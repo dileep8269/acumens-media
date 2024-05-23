@@ -9,12 +9,14 @@ import Footer from "../components/Footer"
 import AiSection from "../components/AiSection"
 import AcumensReview from "../components/AcumensReview"
 import DisplayCard from "../components/DisplayCard"
+import CustomForm from "../components/CustomForm"
 
 // importing constants from constant folder
-import { whatWeDo, aboutAcumensic, partnerImages, brandImages } from "../constants/constant"
+import { whatWeDo, aboutAcumensic, partnerImages, brandImages, marketingList, awardedImages, inputFields } from "../constants/constant"
 
+// importing react icons
+import { FaCheckCircle } from "react-icons/fa";
 
-const items = ["item1", "item2", "item3", "item4"];
 
 const HomePage = () => {
   return (
@@ -33,15 +35,15 @@ const HomePage = () => {
         <AboutUs about={whatWeDo} />
       </div>
 
-      <div className="container mx-auto py-20">
+      <div className="container mx-auto py-10">
         <DisplayCard />
       </div>
 
       <div className="container mx-auto">
-        <AboutUs about={aboutAcumensic}/>
+        <AboutUs about={aboutAcumensic} />
       </div>
 
-      <div className="w-full py-20 bg-gray-100">
+      <div className="w-full py-10 bg-gray-100">
         <div className="container mx-auto text-center space-y-8 px-10">
           <p className="text-base font-medium"> OUR CLIENTS ARE SOME OF THE WORLD'S... </p>
           <h1 className="text-4xl font-semibold">Fastest growing companies & Brands.</h1>
@@ -52,7 +54,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="w-full py-20">
+      <div className="w-full py-10">
         <div className="container mx-auto space-y-8 px-10">
           <p className="text-base font-medium text-center"> WHY ACUMENS </p>
           <h1 className="text-4xl font-semibold text-center">Managing your business has never been easier.</h1>
@@ -60,22 +62,22 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="w-full bg-gray-100 py-20">
+      <div className="w-full bg-gray-100 py-10">
         <div className="container mx-auto">
           <AcumensReview />
         </div>
       </div>
 
-      <ImageSlider images={brandImages}/>
+      <ImageSlider images={brandImages} />
 
-      <div className="w-full min-h-[880px] md:min-h-[1000px] lg:min-h-[480px] py-20">
+      <div className="w-full min-h-[880px] md:min-h-[1000px] lg:min-h-[480px] py-10">
         <div className="container mx-auto ">
           <AiSection />
 
         </div>
       </div>
 
-      <div className="w-full px-8 py-20">
+      <div className="w-full px-8 py-10 bg-gray-100">
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row justify-center items-center gap-8">
             <div className="w-full md:w-[50%] ">
@@ -88,8 +90,6 @@ const HomePage = () => {
 
             </div>
 
-            {/* Carousel Container */}
-
             <div className="w-full md:w-[50%]">
 
               <BlogCard />
@@ -101,6 +101,51 @@ const HomePage = () => {
         </div>
 
       </div>
+
+      <div className="w-full px-8 py-20">
+        <div className="container mx-auto">
+
+          <div className="flex flex-col md:flex-row gap-8">
+            <div className="w-full md:w-[50%] flex flex-col justify-center items-center gap-y-5">
+              <h1 className="text-3xl font-bold lg:px-[3rem]">Unlock a Complimentary Consultation to Supercharge Your Business</h1>
+              <p className="text-sm font-normal lg:px-[3rem]">Experience a comprehensive marketing analysis, assessing the effectiveness of your company's marketing initiatives. Here's what awaits you:</p>
+
+              <hr className="w-full h-2 "/>
+
+              <ul className="space-y-4">
+                {
+                  marketingList.map((list, index) => (
+                    
+                    <li key={index} className="flex gap-x-5 items-start justify-start text-sm"><span className="text-xl mt-0.5"><FaCheckCircle /></span>{list}</li>
+                  ))
+                }
+              
+              
+              </ul>
+
+              <div className="w-full text-center">
+                <h1 className="text-2xl font-semibold">Awarded Marketing Agency</h1>
+                <ul className="flex flex-row justify-between items-center mt-10">
+                  {
+                    awardedImages.map((image,index) => (
+                      
+                      <li key={index}><img src={image} alt="" className="h-auto w-28 object-cover"/></li>
+                    ))
+                  }
+                </ul>
+              </div>
+
+            </div>
+            <div className="w-full md:w-[50%] flex flex-col justify-center items-center">
+              <CustomForm fields={inputFields} />
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
 
       <div className="w-full bg-gray-100">
         <div className="container mx-auto">

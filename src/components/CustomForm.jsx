@@ -15,7 +15,7 @@ const CustomForm = ({ fields }) => {
     };
 
     return (
-        <div className="bg-transparent p-8 rounded-[40px] shadow-lg shadow-black w-full xs:w-[28rem]">
+        <div className="bg-transparent p-8 rounded-[40px] shadow-lg shadow-black w-auto lg:w-[28rem]">
             <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
             <form onSubmit={handleSubmit(onSubmit)}>
                 {fields.map((field) => (
@@ -30,10 +30,14 @@ const CustomForm = ({ fields }) => {
                                         required: field.require, maxLength: {
                                             value: 30,
                                             message: 'you can\'t exceed 30 characters'
+                                        },
+                                        minLength : {
+                                            value: 3,
+                                            message: 'character should be between 3 to 30 characters'
                                         }
                                     })}
                                     placeholder={field.placeholder}
-                                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+                                    className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500`}
                                 />
                                 <p className='text-red-600 mt-2 text-md font-normal italic'>{errors[field.name]?.message}</p>
                             </>
@@ -105,7 +109,6 @@ const CustomForm = ({ fields }) => {
 
 
                                 </div>
-
 
                             )
                         }
