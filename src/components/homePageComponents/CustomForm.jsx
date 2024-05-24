@@ -23,6 +23,7 @@ const CustomForm = ({ fields }) => {
                                 <input
                                     type="text"
                                     id={field.name}
+                                    autoComplete="on"
                                     {...register(field.name, {
                                         required: field.require, maxLength: {
                                             value: 30,
@@ -44,6 +45,7 @@ const CustomForm = ({ fields }) => {
                                 <input
                                     type="password"
                                     id={field.name}
+                                    autoComplete="on"
                                     {...register(field.name)}
                                     placeholder={field.placeholder}
                                     className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
@@ -56,6 +58,7 @@ const CustomForm = ({ fields }) => {
                                 <input
                                     type="email"
                                     id={field.name}
+                                    autoComplete="on"
                                     {...register(field.name, {
                                         pattern: {
                                             value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.com$/,
@@ -90,7 +93,7 @@ const CustomForm = ({ fields }) => {
                                 <div className='flex justify-start items-start'>
                                     <input
                                         type="checkbox"
-
+                                        id={field.name}
                                         {...register(field.name, {
                                             required: {
                                                 value: true,

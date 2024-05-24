@@ -160,8 +160,12 @@ const HomePage = () => {
         <span className="inline-block w-1/2 px-1 py-4 xs:p-4  bg-blue-Purple text-lg font-normal font-kanit">
           Speak To Us
         </span>
-        <span className="inline-block w-1/2 px-1 py-4 xs:p-4  bg-blue-Purple text-lg font-normal font-kanit">
+        {/* <span className="inline-block w-1/2 px-1 py-4 xs:p-4  bg-blue-Purple text-lg font-normal font-kanit">
           884915291
+        </span> */}
+        <span className="flex flex-col gap-y-2 w-1/2 px-1 py-4 xs:p-4  bg-blue-Purple font-normal font-kanit text-sm">
+          <span>884915291</span>
+          <span>884915291</span>
         </span>
       </div>
 
