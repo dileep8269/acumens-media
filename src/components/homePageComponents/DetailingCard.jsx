@@ -22,8 +22,8 @@ const DetailingCard = () => {
                     acumensincDatail.map((item, index) => (
                         <div key={index} className='flex flex-col w-[300px] h-auto justify-items-start p-5 space-y-4 rounded-2xl'>
                             <span className="w-14 h-14 rounded-full flex justify-center items-center text-3xl bg-gray-100 text-purple-900">{item.icon}</span>
-                            <p className="font-medium">{item.title}</p>
-                            <p className="text-base">{item.desc}</p>
+                            <p className="font-bold text-base font-syne text-black">{item.title}</p>
+                            <p className="text-base font-light font-kanit leading-6 tracking-normal">{item.desc}</p>
                         </div>
 
                     ))

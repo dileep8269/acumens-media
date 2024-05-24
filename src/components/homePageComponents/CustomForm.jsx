@@ -5,22 +5,19 @@ import { useForm } from 'react-hook-form';
 const CustomForm = ({ fields }) => {
 
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
-
-    if (errors) {
-        console.log(errors);
-    }
+    
     const onSubmit = (data) => {
         console.log("data is fetched : ", data);
         reset();
     };
 
     return (
-        <div className="bg-transparent p-8 rounded-[40px] shadow-lg shadow-black w-auto lg:w-[28rem]">
-            <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
+        <div className="bg-white p-8 rounded-[40px] shadow-lg shadow-black w-auto lg:w-[28rem] text-base font-kanit font-light leading-6 tracking-normal text-black">
+            <h2 className="text-2xl mb-4">Contact Us</h2>
             <form onSubmit={handleSubmit(onSubmit)}>
                 {fields.map((field) => (
                     <div key={field.name} className="mb-4">
-                        {field.type != 'checkbox' && <label htmlFor={field.name} className='block text-gray-700 font-semibold mb-2'>{field.label}</label>}
+                        {field.type != 'checkbox' && <label htmlFor={field.name} className='block mb-2'>{field.label}</label>}
                         {field.type === 'text' && (
                             <>
                                 <input

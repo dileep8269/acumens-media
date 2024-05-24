@@ -10,18 +10,14 @@ export default {
         'xs': '480px',  // Custom extra-small breakpoint
         'sm': '640px'
       },
-      animation: {
-        'rotate-horizontal': 'rotateHorizontal 12s infinite linear',
+      fontFamily: {           
+        syne: ["Syne", "sans-serif"],  // custom font-family
+        kanit: ["Kanit", "sans-serif"]
       },
-      keyframes: {
-        rotateHorizontal: {
-          '0%': { transform: 'rotateY(0deg)' },
-          '25%': { transform: 'rotateY(90deg)' },
-          '50%': { transform: 'rotateY(180deg)' },
-          '75%': { transform: 'rotateY(90deg)' },
-          '100%': { transform: 'rotateY(0deg)' },
-        },
-      },
+      colors : {
+        'blue-Purple' : "#5f4cdd",
+        'light-purple' : "#eeebff",
+      }
     },
   },
   plugins: [require('daisyui')],

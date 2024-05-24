@@ -1,0 +1,74 @@
+import { FaLinkedin, FaFacebook, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
+import { SiGooglemaps } from "react-icons/si";
+
+const Footer = () => {
+    return (
+        <footer>
+            <div className='grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 gap-5 text-center lg:text-left justify-items-center items-start py-5 px-3 '>
+
+                <div className="space-y-5 flex flex-col justify-center items-center text-center">
+                    <h5 className='text-lg font-bold font-syne text-black'>Address</h5>
+                    <div className="w-16 h-16 rounded-full bg-gray-300 flex justify-center items-center">
+                        <span className="text-2xl "><SiGooglemaps /></span>
+                    </div>
+                    <p className=" w-48 text-lg font-normal font-syne text-black">440 N Barranca Ave.,
+                        Covina,
+                        CA 91723
+                    </p>
+                    <a href="" className="underline underline-offset-8 decoration-2 decoration-purple-700 font-bold uppercase text-sm font-syne">view on map</a>
+                </div>
+
+                <div className='space-y-5'>
+                    <h5 className='text-lg font-bold font-syne text-black text-center'>Services</h5>
+                    <div className="flex justify-between items-start gap-8">
+                        <div>
+                            <ul className='text-base font-normal space-y-2 cursor-pointer'>
+                                <li className='hover:text-yellow-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6'>Social Media Automation</li>
+                                <li className="hover:text-yellow-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6">AI-Fueled Google Business Services</li>
+                                <li className="hover:text-yellow-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6">AI-Driven E-Commerce Solutions</li>
+                                <li className="hover:text-yellow-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6">AI-Enhanced App Development</li>
+                                <li className="hover:text-yellow-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6">Content Writing</li>
+                            </ul>
+
+                        </div>
+                        <div>
+                            <ul className='text-base font-normal space-y-2 cursor-pointer'>
+                                <li className='hover:text-yellow-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6'>Search Engine Services (SEO/SEM)</li>
+                                <li className="hover:text-yellow-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6">AI-Powered Email Marketing</li>
+                                <li className="hover:text-yellow-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6">AI-Integrated Web Design & Hosting</li>
+                                <li className="hover:text-yellow-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6">ERP / CRM / IT / ChatBots</li>
+                                <li className="hover:text-yellow-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6">CCaaS / Outsourcing & Consulting.</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div className='space-y-5'>
+                    <h5 className='text-lg font-bold font-syne text-black'>About Us</h5>
+                    <ul className='text-base font-normal space-y-2 cursor-pointer'>
+                        <li className='hover:text-yellow-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6'>About</li>
+                        <li className="hover:text-yellow-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6">Blog</li>
+                        <li className="hover:text-yellow-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6">Contact</li>
+                    </ul>
+
+                    <div className='space-y-5 '>
+                        <h5 className='text-lg font-medium'>Follow Us</h5>
+                        <ul className='flex flex-row justify-start items-center gap-5'>
+                            <li className="text-xl cursor-pointer hover:scale-150 transition-transform duration-700"><FaLinkedin /></li>
+                            <li className="text-xl cursor-pointer hover:scale-150 transition-transform duration-700"><FaFacebook /></li>
+                            <li className="text-xl cursor-pointer hover:scale-150 transition-transform duration-700"><FaTwitter /></li>
+                            <li className="text-xl cursor-pointer hover:scale-150 transition-transform duration-700"><FaInstagram /></li>
+                            <li className="text-xl cursor-pointer hover:scale-150 transition-transform duration-700"><FaYoutube /></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+        </footer>
+    )
+}
+
+export default Footer
