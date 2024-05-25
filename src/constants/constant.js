@@ -146,3 +146,54 @@ export const inputFields = [
         label: 'Yes, I would like to receive promotional emails & newsletters',
     }
 ];
+
+export const AiSolutionsDropdown = [
+    {
+        content: "Social Media Automation",
+        router: "/"
+    },
+    {
+        content: "Search Engine Services(SEO/SEM)",
+        router: "/"
+    },
+    {
+        content: "AI Fueled Google Business Services",
+        router: "/"
+    },
+    {
+        content: "AI Powered Email Marketing",
+        router: "/"
+    },
+    {
+        content: "AI Driven E-commerce Solutions",
+        router: "/"
+    },
+    {
+        content: "AI-Integrated Web Design & Hosting",
+        router: "/"
+    },
+    {
+        content: "ERP / CRM / IT /Chatbots",
+        router: "/"
+    },
+    {
+        content: "AI-Enhanced Content Writing",
+        router: "/"
+    },
+    {
+        content: "CCaaS / Outsourcing & Global Recruitment Support",
+        router: "/"
+    },
+
+];
+
+export const WhoWeAreDropdown = [
+    {
+        content: "About Us",
+        router: "/"
+    },
+    {
+        content: "Blog",
+        router: "/"
+    }
+]

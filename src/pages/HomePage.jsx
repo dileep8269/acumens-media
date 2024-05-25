@@ -1,11 +1,11 @@
-import Header from "../components/homePageComponents/Header"
+
 import Hero from "../components/homePageComponents/Hero"
 import ImageSlider from "../components/homePageComponents/ImageSlider"
 import AboutUs from "../components/homePageComponents/AboutUs"
 import BrandCard from "../components/homePageComponents/BrandCard"
 import DetailingCard from "../components/homePageComponents/DetailingCard"
 import BlogCard from "../components/homePageComponents/BlogCard"
-import Footer from "../components/homePageComponents/Footer"
+
 import AiSection from "../components/homePageComponents/AiSection"
 import AcumensReview from "../components/homePageComponents/AcumensReview"
 import DisplayCard from "../components/homePageComponents/DisplayCard"
@@ -22,7 +22,6 @@ import { FaCheckCircle } from "react-icons/fa";
 const HomePage = () => {
   return (
     <div>
-      <Header />
 
       <div className="w-full bg-blue-Purple">
         <div className="container mx-auto ">
@@ -142,18 +141,6 @@ const HomePage = () => {
           </div>
         </div>
 
-      </div>
-
-
-      <div className="w-full bg-gray-100 mb-[46px] sm:mb-0">
-        <div className="container mx-auto">
-          <Footer />
-        </div>
-        <div className="footer footer-center p-4 text-base-content border-t-2 border-black">
-          <aside>
-            <p className="space-x-3 font-kanit font-light leading-6 tracking-normal text-base pb-2 sm:pb-0">Copyright © 2016 - 2024 <span>Acumens Media Inc.</span> <span>Terms & Conditions</span> <span>Privacy Policy</span></p>
-          </aside>
-        </div>
       </div>
 
       <div className="fixed left-0 bottom-0 w-full text-white text-center flex justify-center items-center gap-x-1 sm:hidden">

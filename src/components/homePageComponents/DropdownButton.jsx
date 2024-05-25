@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
-function DropdownButton({children}) {
+function DropdownButton({children, dropdown}) {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
@@ -23,15 +24,13 @@ function DropdownButton({children}) {
                     className="origin-top-right absolute top-6 left-0 mt-2 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50"
                 >
                     <div className="py-1">
-                        <a href="#" className="block px-2 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                            Account settings
-                        </a>
-                        <a href="#" className="block px-2 py-2 text-sm text-gray-700 hover:bg-gray-100 ">
-                            Support
-                        </a>
-                        <a href="#" className="block px-2 py-2 text-sm text-gray-700 hover:bg-gray-100 ">
-                            License
-                        </a>
+                    {dropdown?.map((dropdownMenu, index) => (
+                        
+                        <Link key={index} to={dropdownMenu.route} className="block px-2 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                            {dropdownMenu.content}
+                        </Link>
+                    ))}
+                        
                     </div>
                 </div>
             )}
