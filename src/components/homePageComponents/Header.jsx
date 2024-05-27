@@ -72,7 +72,7 @@ const Header = () => {
 
           {/* Buttons */}
           <div className="flex flex-row justify-center items-center gap-4">
-            <Link to="/Contact" className="cursor-pointer px-4 py-1 hover:bg-gray-50 bg-transparent border border-gray-300 rounded-md text-sm font-medium text-gray-700 transition-colors duration-500">
+            <Link to="/contact.htm" className="cursor-pointer px-4 py-1 hover:bg-gray-50 bg-transparent border border-gray-300 rounded-md text-sm font-medium text-gray-700 transition-colors duration-500">
               <p className="text-[12px] font-syne font-bold tracking-tighter leading-5 uppercase">
                 Support - 8884915291
               </p>

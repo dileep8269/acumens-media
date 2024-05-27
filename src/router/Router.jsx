@@ -18,12 +18,12 @@ const router = createBrowserRouter([
         },
 
         {
-            path: "/Contact",
+            path: "/contact.htm",
             element: <ContactPage />,
         },
         
         {
-            path: "/Audit",
+            path: "/audit.htm",
             element: <AuditPage />,
         },
       ]

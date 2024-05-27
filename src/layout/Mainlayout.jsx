@@ -5,9 +5,11 @@ import Footer from "../components/homePageComponents/Footer"
 const Mainlayout = () => {
   return (
     <>
-    <Header />
-    <Outlet></Outlet>
-    <div className="w-full bg-gray-100 mb-[46px] sm:mb-0">
+      <Header />
+      
+      <Outlet></Outlet>
+
+      <div className="w-full bg-gray-100 mb-[46px] sm:mb-0">
         <div className="container mx-auto">
           <Footer />
         </div>

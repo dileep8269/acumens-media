@@ -1,7 +1,3 @@
-// src/components/Contact.jsx
-
-import React from 'react';
-
 const Contact = ({ title, fields, checkboxes, buttonText }) => {
   console.log(fields,checkboxes);
   return (
