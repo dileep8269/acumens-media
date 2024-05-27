@@ -5,30 +5,29 @@ import ContactPage from "../pages/ContactPage";
 import AuditPage from "../pages/AuditPage";
 
 
-
 const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Mainlayout />,
-      children: [
-        {
-            path: "/",
-            element: <HomePage />,
+  {
+    path: "/",
+    element: <Mainlayout />,
+    children: [
+      {
+          path: "/",
+          element: <HomePage />,
 
-        },
-
-        {
-            path: "/Contact",
-            element: <ContactPage />,
-        },
-        
-        {
-            path: "/Audit",
-            element: <AuditPage />,
-        },
-      ]
-    },
-  ]);
+      },
+      
+      {
+          path: "/contact.htm",
+          element: <ContactPage />,
+      },
+      
+      {
+          path: "/audit.htm",
+          element: <AuditPage />,
+      },
+    ]
+  }, 
+]);
   
 
   export default router

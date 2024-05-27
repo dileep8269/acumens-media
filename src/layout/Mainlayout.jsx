@@ -17,6 +17,19 @@ const Mainlayout = () => {
           </aside>
         </div>
       </div>
+      {/*Contact popup section is added:*/}  
+      <div className="fixed left-0 bottom-0 w-full text-white text-center flex justify-center items-center gap-x-1 sm:hidden">
+        <span className="inline-block w-1/2 px-1 py-4 xs:p-4  bg-blue-Purple text-lg font-normal font-kanit">
+          Speak To Us
+        </span>
+        {/* <span className="inline-block w-1/2 px-1 py-4 xs:p-4  bg-blue-Purple text-lg font-normal font-kanit">
+          884915291
+        </span> */}
+        <span className="flex flex-col gap-y-2 w-1/2 px-1 py-4 xs:p-4  bg-blue-Purple font-normal font-kanit text-sm">
+          <span>884915291</span>
+          <span>884915291</span>
+        </span>
+      </div>
     </>
   )
 }
