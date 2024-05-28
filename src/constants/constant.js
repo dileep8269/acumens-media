@@ -179,15 +179,15 @@ export const AiSolutionsDropdown = [
     // 3 page 
     {
         content: "ERP / CRM / IT /Chatbots",
-        router: "/"
+        router: "/Erp-crm-it-chatbot"
     },
     {
         content: "AI-Enhanced Content Writing",
-        router: "/"
+        router: "/Content-writing.htm"
     },
     {
         content: "CCaaS / Outsourcing & Global Recruitment Support",
-        router: "/"
+        router: "/CCaaS-Outsourcing-Consulting.htm"
     },
 
 ];

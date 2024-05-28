@@ -82,7 +82,7 @@ const AppDevelopmentPage = () => {
             <div className="w-full py-5">
                 <div className="container mx-auto space-y-6 bg-gray-100 py-10 rounded-[40px]">
                     <div className="flex justify-center items-center">
-                        <img src={banner.photo} alt={banner.photo} className="object-contain h-20 w-44" />
+                        <img src={banner.photo} alt={banner.photo} className="object-contain h-15 w-28" />
                     </div>
                     <div className='flex flex-col justify-center items-center space-y-6 px-8'>
                         <h1 className='text-center text-3xl lg:text-5xl font-bold font-syne lg:w-[63%] text-black'>{banner.heading}</h1>
