@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+/* eslint-disable react/prop-types */
+import  { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 function DropdownButton({children, dropdown}) {
@@ -26,7 +27,7 @@ function DropdownButton({children, dropdown}) {
                     <div className="py-1">
                     {dropdown?.map((dropdownMenu, index) => (
                         
-                        <Link key={index} to={dropdownMenu.route} className="block px-2 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                        <Link key={index} to={dropdownMenu?.router} className="block px-2 py-2 text-sm text-gray-700 hover:bg-gray-100">
                             {dropdownMenu.content}
                         </Link>
                     ))}

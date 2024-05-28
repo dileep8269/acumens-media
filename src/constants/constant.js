@@ -194,6 +194,6 @@ export const WhoWeAreDropdown = [
     },
     {
         content: "Blog",
-        router: "/"
+        router: "/blog.htm"
     }
 ]

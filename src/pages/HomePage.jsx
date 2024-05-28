@@ -105,7 +105,7 @@ const HomePage = () => {
           <div className="flex flex-col md:flex-row gap-8">
             <div className="w-full md:w-[50%] flex flex-col justify-center items-center gap-y-5">
               <h1 className="text-4xl lg:text-5xl font-bold font-syne lg:px-[3rem]">Unlock a Complimentary Consultation to Supercharge Your Business</h1>
-              <p className="text-base font-light font-kanit tracking-normal leading-6 lg:px-[3rem]">Experience a comprehensive marketing analysis, assessing the effectiveness of your company's marketing initiatives. Here's what awaits you:</p>
+              <p className="text-base font-light font-kanit tracking-normal leading-6 lg:px-[3rem]">Experience a comprehensive marketing analysis, assessing the effectiveness of your company&apos;s marketing initiatives. Here's what awaits you:</p>
 
               <hr className="w-full h-2 " />
 
