@@ -10,10 +10,9 @@ import Contact from "../components/aiSolutionPageComponents/Contact"
 import Button from "../components/homePageComponents/Button"
 
 // importing aiSolutions constants 
-import { socialMediaMarktingList, socialMediaBlogs, aboutSocialMediaServices, socialMediaServices, socialMediaProofs, socialMediaFaqs, socialMediaHero, banner, clientReview, contactMessage } from "../constants/searchEngineConstant"
+import { socialMediaMarktingList, socialMediaBlogs, aboutSocialMediaServices, socialMediaServices, socialMediaProofs, socialMediaFaqs, socialMediaHero, banner, clientReview, contactMessage } from "../constants/erpCrmItChatbotConstant"
 
-
-const SearchEnginePage = () => {
+const AiChatbotPage = () => {
     return (
         <div>
             <div className="w-full py-10">
@@ -52,7 +51,7 @@ const SearchEnginePage = () => {
             </div>
 
             <div className="w-full py-10">
-                <ClientReview review={clientReview}/>
+                <ClientReview review={clientReview} />
             </div>
 
             <div className="w-full py-10">
@@ -95,7 +94,7 @@ const SearchEnginePage = () => {
 
             <div className="w-full py-10">
                 <div className="container mx-auto">
-                    <Contact message={contactMessage}/>
+                    <Contact message={contactMessage} />
                 </div>
             </div>
 
@@ -103,4 +102,4 @@ const SearchEnginePage = () => {
     )
 }
 
-export default SearchEnginePage
+export default AiChatbotPage

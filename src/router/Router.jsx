@@ -10,6 +10,9 @@ import EmailMarketingPage from "../pages/EmailMarketingPage";
 import EcommerceSolutionPage from "../pages/EcommerceSolutionPage";
 import WebDesignAndHosting from "../pages/WebDesignAndHosting";
 import AppDevelopmentPage from "../pages/AppDevelopmentPage";
+import ConsultingPage from "../pages/ConsultingPage";
+import ContentWritingPage from "../pages/ContentWritingPage";
+import AiChatbotPage from "../pages/AiChatbotPage";
 
 
 
@@ -61,6 +64,18 @@ const router = createBrowserRouter([
             path: "/app-development.htm",
             element: <AppDevelopmentPage />,
         },
+        {
+            path: "/Erp-Crm-It-Chatbots.htm",
+            element: <AiChatbotPage />,
+        },
+        {
+            path: "/Content-writing.htm",
+            element: <ContentWritingPage />,
+        },
+        {
+            path: "/CCaaS-Outsourcing-Consulting.htm",
+            element: <ConsultingPage />,
+        }
       ]
     },
   ]);
