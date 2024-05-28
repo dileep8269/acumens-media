@@ -45,7 +45,7 @@ const HomePage = () => {
 
       <div className="w-full py-10 bg-gradient-to-b from-light-purple to-gray-100">
         <div className="container mx-auto text-center space-y-8 px-10 mb-20">
-          <h6 className="text-base font-bold font-syne text-black"> OUR CLIENTS ARE SOME OF THE WORLD'S... </h6>
+          <h6 className="text-base font-bold font-syne text-black"> OUR CLIENTS ARE SOME OF THE WORLD&apos;S... </h6>
           <h1 className="text-4xl lg:text-5xl font-bold font-syne lg:px-[20%] text-black">Fastest growing companies & Brands.</h1>
           <Button className={"mx-auto"}>View All</Button>
           <div className="flex flex-row justify-center items-center flex-wrap gap-10">
@@ -105,7 +105,7 @@ const HomePage = () => {
           <div className="flex flex-col md:flex-row gap-8">
             <div className="w-full md:w-[50%] flex flex-col justify-center items-center gap-y-5">
               <h1 className="text-4xl lg:text-5xl font-bold font-syne lg:px-[3rem]">Unlock a Complimentary Consultation to Supercharge Your Business</h1>
-              <p className="text-base font-light font-kanit tracking-normal leading-6 lg:px-[3rem]">Experience a comprehensive marketing analysis, assessing the effectiveness of your company&apos;s marketing initiatives. Here's what awaits you:</p>
+              <p className="text-base font-light font-kanit tracking-normal leading-6 lg:px-[3rem]">Experience a comprehensive marketing analysis, assessing the effectiveness of your company&apos;s marketing initiatives. Here&apos;s what awaits you:</p>
 
               <hr className="w-full h-2 " />
 

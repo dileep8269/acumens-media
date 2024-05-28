@@ -27,7 +27,7 @@ const DisplayCard = () => {
 
                             </div>
                         </div>
-                        <div className="back-card">
+                        <div className="back-card pl-10">
                             <ul className='flex flex-col gap-4 justify-center items-start h-[85%] list-none text-lg font-normal text-black'>
                                 {
                                     service.list.map((service, index) => (

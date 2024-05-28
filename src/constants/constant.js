@@ -150,28 +150,33 @@ export const inputFields = [
 export const AiSolutionsDropdown = [
     {
         content: "Social Media Automation",
-        router: "/"
+        router: "/Social-media-automation.htm"
     },
     {
         content: "Search Engine Services(SEO/SEM)",
-        router: "/"
+        router: "/Seo.htm"
     },
     {
         content: "AI Fueled Google Business Services",
-        router: "/"
+        router: "/Google-suite.htm"
     },
     {
         content: "AI Powered Email Marketing",
-        router: "/"
+        router: "/Email-Marketing.htm"
     },
     {
         content: "AI Driven E-commerce Solutions",
-        router: "/"
+        router: "/E-commerce.htm"
     },
     {
         content: "AI-Integrated Web Design & Hosting",
-        router: "/"
+        router: "/Web-Design-Hosting.htm"
     },
+    {
+        content: "AI-Enhanced App Development",
+        router: "/app-development.htm"
+    },
+    // 3 page 
     {
         content: "ERP / CRM / IT /Chatbots",
         router: "/"

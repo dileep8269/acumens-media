@@ -9,7 +9,7 @@
 
 .card {
     width: 350px;
-    height: 450px;
+    height: 500px;
     perspective: 1000px;
 }
 
@@ -38,7 +38,6 @@
 .back-card {
     border-radius: 40px;
     background-color: #f7f7fa;
-    padding-left: 40px;
     transform: rotateY(180deg);
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2), -5px -5px 15px rgba(255, 255, 255, 0.7);
 }
