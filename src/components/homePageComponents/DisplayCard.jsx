@@ -5,7 +5,7 @@ import { socialMediaServices } from '../../constants/constant';
 const DisplayCard = () => {
     return (
 
-        <div className='div-container'>
+        <div className='div-container grid lg:grid-cols-4 grid-cols-1 gap-5 '>
 
             {
                 socialMediaServices.map((service) => (

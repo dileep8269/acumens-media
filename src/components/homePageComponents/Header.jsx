@@ -1,15 +1,18 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { MyContext } from "../../context api/MyProvider";
+import { RxCross1, RxHamburgerMenu } from "react-icons/rx";
 import acumensLogo from "../../assets/acumens-logoo_new2.webp";
 import acumensStyleLogo from "../../assets/acumenslogo2.webp";
-import { RxCross1, RxHamburgerMenu } from "react-icons/rx";
 import DropdownButton from "./DropdownButton";
-import { MyContext } from "../../context api/MyProvider";
 import Button from "./Button";
-//This is a constant present in constant.js for mapping only
+
+// importing dropdown list from constant folder
 import {
   AiSolutionsDropdown,
   WhoWeAreDropdown,
+  FollowUs,
+  AiSolutionsDropdownMobile
 } from "../../constants/constant";
 
 const Header = () => {
@@ -23,10 +26,11 @@ const Header = () => {
 
   return (
     <>
-      <header className="bg-white bg-opacity-50 backdrop-blur-md shadow-lg p-4 text-black fixed top-0 left-0 w-full z-50 ">
+      <header className="bg-white bg-opacity-50 backdrop-blur-md shadow-lg p-4 text-black  w-full  ">
         {/* Desktop View */}
         <div className="hidden xl:flex flex-1 justify-between items-center gap-x-6 container mx-auto">
           {/* Logo */}
+          <Link to='/'>
           <div className="flex items-center shrink-0">
             <img
               src={acumensStyleLogo}
@@ -35,49 +39,56 @@ const Header = () => {
             />
             <img src={acumensLogo} alt="Acumens Logo" className="h-8 xl:h-10" />
           </div>
+          </Link>
           {/* Dropdown Menu */}
           <div>
             <ul className="flex flex-row gap-x-2">
-              <li className="cursor-pointer px-4 py-1 hover:bg-gray-50 bg-transparent border border-gray-300 rounded-md text-sm font-medium text-gray-700 transition-colors duration-500">
-                <Link
-                  to="/"
-                  className="text-[12px] font-syne font-bold tracking-tighter leading-5 uppercase"
-                >
+              <Link to="/" className="cursor-pointer px-4 py-1 bg-transparent text-sm font-medium text-gray-700 ">
+                <span className="text-[12px] font-syne font-bold tracking-tighter leading-5 uppercase">
                   Home
-                </Link>
-              </li>
+                </span>
+              </Link>
               <li className="cursor-pointer">
-                <DropdownButton dropdown={AiSolutionsDropdown}>
-                  Ai Solutions
+                <DropdownButton dropdown={AiSolutionsDropdown} classname="w-72">
+                  <Link to='/Ai-Solutions.htm'>Ai Solutions</Link>
                 </DropdownButton>
               </li>
-              <li className="cursor-pointer px-4 py-1 hover:bg-gray-50 bg-transparent border border-gray-300 rounded-md text-sm font-medium text-gray-700 transition-colors duration-500">
-                <Link
-                  to="/pricing.htm"
-                  className="text-[12px] font-syne font-bold tracking-tighter leading-5 uppercase"
-                >
+              <Link to="/pricing.htm" className="cursor-pointer px-4 py-1 bg-transparent text-sm font-medium text-gray-700 ">
+                <span className="text-[12px] font-syne font-bold tracking-tighter leading-5 uppercase">
                   Pricing
-                </Link>
-              </li>
+                </span>
+              </Link>
               <li className="cursor-pointer">
-                <DropdownButton dropdown={WhoWeAreDropdown}>
+                <DropdownButton dropdown={WhoWeAreDropdown} classname="w-36">
                   Who We Are
                 </DropdownButton>
               </li>
               <li className="cursor-pointer">
-                <DropdownButton>Follow Us</DropdownButton>
+                <DropdownButton dropdown={FollowUs} classname="w-72">
+                  Follow Us
+                </DropdownButton>
               </li>
             </ul>
           </div>
 
           {/* Buttons */}
           <div className="flex flex-row justify-center items-center gap-4">
-            <Link to="/contact.htm" className="cursor-pointer px-4 py-1 hover:bg-gray-50 bg-transparent border border-gray-300 rounded-md text-sm font-medium text-gray-700 transition-colors duration-500">
+
+            <Link to={'/contact.htm'} className="cursor-pointer px-4 py-1 bg-transparent text-sm font-medium text-gray-700 ">
               <p className="text-[12px] font-syne font-bold tracking-tighter leading-5 uppercase">
-                Support - 8884915291
+                Support
               </p>
               <p className="text-[12px] font-syne font-bold tracking-tighter leading-5 uppercase">
-                Sales - 8009694409
+                8884915291
+              </p>
+            </Link>
+
+            <Link to={'/contact.htm'} className="cursor-pointer px-4 py-1 bg-transparent text-sm font-medium text-gray-700 ">
+              <p className="text-[12px] font-syne font-bold tracking-tighter leading-5 uppercase">
+                Sales
+              </p>
+              <p className="text-[12px] font-syne font-bold tracking-tighter leading-5 uppercase">
+                8009694409
               </p>
             </Link>
 
@@ -91,7 +102,8 @@ const Header = () => {
       {/* Mobile view */}
       <header className="bg-white bg-opacity-50 backdrop-blur-md shadow-lg p-4 flex justify-between items-center xl:hidden -mt-8 fixed top-8 left-0 w-full z-50">
         {/* Logo */}
-        <div className="flex items-center">
+      <Link to="/">
+      <div className="flex items-center" onClick={toggleMenu}>
           <img
             src={acumensStyleLogo}
             alt="Acumens Logo"
@@ -99,47 +111,43 @@ const Header = () => {
           />
           <img src={acumensLogo} alt="Acumens Logo" className="h-10" />
         </div>
+      </Link>
 
         {/* Mobile menu */}
         <div
-          className={`absolute top-[72px] left-0 right-0 bg-white bg-opacity-100 backdrop-blur-md shadow-lg text-white text-lg font-semibold p-4 transition-opacity duration-700 ${
-            menuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
-          }`}
+          className={`absolute top-[72px] left-0 right-0 bg-white bg-opacity-100 backdrop-blur-md shadow-lg text-white text-lg font-semibold p-4 transition-opacity duration-700 ${menuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
+            }`}
         >
           <ul className="flex flex-col space-y-5">
-            <li className=" cursor-pointer px-4 py-2 bg-white rounded-md text-sm font-medium text-gray-700 hover:bg-gray-400 w-fit">
-              <Link
-                to="#"
-                className="text-[12px] font-syne font-bold tracking-tighter leading-5 uppercase"
-                onClick={toggleMenu}
-              >
+            <Link to="/" className=" cursor-pointer px-4 py-2 rounded-md text-sm font-medium text-gray-700 w-fit">
+              <span className="text-[12px] font-syne font-bold tracking-tighter leading-5 uppercase" onClick={toggleMenu} >
                 Home
-              </Link>
-            </li>
+              </span>
+            </Link>
             <li className=" cursor-pointer">
-              <DropdownButton dropdown={AiSolutionsDropdown}>
+              <DropdownButton dropdown={AiSolutionsDropdownMobile} classname="w-72">
                 Ai Solutions
               </DropdownButton>
             </li>
-            <li className=" cursor-pointer px-4 py-2 bg-white rounded-md text-sm font-medium text-gray-700 hover:bg-gray-400 w-fit">
+            <li className=" cursor-pointer px-4 py-2 rounded-md text-sm font-medium text-gray-700 w-fit">
               <Link
-                to="#"
+                to="/pricing.htm"
                 className="text-[12px] font-syne font-bold tracking-tighter leading-5 uppercase"
                 onClick={toggleMenu}
               >
                 Pricing
               </Link>
             </li>
-            <li className=" cursor-pointer">
-              <li className="cursor-pointer">
-                <DropdownButton dropdown={WhoWeAreDropdown}>
-                  Who We Are
-                </DropdownButton>
-              </li>
+
+            <li className="cursor-pointer">
+              <DropdownButton dropdown={WhoWeAreDropdown} classname="w-36">
+                Who We Are
+              </DropdownButton>
             </li>
-            <li className=" cursor-pointer px-4 py-2 bg-white rounded-md text-sm font-medium text-gray-700 hover:bg-gray-400 w-fit">
+
+            <li className=" cursor-pointer px-4 py-2 rounded-md text-sm font-medium text-gray-700 w-fit">
               <Link
-                to="#"
+                to="/contact.htm"
                 className="text-[12px] font-syne font-bold tracking-tighter leading-5 uppercase"
                 onClick={toggleMenu}
               >

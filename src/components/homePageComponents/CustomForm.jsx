@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+/* eslint-disable react/prop-types */
 import { useForm } from 'react-hook-form';
+// import "./CustomForm.css"
 
 
 const CustomForm = ({ fields }) => {
@@ -13,9 +14,9 @@ const CustomForm = ({ fields }) => {
 
     return (
         <div className="bg-white p-8 rounded-[40px] shadow-lg shadow-black w-auto lg:w-[28rem] text-base font-kanit font-light leading-6 tracking-normal text-black">
-            <h2 className="text-2xl mb-4">Contact Us</h2>
+            <h2 className="text-4xl mb-4 font-syne font-bold">Contact Us</h2>
             <form onSubmit={handleSubmit(onSubmit)}>
-                {fields.map((field) => (
+                {fields?.map((field) => (
                     <div key={field.name} className="mb-4">
                         {field.type != 'checkbox' && <label htmlFor={field.name} className='block mb-2'>{field.label}</label>}
                         {field.type === 'text' && (
@@ -40,13 +41,34 @@ const CustomForm = ({ fields }) => {
                                 <p className='text-red-600 mt-2 text-md font-normal italic'>{errors[field.name]?.message}</p>
                             </>
                         )}
-                        {field.type === 'password' && (
+                        {field?.type === 'password' && (
                             <>
                                 <input
                                     type="password"
                                     id={field.name}
                                     autoComplete="on"
                                     {...register(field.name)}
+                                    placeholder={field.placeholder}
+                                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+                                />
+                                <p className='text-red-600 mt-2 text-md font-normal italic'>{errors[field.name]?.message}</p>
+                            </>
+                        )}
+                        {field?.type === 'number' && (
+                            <>
+                                <input
+                                    type="number"
+                                    id={field.name}
+                                    autoComplete="on"
+                                    {...register(field.name, {
+                                        pattern: {
+                                            value: /^\+?(1|91)?[-.\s]?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$|^\+?(91)?[-.\s]?[6-9]\d{9}$/,
+                                            message: 'Invalid Number',
+                                        }, required : {
+                                            value: true,
+                                            message: field.require,
+                                        }
+                                    })}
                                     placeholder={field.placeholder}
                                     className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
                                 />

@@ -17,6 +17,7 @@ import BlogPage from "../pages/BlogPage";
 import PricingPage from "../pages/PricingPage/PricingPage";
 import TermsCondition from "../pages/TermsCondition";
 import Privacy from "../pages/Privacy";
+import AiSolutionsPage from "../pages/AiSolutionsPage";
 
 
 
@@ -27,6 +28,11 @@ const router = createBrowserRouter([
       children: [
         {
             path: "/",
+            element: <HomePage />,
+
+        },
+        {
+            path: "/index.htm",
             element: <HomePage />,
 
         },
@@ -55,6 +61,10 @@ const router = createBrowserRouter([
         {
             path: "/blog.htm",
             element: <BlogPage/>,
+        },
+        {
+            path: "/Ai-Solutions.htm",
+            element: <AiSolutionsPage/>,
         },
         {
             path: "/Social-media-automation.htm",

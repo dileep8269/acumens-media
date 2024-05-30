@@ -17,7 +17,7 @@ const WebDesignAndHosting = () => {
 
   return (
     <div>
-      <div className="w-full py-10">
+      <div className="w-full pb-10">
         <div className="container mx-auto space-y-20">
           <Hero hero={socialMediaHero} />
           <MarketingSection list={socialMediaMarktingList} />

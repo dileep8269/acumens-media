@@ -1,4 +1,6 @@
-import React from 'react'
+/* eslint-disable react/prop-types */
+
+import { Link } from "react-router-dom"
 
 const AboutUs = ({about}) => {
     return (
@@ -11,7 +13,7 @@ const AboutUs = ({about}) => {
                 <div className='w-full md:w-1/2 py-5'>
                     <p className='text-left text-base font-kanit font-light tracking-normal leading-6 text-black mb-5 lg:w-[80%]'>{about.about}</p>
 
-                    <a href="" className="underline underline-offset-8 decoration-2 decoration-blue-Purple font-bold uppercase text-sm font-syne">{about.buttonTitle}</a>
+                    <Link to="/Ai-Solutions.htm" className="underline underline-offset-8 decoration-2 decoration-blue-Purple font-bold uppercase text-sm font-syne">{about.buttonTitle}</Link>
                 </div>
             </div>
 

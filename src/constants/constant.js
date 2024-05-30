@@ -1,12 +1,16 @@
+import React from "react"
+import { FaLinkedin, FaFacebook, FaTwitter, FaInstagram, FaYoutube, FaGoogle, FaLightbulb, FaSearchengin, FaHashtag,FaRegAddressCard,FaBlog,FaInstalod   } from "react-icons/fa";
+import { FaCartShopping } from "react-icons/fa6";
+import { MdGroups, MdMessage, MdMail, MdRocket, MdOutlineBrowserUpdated } from "react-icons/md";
 export const blogDetails = [
-    { id: 'item1', date: 'March 2023', desc: '4 Insights for Smarter Short-Form Video' },
-    { id: 'item2', date: 'March 2023', desc: 'Digital Marketing for Small Buisness: An Introduction' },
-    { id: 'item3', date: 'March 2023', desc: 'Average ROAS by Industry: The Most Difficult Metric to Measure' },
-    { id: 'item4', date: 'March 2023', desc: 'What is SEO in Digital Marketing & How Does it work? The SEO Quick Beginner\'s Guide' },
-    { id: 'item5', date: 'April 2023', desc: 'Google\'s march 2023 core update: winners, losers & analysis' },
-    { id: 'item6', date: 'May 2023', desc: 'The Metaverse boom: brands unite and Apple takes a rain check' },
-    { id: 'item7', date: 'May 2023', desc: 'Verify your site is protecting your business' },
-    { id: 'item8', date: 'May 2023', desc: 'The evolution of live-stream content and short-form video: a look at the TikTok revolution' },
+    { id: 'item1', date: 'March 2023', desc: '4 Insights for Smarter Short-Form Video', img: "./GettyImages-1437209223.webp" },
+    { id: 'item2', date: 'March 2023', desc: 'Digital Marketing for Small Business: An Introduction', img:"./pexels-ivan-samkov-4458548.webp" },
+    { id: 'item3', date: 'March 2023', desc: 'Average ROAS by Industry: The Most Difficult Metric to Measure', img:"./pexels-karolina-grabowska-7681092.webp"},
+    { id: 'item4', date: 'March 2023', desc: 'What is SEO in Digital Marketing & How Does it work? The SEO Quick Beginner\'s Guide', img:"./pexels-mikael-blomkvist-6483582.webp" },
+    { id: 'item5', date: 'April 2023', desc: 'Google\'s march 2023 core update: winners, losers & analysis', img:"./GettyImages-1389316294.webp" },
+    { id: 'item6', date: 'May 2023', desc: 'The Metaverse boom: brands unite and Apple takes a rain check', img:"./minh-pham-HI6gy-p-WBI-unsplash-Copy-768x524.webp" },
+    { id: 'item7', date: 'May 2023', desc: 'Verify your site is protecting your business', img:"./GettyImages-1358427508.webp" },
+    { id: 'item8', date: 'May 2023', desc: 'The evolution of live-stream content and short-form video: a look at the TikTok revolution', img:"./milad-fakurian-58Z17lnVS4U-unsplash-Copy-768x524.webp" },
 ]
 
 export const socialMediaServices = [
@@ -133,8 +137,14 @@ export const inputFields = [
         type: 'email',
         label: 'Email Address',
         placeholder: 'Enter your Email',
+    },  
+    {
+        name: 'PhoneNo',
+        type: 'number',
+        label: 'Phone Number',
+        require: 'Phone Number is Required',
+        placeholder: 'Enter your phone number',
     },
-
     {
         name: 'subscribe',
         type: 'checkbox',
@@ -146,46 +156,112 @@ export const inputFields = [
         label: 'Yes, I would like to receive promotional emails & newsletters',
     }
 ];
-
 export const AiSolutionsDropdown = [
     {
+        icon: React.createElement(MdMessage),
         content: "Social Media Automation",
         router: "/Social-media-automation.htm"
     },
     {
+        icon: React.createElement(FaSearchengin),
         content: "Search Engine Services(SEO/SEM)",
         router: "/Seo.htm"
     },
     {
+        icon: React.createElement(FaGoogle),
         content: "AI Fueled Google Business Services",
         router: "/Google-suite.htm"
     },
     {
+        icon: React.createElement(MdMail),
         content: "AI Powered Email Marketing",
         router: "/Email-Marketing.htm"
     },
     {
+        icon: React.createElement(FaCartShopping),
         content: "AI Driven E-commerce Solutions",
         router: "/E-commerce.htm"
     },
     {
+        icon: React.createElement(MdOutlineBrowserUpdated),
         content: "AI-Integrated Web Design & Hosting",
         router: "/Web-Design-Hosting.htm"
     },
     {
+        icon: React.createElement(MdRocket),
         content: "AI-Enhanced App Development",
         router: "/app-development.htm"
     },
-    // 3 page 
     {
+        icon: React.createElement(MdGroups),
         content: "ERP / CRM / IT /Chatbots",
         router: "/Erp-crm-it-chatbot"
     },
     {
+        icon: React.createElement(FaLightbulb),
         content: "AI-Enhanced Content Writing",
         router: "/Content-writing.htm"
     },
     {
+        icon: React.createElement(FaHashtag),
+        content: "CCaaS / Outsourcing & Global Recruitment Support",
+        router: "/CCaaS-Outsourcing-Consulting.htm"
+    },
+
+];
+export const AiSolutionsDropdownMobile = [
+    {
+        icon: React.createElement(FaInstalod),
+        content: "Ai Solutions",
+        router: "/Ai-Solutions.htm"
+    },
+    {
+        icon: React.createElement(MdMessage),
+        content: "Social Media Automation",
+        router: "/Social-media-automation.htm"
+    },
+    {
+        icon: React.createElement(FaSearchengin),
+        content: "Search Engine Services(SEO/SEM)",
+        router: "/Seo.htm"
+    },
+    {
+        icon: React.createElement(FaGoogle),
+        content: "AI Fueled Google Business Services",
+        router: "/Google-suite.htm"
+    },
+    {
+        icon: React.createElement(MdMail),
+        content: "AI Powered Email Marketing",
+        router: "/Email-Marketing.htm"
+    },
+    {
+        icon: React.createElement(FaCartShopping),
+        content: "AI Driven E-commerce Solutions",
+        router: "/E-commerce.htm"
+    },
+    {
+        icon: React.createElement(MdOutlineBrowserUpdated),
+        content: "AI-Integrated Web Design & Hosting",
+        router: "/Web-Design-Hosting.htm"
+    },
+    {
+        icon: React.createElement(MdRocket),
+        content: "AI-Enhanced App Development",
+        router: "/app-development.htm"
+    },
+    {
+        icon: React.createElement(MdGroups),
+        content: "ERP / CRM / IT /Chatbots",
+        router: "/Erp-crm-it-chatbot"
+    },
+    {
+        icon: React.createElement(FaLightbulb),
+        content: "AI-Enhanced Content Writing",
+        router: "/Content-writing.htm"
+    },
+    {
+        icon: React.createElement(FaHashtag),
         content: "CCaaS / Outsourcing & Global Recruitment Support",
         router: "/CCaaS-Outsourcing-Consulting.htm"
     },
@@ -194,11 +270,35 @@ export const AiSolutionsDropdown = [
 
 export const WhoWeAreDropdown = [
     {
+        icon: React.createElement(FaRegAddressCard),
         content: "About Us",
         router: "/"
     },
     {
+        icon: React.createElement(FaBlog),
         content: "Blog",
         router: "/blog.htm"
+    }
+]
+export const FollowUs = [
+    {
+        icon : React.createElement(FaLinkedin),
+        router: "/"
+    },
+    {
+        icon : React.createElement(FaFacebook),
+        router: "/"
+    },
+    {
+        icon : React.createElement(FaTwitter),
+        router: "/"
+    },
+    {
+        icon : React.createElement(FaInstagram),
+        router: "/"
+    },
+    {
+        icon : React.createElement(FaYoutube),
+        router: "/"
     }
 ]

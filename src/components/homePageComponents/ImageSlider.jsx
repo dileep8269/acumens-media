@@ -1,10 +1,11 @@
+/* eslint-disable react/prop-types */
 import './ImageSlider.css'; 
 
 const ImageSlider = ({images}) => {
   return (
     <div className="overflow-hidden whitespace-nowrap relative">
-      <div className="animate-scroll md:gap-x-24 lg:gap-x-40 xl:gap-x-52 2xl:gap-x-72"> 
-        {images.map((image, index) => (
+         <div className="animate-scroll xs:gap-x-10 md:gap-x-20 lg:gap-x-32 xl:gap-x-40 2xl:gap-x-48"> 
+        {images?.map((image, index) => (
           <div key={index} className='relative w-auto h-auto text-black bg-transparent overflow-hidden mr-10 md:mr-0'>
 
             <img
@@ -14,7 +15,7 @@ const ImageSlider = ({images}) => {
             />
           </div>
         ))}
-        {images.map((image, index) => (
+        {images?.map((image, index) => (
           <div key={index} className='relative w-auto h-auto text-black bg-transparent overflow-hidden hidden md:block md:mr-0'>
             <img
               src={image}

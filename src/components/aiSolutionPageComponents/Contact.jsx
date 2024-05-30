@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import Button from '../homePageComponents/Button'
 import { partnerImages } from '../../constants/constant'
 

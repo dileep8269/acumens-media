@@ -15,7 +15,7 @@ const BlogCard = () => {
 
                                 <div className="max-w-md rounded-[40px] overflow-hidden shadow-lg shadow-slate-200 bg-white">
 
-                                    <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Card image" className='object-cover w-full' />
+                                    <img src={blog.img} alt="Card image" className='object-cover w-full' />
 
                                     <div className="p-8">
                                         <h4 className="font-light font-kanit leading-6 tracking-normal text-base mb-2">{blog.date}</h4>

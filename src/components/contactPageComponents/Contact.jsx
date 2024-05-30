@@ -5,7 +5,7 @@ const Contact = ({ title, fields, checkboxes, buttonText }) => {
       <div className="container max-w-lg bg-white rounded-3xl p-6 hover:shadow-xl shadow-slate-800 border-r-8 border-b-8 border-black">
         <h1 className="text-4xl font-bold mb-6 text-center text-gray-800">{title}</h1>
         <form>
-          {fields.map((field) => (
+          {fields?.map((field) => (
             <div className="mb-6" key={field.id}>
               <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor={field.id}>
                 {field.label}
