@@ -77,17 +77,17 @@ const HomePage = () => {
       <div className="w-full px-8 py-10 bg-white">
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row justify-center items-center gap-x-8">
-            <div className="w-full md:w-[50%] ">
+            <div className="w-full md:w-[30%] ">
 
               <div className="w-full px-8 space-y-7 lg:space-y-24 text-center md:text-left ">
                 <h4 className="text-base font-bold font-syne text-black">BLOG</h4>
                 <h1 className="text-4xl lg:text-5xl font-bold font-syne text-black">Digital marketing & industry insights</h1>
-                <Button>View More</Button>
+                <Button className="mx-auto md:mx-0">View More</Button>
               </div>
 
             </div>
 
-            <div className="w-full md:w-[50%]">
+            <div className="w-full md:w-[70%]">
 
               <BlogCard />
 

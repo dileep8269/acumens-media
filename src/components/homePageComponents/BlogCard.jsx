@@ -1,4 +1,5 @@
 import { blogDetails } from "../../constants/constant"
+import { homePageBlogDetails } from "../../constants/constant"
 
 const BlogCard = () => {
 
@@ -7,23 +8,30 @@ const BlogCard = () => {
             <div className="carousel w-full">
 
                 {
-                    blogDetails.map((blog) => (
+                    homePageBlogDetails.map((blog) => (
 
                         <div key={blog.id} id={blog.id} className="carousel-item w-full flex justify-center">
 
-                            <div className='flex flex-row justify-center items-center '>
+                            <div className='flex flex-row justify-center items-start gap-2 p-5 '>
 
-                                <div className="max-w-md rounded-[40px] overflow-hidden shadow-lg shadow-slate-200 bg-white">
-
-                                    <img src={blog.img} alt="Card image" className='object-cover w-full' />
-
+                                <div className="max-w-[50%] overflow-hidden shadow-lg bg-white rounded-[40px] h-[450px] lg:h-[560px]">
+                                    <img src={blog.img1} alt="Card image" className='object-cover w-full' />
                                     <div className="p-8">
-                                        <h4 className="font-light font-kanit leading-6 tracking-normal text-base mb-2">{blog.date}</h4>
+                                        <h4 className="font-light font-kanit leading-6 tracking-normal text-base mb-2">{blog.date1}</h4>
                                         <p className="text-black text-xl font-bold font-syne tracking-tighter leading-6 cursor-pointer">
-                                            {blog.desc}
+                                            {blog.desc1}
                                         </p>
                                     </div>
+                                </div>
 
+                                <div className="max-w-[50%] overflow-hidden shadow-lg bg-white rounded-[40px] h-[450px] lg:h-[560px]">
+                                    <img src={blog.img2} alt="Card image" className='object-cover w-full' />
+                                    <div className="p-8">
+                                        <h4 className="font-light font-kanit leading-6 tracking-normal text-base mb-2">{blog.date2}</h4>
+                                        <p className="text-black text-xl font-bold font-syne tracking-tighter leading-6 cursor-pointer">
+                                            {blog.desc2}
+                                        </p>
+                                    </div>
                                 </div>
 
                             </div>
@@ -38,8 +46,8 @@ const BlogCard = () => {
             <div className="flex justify-center w-full py-8 gap-2">
 
                 {
-                    blogDetails.map((blog) => (
-                        
+                    homePageBlogDetails.map((blog) => (
+
                         <a key={blog.id} href={`#${blog.id}`} className="w-2 h-2 rounded-full bg-black"></a>
 
                     ))
