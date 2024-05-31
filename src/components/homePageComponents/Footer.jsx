@@ -1,5 +1,6 @@
 import { FaLinkedin, FaFacebook, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
 import { SiGooglemaps } from "react-icons/si";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -23,21 +24,35 @@ const Footer = () => {
                     <div className="flex justify-between items-start gap-8">
                         <div>
                             <ul className='text-base font-normal space-y-2 cursor-pointer'>
-                                <li className='hover:text-yellow-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6'>Social Media Automation</li>
-                                <li className="hover:text-yellow-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6">AI-Fueled Google Business Services</li>
-                                <li className="hover:text-yellow-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6">AI-Driven E-Commerce Solutions</li>
-                                <li className="hover:text-yellow-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6">AI-Enhanced App Development</li>
-                                <li className="hover:text-yellow-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6">Content Writing</li>
+                     
+                         <li className='hover:text-blue-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6'><Link to='/Social-media-automation.htm'>Social Media Automation</Link></li>
+              
+                     
+                             <li className="hover:text-blue-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6"><Link to='/Google-suite.htm'>AI-Fueled Google Business Services</Link></li>
+                    
+                          <li className="hover:text-blue-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6"><Link to='/E-commerce.htm'>AI-Driven E-Commerce Solutions</Link></li>
+                      
+                           
+                             <li className="hover:text-blue-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6"><Link to='/app-development.htm'>AI-Enhanced App Development</Link></li>
+                     
+           
+                   <li className="hover:text-blue-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6"><Link to='/Content-writing.htm'>Content Writing</Link></li>
+       
                             </ul>
 
                         </div>
                         <div>
                             <ul className='text-base font-normal space-y-2 cursor-pointer'>
-                                <li className='hover:text-yellow-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6'>Search Engine Services (SEO/SEM)</li>
-                                <li className="hover:text-yellow-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6">AI-Powered Email Marketing</li>
-                                <li className="hover:text-yellow-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6">AI-Integrated Web Design & Hosting</li>
-                                <li className="hover:text-yellow-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6">ERP / CRM / IT / ChatBots</li>
-                                <li className="hover:text-yellow-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6">CCaaS / Outsourcing & Consulting.</li>
+                 
+                           <li className='hover:text-blue-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6'><Link to='/Seo.htm'>Search Engine Services (SEO/SEM)</Link></li>
+                   
+               
+                                <li className="hover:text-blue-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6"><Link to='/Email-Marketing.htm'>AI-Powered Email Marketing</Link></li>
+
+                    
+                                <li className="hover:text-blue-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6"><Link to='/Web-Design-Hosting.htm'>AI-Integrated Web Design & Hosting</Link></li>
+                                <li className="hover:text-blue-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6"><Link to='/Erp-Crm-It-Chatbots.htm'>ERP / CRM / IT / ChatBots</Link></li>
+                                <li className="hover:text-blue-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6"><Link to='/CCaaS-Outsourcing-Consulting.htm'>CCaaS / Outsourcing & Consulting.</Link></li>
                             </ul>
 
                         </div>
@@ -48,9 +63,9 @@ const Footer = () => {
                 <div className='space-y-5'>
                     <h5 className='text-lg font-bold font-syne text-black'>About Us</h5>
                     <ul className='text-base font-normal space-y-2 cursor-pointer'>
-                        <li className='hover:text-yellow-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6'>About</li>
-                        <li className="hover:text-yellow-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6">Blog</li>
-                        <li className="hover:text-yellow-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6">Contact</li>
+                        <li className='hover:text-blue-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6'><Link to='/about'>About</Link></li>
+                        <li className="hover:text-blue-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6"><Link to='/blog.htm'>Blog</Link></li>
+                        <li className="hover:text-blue-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6"><Link to='/contact.htm'>Contact</Link></li>
                     </ul>
 
                     <div className='space-y-5 '>

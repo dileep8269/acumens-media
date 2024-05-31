@@ -10,15 +10,23 @@ const CustomForm = ({ fields }) => {
     const onSubmit = (data) => {
         console.log("data is fetched : ", data);
         reset();
+        // const userData = {
+        //     userFirstName: firstName,
+        //     userLastName: lastName,
+        //     CompanyName: companyName,
+        //     userEmail: email,
+        //     userPhnNo: phoneNo,
+        //     message
+        // }
     };
 
     return (
-        <div className="bg-white p-8 rounded-[40px] shadow-lg shadow-black w-auto lg:w-[28rem] text-base font-kanit font-light leading-6 tracking-normal text-black">
-            <h2 className="text-4xl mb-4 font-syne font-bold">Contact Us</h2>
+        <div className="bg-white p-12 rounded-[40px] shadow-lg shadow-black w-auto lg:w-[600px] text-base font-kanit font-light leading-6 tracking-normal text-black">
+            <h2 className="text-4xl mb-8 font-syne font-bold">Contact Us</h2>
             <form onSubmit={handleSubmit(onSubmit)}>
                 {fields?.map((field) => (
                     <div key={field.name} className="mb-4">
-                        {field.type != 'checkbox' && <label htmlFor={field.name} className='block mb-2'>{field.label}</label>}
+                        {/* {field.type != 'checkbox' && <label htmlFor={field.name} className='block mb-2'>{field.label}</label>} */}
                         {field.type === 'text' && (
                             <>
                                 <input
@@ -36,7 +44,8 @@ const CustomForm = ({ fields }) => {
                                         }
                                     })}
                                     placeholder={field.placeholder}
-                                    className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500`}
+                                    className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500 placeholder-black`}
+                                    style={{placeholder:"black"}}
                                 />
                                 <p className='text-red-600 mt-2 text-md font-normal italic'>{errors[field.name]?.message}</p>
                             </>
@@ -49,7 +58,7 @@ const CustomForm = ({ fields }) => {
                                     autoComplete="on"
                                     {...register(field.name)}
                                     placeholder={field.placeholder}
-                                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+                                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500 placeholder-black"
                                 />
                                 <p className='text-red-600 mt-2 text-md font-normal italic'>{errors[field.name]?.message}</p>
                             </>
@@ -70,7 +79,7 @@ const CustomForm = ({ fields }) => {
                                         }
                                     })}
                                     placeholder={field.placeholder}
-                                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+                                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500 placeholder-black"
                                 />
                                 <p className='text-red-600 mt-2 text-md font-normal italic'>{errors[field.name]?.message}</p>
                             </>
@@ -91,7 +100,7 @@ const CustomForm = ({ fields }) => {
                                         }
                                     })}
                                     placeholder={field.placeholder}
-                                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+                                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500 placeholder-black"
                                 />
                                 <p className='text-red-600 mt-2 text-md font-normal italic'>{errors[field.name]?.message}</p>
                             </>
@@ -125,7 +134,7 @@ const CustomForm = ({ fields }) => {
 
                                         className="mr-3 mt-1"
                                     />
-                                    <label htmlFor={field.name} className="block text-black font-light text-sm">
+                                    <label htmlFor={field.name} className="block text-black font-light text-[13px]">
                                         {field.label}
                                     </label>
 

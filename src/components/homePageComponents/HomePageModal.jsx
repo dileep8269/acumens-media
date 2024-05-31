@@ -1,4 +1,4 @@
-import { useContext} from 'react'
+import { useContext } from 'react'
 import { RxCross1 } from 'react-icons/rx'
 import { useForm } from 'react-hook-form';
 import { MyContext } from '../../context api/MyProvider';
@@ -33,8 +33,8 @@ const HomePageModal = () => {
                         </div>
 
                         {/* Popup content */}
-                <div className="w-[320px] h-[450px] sm:w-[500px] sm:h-[500px] md:w-[700px] md:h-[640px] overflow-auto">
-                    <button className="btn btn-secondary text-2xl text-center font-bold font-syne text-black">Speak To Us</button>
+                        <div className="w-[320px] h-[450px] sm:w-[500px] sm:h-[500px] md:w-[700px] md:h-[640px] overflow-auto">
+                            <button className="btn btn-secondary text-2xl text-center font-bold font-syne text-black">Speak To Us</button>
 
                             <div className='py-10 px-8'>
                                 <form onSubmit={handleSubmit(onSubmit)}>
@@ -145,7 +145,7 @@ const HomePageModal = () => {
 
 
                                     <div className='flex justify-center items-center'>
-                                        <input type="submit" className='cursor-pointer px-4 py-2 text-white font-bold font-syne leading-6 bg-blue-Purple rounded-full shadow-lg shadow-blue-Purple' value="Send Enquiry"/>
+                                        <input type="submit" className='cursor-pointer px-4 py-2 text-white font-bold font-syne leading-6 bg-blue-Purple rounded-full shadow-lg shadow-blue-Purple' value="Send Enquiry" />
                                     </div>
 
                                 </form>

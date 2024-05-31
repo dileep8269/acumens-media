@@ -42,7 +42,7 @@ const Header = () => {
           </Link>
           {/* Dropdown Menu */}
           <div>
-            <ul className="flex flex-row gap-x-2">
+            <ul className="flex flex-row gap-x-2 items-center">
               <Link to="/" className="cursor-pointer px-4 py-1 bg-transparent text-sm font-medium text-gray-700 ">
                 <span className="text-[12px] font-syne font-bold tracking-tighter leading-5 uppercase">
                   Home
@@ -53,11 +53,13 @@ const Header = () => {
                   <Link to='/Ai-Solutions.htm'>Ai Solutions</Link>
                 </DropdownButton>
               </li>
-              <Link to="/pricing.htm" className="cursor-pointer px-4 py-1 bg-transparent text-sm font-medium text-gray-700 ">
+          <li className="cursor-pointer px-4 py-1 bg-transparent text-sm font-medium text-gray-700 ">
+          <Link to="/pricing.htm" >
                 <span className="text-[12px] font-syne font-bold tracking-tighter leading-5 uppercase">
                   Pricing
                 </span>
               </Link>
+          </li>
               <li className="cursor-pointer">
                 <DropdownButton dropdown={WhoWeAreDropdown} classname="w-36">
                   Who We Are

@@ -5,12 +5,12 @@ import { socialMediaServices } from '../../constants/constant';
 const DisplayCard = () => {
     return (
 
-        <div className='div-container grid lg:grid-cols-4 grid-cols-1 gap-5 '>
+        <div className='grid lg:grid-cols-4 grid-cols-1 gap-5 p-5'>
 
             {
                 socialMediaServices.map((service) => (
 
-                    <div key={service.id} className="card select-none">
+                    <div key={service.id} className="card select-none ">
                         <div className="front-card">
                             <div className='flex flex-col justify-center items-center gap-4 px-4 h-full'>
                                 <h1 className='text-xl text-center font-bold font-syne text-black'>{service.header}</h1>
