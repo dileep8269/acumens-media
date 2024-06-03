@@ -21,7 +21,7 @@ const buttonTabs = ["Login", "Sign Up", "Lets Talk"];
 const Header = () => {
   const { menuOpen, setMenuOpen } = useContext(MyContext);
   const [show, setShow] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
+  const [lastScrollY, setLastScrollY] = useState(10);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -32,7 +32,9 @@ const Header = () => {
     if (typeof window !== 'undefined') {
       if (window.scrollY > lastScrollY) {   // if scroll down hide the navbar
         setShow(false);
-      } else {                              // if scroll up show the navbar
+      }else if(window.scrollY === 0){
+        setShow(true);
+      }else {                              // if scroll up show the navbar
         setShow(true);
       }
       setLastScrollY(window.scrollY);
