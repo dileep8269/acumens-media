@@ -14,7 +14,8 @@ const MeetTheTeam = () => {
             <div className=" flex flex-col w-auto md:w-[350px] md:h-[350px] h-auto justify-center items-start md:py-14">
                  <img src='./pexels-ono-kosuki-5648103.webp' className=' rounded-[35px]'/>
                  <h1 className='text-xl font-syne pt-3 font-bold text-start '> Patrick Murphy </h1>
-            </div>
+                 <h1 className='text-base font-sans text-start '> CEO & Founder </h1>
+            </div> 
           </div>
     )
   }

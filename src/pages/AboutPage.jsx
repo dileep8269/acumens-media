@@ -4,10 +4,10 @@ import HeroAbout from "../components/aboutPageComponents/HeroAbout";
 import MarketingSol from "../components/aboutPageComponents/MarketingSol";
 import MeetTheTeam from "../components/aboutPageComponents/MeetTheTeam";
 import Button from "../components/homePageComponents/Button";
-import { FaArrowRight } from "react-icons/fa6";
-import { ImQuotesRight } from "react-icons/im";
-import { MdOutlineStarPurple500 } from "react-icons/md";
+import { FaStar } from "react-icons/fa6";
+import { RiDoubleQuotesR } from "react-icons/ri";
 import Contact from "../components/aiSolutionPageComponents/Contact";
+
 
 
 const AboutPage = () => {
@@ -46,36 +46,48 @@ const AboutPage = () => {
                  <img src="./new-badge20211006-5432-t7lh3l-q7mfkwpcwp738n5l7zqmgjj0lbqpg0die58sgqfyn4.webp" className=""/>
                  <img src="./new-badge20211005-28345-8m8kvp-q7mfkyl1ad9nvv2ux0jvlj1xs3hfvekz2ejrfad6ao.webp" className=""/>
                  <img src="./logo_hubspot-q7mfl0gr2gxhcpfzpavncu1gpvupsjpnipt64jtz34.webp" className=""/>
-                 <Link to="/audit.htm"> <Button>Get Proposal<FaArrowRight className="inline"/></Button></Link>
+                 <Link to="/audit.htm"> <Button>Get Proposal</Button></Link>
             </div>
 
           <h1 className="block text-center text-4xl font-syne font-bold my-16">What our happy customers are saying</h1>  
-          <div className="mb-10" >
-          <div className="container mb-10 mx-auto space-y-6 bg-gray-100 py-10 rounded-[55px]">
-              <div className="flex flex-col justify-start items-start mx-20">
-              <ImQuotesRight className=" text-blue-Purple text-5xl" />
-              <h1 className=' text-xl lg:text-2xl font-kanit font-medium my-7 italic md:w-[40%]'>&apos;&apos;The entire staff at Acumens have been phenomenal. They are quick with their replies and incredibly helpful.&apos;&apos;</h1>
-              <h5 className=" font-bold font-sans">Edward kennedy</h5>
-              <h6 className="">Director, Client Experience</h6>
-              </div>
-              <div className='flex flex-row justify-center items-center md:ml-28 space-y-6 px-8'>
-              
-              <MdOutlineStarPurple500 className="mt-[24px] text-yellow-400"/>
-              <MdOutlineStarPurple500 className=" text-yellow-400"/>
-              <MdOutlineStarPurple500 className=" text-yellow-400"/>
-              <MdOutlineStarPurple500 className=" text-yellow-400"/>
-              <MdOutlineStarPurple500 className=" text-yellow-400"/>
-              <br/>
-              <h5 className=" md:ml-4 font-bold font-sans block">5000+ clients reviews</h5>
-                  
-              </div>
-          </div>
-          <div className="w-full px-8 py-10">
+          <div className='flex flex-col md:flex-row gap-6 justify-center items-center container mx-auto'>
+            <div className='w-full md:w-1/2 space-y-20 py-20 px-20'>
+                <span className="text-7xl text-blue-Purple"><RiDoubleQuotesR /></span>
+                <p className="text-xl font-kanit font-normal leading-6 tracking-normal italic">&apos;&apos;The entire staff at Acumens have been phenomenal. They are quick with their replies and incredibly helpful.&apos;&apos;</p>
+                <div className="space-y-0">
+                    <h6 className='text-left uppercase text-lg font-semibold font-syne text-black'>Edward Kennedy</h6>
+                    <p className="font-kanit font-light">Director, client experience</p>
+                </div>
+            </div>
+            <div className="w-full md:w-1/2 rounded-t-[40px] h-[580px] relative">
+                <img src="./aiSolutionPictures/video-cover.webp" alt="sdsds" className='w-full h-full object-cover absolute rounded-t-[40px]' />
+                <div className="absolute h-24 w-full  bottom-0 left-0 rounded-tl-[46px] flex flex-row justify-between items-center px-8 bg-white">
+                    <div className="flex flex-col justify-center items-center gap-y-2">
+
+                        <div className="flex gap-x-2 justify-center items-center">
+                            <span className="text-yellow-500 text-sm md:text-lg"><FaStar /></span>
+                            <span className="text-yellow-500 text-sm md:text-lg"><FaStar /></span>
+                            <span className="text-yellow-500 text-sm md:text-lg"><FaStar /></span>
+                            <span className="text-yellow-500 text-sm md:text-lg"><FaStar /></span>
+                            <span className="text-yellow-500 text-sm md:text-lg"><FaStar /></span>
+                        </div>
+                        <div className="text-[10px] md:text-sm font-kanit font-normal leading-6 tracking-normal ">
+                            5000+ Client reviews
+                        </div>
+                    </div>
+
+                    <div>
+                        <a href="" className="underline underline-offset-8 decoration-2 decoration-purple-700 font-bold uppercase text-[10px] md:text-sm font-syne">View All Reviews</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div className="w-full px-8 py-10">
         <div className="container mx-auto">
           <Contact message="See how we can help your business grow with digital marketing" />
         </div>
       </div>
-          </div>
     </div>
     </>
   );
