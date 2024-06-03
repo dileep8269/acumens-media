@@ -129,7 +129,7 @@ const Header = () => {
             </Link>
 
             <div>
-              <DropdownButton dropdown={LetsTalk} classname="w-52">
+              <DropdownButton dropdown={LetsTalk} classname="w-40">
                 Lets Talk
               </DropdownButton>
             </div>

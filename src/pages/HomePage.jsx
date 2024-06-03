@@ -17,9 +17,16 @@ import { whatWeDo, aboutAcumensic, partnerImages, brandImages, marketingList, aw
 
 // importing react icons
 import { FaCheckCircle } from "react-icons/fa";
+import { useContext } from "react"
+import { MyContext } from "../context api/MyProvider"
 
 
 const HomePage = () => {
+  const { setIsModalOpen } = useContext(MyContext);
+
+  const toggleModal = () => {
+    setIsModalOpen((prevValue) => !prevValue);
+  }
   return (
     <div>
 
@@ -142,6 +149,15 @@ const HomePage = () => {
         </div>
 
       </div>
+      <div className="fixed left-0 bottom-0 w-full text-white text-center flex justify-center items-center gap-x-1 sm:hidden">
+        <span className="inline-block w-1/2 px-1 py-4 xs:p-4 text-lg font-normal font-kanit bg-purple-700" onClick={toggleModal}>
+          Speak To Us
+        </span>
+        <span className="inline-block w-1/2 px-1 py-4 xs:p-4 text-lg font-normal font-kanit bg-purple-700">
+          884915291
+        </span>
+      </div>
+
 
     </div>
   )

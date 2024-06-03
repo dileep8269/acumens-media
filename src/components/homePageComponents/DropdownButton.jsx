@@ -2,8 +2,8 @@
 import { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { MyContext } from '../../context api/MyProvider';
-import Button from './Button';
-
+// import Button from './Button';
+import { IoIosArrowRoundForward } from "react-icons/io";
 
 
 function DropdownButton({ children, dropdown, classname = "" }) {
@@ -73,9 +73,10 @@ function DropdownButton({ children, dropdown, classname = "" }) {
                         <div className='p-6'>
                             {dropdown?.map((dropdownMenu, index) => {
                                 return (
-                                    <Button key={index} className='mb-2'>
+                             <button key={index} className='btn bg-black text-white rounded-full btn-sm mb-2 flex justify-center items-center hover:bg-black'>
                                         <Link to={dropdown.router}>{dropdownMenu.content}</Link>
-                                    </Button>
+                                        <IoIosArrowRoundForward />
+                                    </button>
                                 )
                             })}
                         </div>

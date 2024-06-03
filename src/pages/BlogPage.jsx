@@ -3,9 +3,9 @@ import BlogCard from "../components/blogPageComponents/BlogCard"
 
 const BlogPage = () => {
     return (
-        <div>
+        <div className="pt-12">
             <div className="w-full px-8">
-                <div className="container mx-auto rounded-[40px] bg-purple-200 p-8 mt-28">
+                <div className="container mx-auto rounded-[40px] bg-purple-200 p-8 mt-14">
                     <Hero />
                 </div>
             </div>

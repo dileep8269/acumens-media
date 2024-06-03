@@ -7,7 +7,7 @@ import CustomTab from './PricingTabs/CustomTab';
 const PricingPage = () => {
 
   return (
-    <div className="min-h-screen md:mt-20 mt-10">
+    <div className="min-h-screen md:mt-32 mt-10">
       <h1 className="text-[rgb(0,0,0)]  font-bold text-center md:text-5xl text-xl">Select an option Below to check Pricing & Details</h1>
       <Tabs>
         <div className="flex justify-center gap-4 items-center mx-10

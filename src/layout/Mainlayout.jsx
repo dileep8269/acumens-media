@@ -1,9 +1,10 @@
-import { Outlet } from "react-router-dom"
+import { Link, Outlet } from "react-router-dom"
 import Header from "../components/homePageComponents/Header"
 import Footer from "../components/homePageComponents/Footer"
 import HomePageModal from "../components/homePageComponents/HomePageModal"
 
 const Mainlayout = () => {
+  
   return (
     <>
       <Header />
@@ -16,7 +17,7 @@ const Mainlayout = () => {
         </div>
         <div className="footer footer-center p-4 text-base-content border-t-2 border-black">
           <aside>
-            <p className="space-x-3 font-kanit font-light leading-6 tracking-normal text-base pb-2 sm:pb-0">Copyright © 2016 - 2024 <span>Acumens Media Inc.</span> <span>Terms & Conditions</span> <span>Privacy Policy</span></p>
+            <p className="space-x-3 font-kanit font-light leading-6 tracking-normal text-base pb-2 sm:pb-0">Copyright © 2016 - 2024 <span>Acumens Media Inc.</span> <span><Link to='/terms-condition.htm'>Terms & Conditions</Link></span> <span><Link to='/privacy-policy.htm'>Privacy Policy</Link></span></p>
           </aside>
         </div>
       </div>

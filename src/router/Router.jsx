@@ -18,6 +18,10 @@ import PricingPage from "../pages/PricingPage/PricingPage";
 import TermsCondition from "../pages/TermsCondition";
 import Privacy from "../pages/Privacy";
 import AiSolutionsPage from "../pages/AiSolutionsPage";
+import AboutPage from "../pages/AboutPage";
+import ContactPage1 from "../pages/ContactPage1";
+import ContactPage2 from "../pages/ContactPage2";
+import ContactPage3 from "../pages/ContactPage3";
 
 
 
@@ -40,6 +44,22 @@ const router = createBrowserRouter([
         {
             path: "/contact.htm",
             element: <ContactPage />,
+        },
+        {
+            path: "/contact1.htm",
+            element: <ContactPage1 />,
+        },
+        {
+            path: "/contact2.htm",
+            element: <ContactPage2 />,
+        },
+        {
+            path: "/contact3.htm",
+            element: <ContactPage3 />,
+        },
+        {
+            path: "/about.htm",
+            element: <AboutPage />,
         },
         
         {

@@ -3,7 +3,7 @@ import "../homePageComponents/DisplayCard.css"
 
 const ServiceCard = ({ services }) => {
     return (
-        <div className='div-container grid lg:grid-cols-4 grid-cols-1 gap-5'>
+        <div className='grid lg:grid-cols-4 grid-cols-1 gap-5 p-4'>
 
             {
                 services?.map((service, index) => (

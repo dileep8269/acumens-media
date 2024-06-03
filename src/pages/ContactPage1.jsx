@@ -3,7 +3,7 @@ import CustomForm from "../components/homePageComponents/CustomForm";
 import { inputFields } from "../constants/constant";
 import Contact from "../components/aiSolutionPageComponents/Contact";
 
-const ContactPage = () => {
+const ContactPage1 = () => {
   return (
     <div className="pt-12">
     <div className="container mx-auto">
@@ -52,7 +52,7 @@ const ContactPage = () => {
           </div>
         </div>
         <div className="flex justify-center items-start w-full md:w-1/2">
-          <CustomForm page='contact' fields={inputFields} message="Contact Us" />
+          <CustomForm page='contact1' fields={inputFields} message="Contact Us" />
         </div>
       </div>
       </div>
@@ -65,4 +65,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
+export default ContactPage1;

@@ -32,7 +32,7 @@ export const socialMediaServices = [
         ]
     },
     {
-        id: 2, header: "AI-Enhanced SEO Dynamics.", content: "Our AI Technology refines SEO to put you at the forefront, ensuring maximum relevance & reach.", percentage: "99%", list: [
+        id: 2, header: "AI-Enhanced SEO Dynamics.", content: "Our AI Technology refines SEO to put you at the forefront, ensuring maximum relevance & reach.AI-Enhanced SEO Dynamics.AI-Enhanced SEO Dynamics.", percentage: "99%", list: [
             "Precision keyword targeting.",
             "Enhanced content relevancy.",
             "Data-driven marketing insights.",
@@ -124,34 +124,41 @@ export const inputFields = [
         type: 'text',
         label: 'Company Name',
         require: 'Company Name is required',
-        placeholder: 'Enter your Company Name',
+        placeholder: 'Company Name',
     },
     {
-        name: 'FirstName',
+        name: 'userFirstName',
         type: 'text',
         label: 'First Name',
         require: 'First Name is required',
-        placeholder: 'Enter your First Name',
+        placeholder: 'First Name',
     },
     {
-        name: 'LastName',
+        name: 'userLastName',
         type: 'text',
         label: 'Last Name',
         require: 'Last Name is required',
-        placeholder: 'Enter your Last Name',
+        placeholder: 'Last Name',
     },
     {
-        name: 'Email',
+        name: 'userEmail',
         type: 'email',
         label: 'Email Address',
-        placeholder: 'Enter your Email',
+        placeholder: 'Email Address',
     },  
     {
-        name: 'PhoneNo',
+        name: 'userPhnNo',
         type: 'number',
         label: 'Phone Number',
         require: 'Phone Number is Required',
-        placeholder: 'Enter your phone number',
+        placeholder: 'Phone Number',
+    },
+    {
+        name: 'message',
+        type: 'message',
+        label: 'message',
+        require: 'Message is Required',
+        placeholder: 'What can we help you with?',
     },
     {
         name: 'subscribe',
@@ -280,7 +287,7 @@ export const WhoWeAreDropdown = [
     {
         icon: React.createElement(FaRegAddressCard),
         content: "About Us",
-        router: "/"
+        router: "/about.htm"
     },
     {
         icon: React.createElement(FaBlog),
