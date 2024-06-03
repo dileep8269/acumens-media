@@ -36,7 +36,7 @@ function DropdownButton({ children, dropdown, classname = "" }) {
                             {dropdown?.map((dropdownMenu, index) => {
                                 return (
 
-                                    <Link key={index} to={dropdownMenu.router} className="flex justify-start items-center gap-4 p-4 text-sm text-gray-700 transform transition-transform duration-300 hover:scale-110"
+                                    <Link key={index} to={dropdownMenu.router} className="flex justify-start items-center gap-4 px-4 py-2 text-sm text-gray-700 transform transition-transform duration-300 hover:scale-110"
                                         onClick={() => {
                                             setIsOpen(false);
                                             toggleMenu();

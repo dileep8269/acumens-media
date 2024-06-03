@@ -12,7 +12,7 @@ const BlogCard = () => {
 
                         <div key={blog.id} id={blog.id} className="carousel-item w-full flex justify-center">
 
-                            <div className='flex flex-row justify-center items-start gap-2 p-5 '>
+                            <div className='flex flex-row justify-center items-start gap-2 py-10 md:p-5 md:py-0'>
 
                                 <div className="max-w-[50%] overflow-hidden shadow-lg bg-white rounded-[40px] h-[450px] lg:h-[560px]">
                                     <img src={blog.img1} alt="Card image" className='object-cover w-full' />

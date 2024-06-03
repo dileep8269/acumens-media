@@ -2,13 +2,14 @@
 import { useForm } from 'react-hook-form';
 // import { useSubmitContactFormMutation } from '../../redux/api/contactApi';
 import { toast } from 'sonner';
+import Button from './Button';
 // import "./CustomForm.css"
 
 
-const CustomForm = ({ fields,page }) => {
+const CustomForm = ({ fields, page }) => {
     // const [submitContactForm]=useSubmitContactFormMutation();
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
-// console.log(page);
+    // console.log(page);
     const onSubmit = async (data) => {
 
         const toastId = toast.loading("Processing...")
@@ -22,63 +23,63 @@ const CustomForm = ({ fields,page }) => {
         }
         // const userJsonData=JSON.stringify(userData)
         try {
-         if(page==='contact'){
-            const res = await fetch('https://chat.acumensinc.com/submit', {
-                method: "POST",
-                headers: {
-                    "content-type": "application/json"
-                },
-                body: JSON.stringify(userData)
-            })
-            // eslint-disable-next-line no-unused-vars
-            const info = await res.json();
-            // console.log(info);
-            toast.success("Form submitted successfully", { id: toastId, duration: 1000 })
-            reset();
-         }
-         else if(page==='contact1'){
-            const res = await fetch('https://chat.acumensinc.com/submitVendor1', {
-                method: "POST",
-                headers: {
-                    "content-type": "application/json"
-                },
-                body: JSON.stringify(userData)
-            })
-            // eslint-disable-next-line no-unused-vars
-            const info = await res.json();
-            // console.log(info);
-            toast.success("Form submitted successfully", { id: toastId, duration: 1000 })
-            reset();
-         }
-         else if(page==='contact2'){
-            const res = await fetch('https://chat.acumensinc.com/submitVendor2', {
-                method: "POST",
-                headers: {
-                    "content-type": "application/json"
-                },
-                body: JSON.stringify(userData)
-            })
-            // eslint-disable-next-line no-unused-vars
-            const info = await res.json();
-            // console.log(info);
-            toast.success("Form submitted successfully", { id: toastId, duration: 1000 })
-            reset();
-         }
-         else if(page==='contact3'){
-            const res = await fetch('https://chat.acumensinc.com/submitVendor3', {
-                method: "POST",
-                headers: {
-                    "content-type": "application/json"
-                },
-                body: JSON.stringify(userData)
-            })
-            // eslint-disable-next-line no-unused-vars
-            const info = await res.json();
-            // console.log(info);
-            toast.success("Form submitted successfully", { id: toastId, duration: 1000 })
-            reset();
-         }
-  
+            if (page === 'contact') {
+                const res = await fetch('https://chat.acumensinc.com/submit', {
+                    method: "POST",
+                    headers: {
+                        "content-type": "application/json"
+                    },
+                    body: JSON.stringify(userData)
+                })
+                // eslint-disable-next-line no-unused-vars
+                const info = await res.json();
+                // console.log(info);
+                toast.success("Form submitted successfully", { id: toastId, duration: 1000 })
+                reset();
+            }
+            else if (page === 'contact1') {
+                const res = await fetch('https://chat.acumensinc.com/submitVendor1', {
+                    method: "POST",
+                    headers: {
+                        "content-type": "application/json"
+                    },
+                    body: JSON.stringify(userData)
+                })
+                // eslint-disable-next-line no-unused-vars
+                const info = await res.json();
+                // console.log(info);
+                toast.success("Form submitted successfully", { id: toastId, duration: 1000 })
+                reset();
+            }
+            else if (page === 'contact2') {
+                const res = await fetch('https://chat.acumensinc.com/submitVendor2', {
+                    method: "POST",
+                    headers: {
+                        "content-type": "application/json"
+                    },
+                    body: JSON.stringify(userData)
+                })
+                // eslint-disable-next-line no-unused-vars
+                const info = await res.json();
+                // console.log(info);
+                toast.success("Form submitted successfully", { id: toastId, duration: 1000 })
+                reset();
+            }
+            else if (page === 'contact3') {
+                const res = await fetch('https://chat.acumensinc.com/submitVendor3', {
+                    method: "POST",
+                    headers: {
+                        "content-type": "application/json"
+                    },
+                    body: JSON.stringify(userData)
+                })
+                // eslint-disable-next-line no-unused-vars
+                const info = await res.json();
+                // console.log(info);
+                toast.success("Form submitted successfully", { id: toastId, duration: 1000 })
+                reset();
+            }
+
         } catch (error) {
             console.log(error?.message);
         }
@@ -232,9 +233,9 @@ const CustomForm = ({ fields,page }) => {
 
 
                 ))}
-                <button className="btn btn-primary w-full text-center">
+                <Button >
                     Submit
-                </button>
+                </Button>
             </form>
         </div>
 

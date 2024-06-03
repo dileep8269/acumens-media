@@ -81,15 +81,15 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="w-full px-8 py-10 bg-white">
+      <div className="w-full px-2 py-10 bg-white">
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row justify-center items-center gap-x-8">
             <div className="w-full md:w-[30%] ">
 
-              <div className="w-full px-8 space-y-7 lg:space-y-24 text-center md:text-left ">
+              <div className="w-full px-8 space-y-7 lg:space-y-24 text-left ">
                 <h4 className="text-base font-bold font-syne text-black">BLOG</h4>
                 <h1 className="text-4xl lg:text-5xl font-bold font-syne text-black">Digital marketing & industry insights</h1>
-                <Button className="mx-auto md:mx-0">View More</Button>
+                <Button className=" md:mx-0">View More</Button>
               </div>
 
             </div>
@@ -106,7 +106,7 @@ const HomePage = () => {
 
       </div>
 
-      <div className="w-full px-8 py-20 bg-blue-Purple text-white">
+      <div className="w-full px-8 py-20 bg-blue-Purple text-white rounded-t-[40px]">
         <div className="container mx-auto">
 
           <div className="flex flex-col md:flex-row gap-8">
@@ -149,11 +149,18 @@ const HomePage = () => {
         </div>
 
       </div>
+      <div className="fixed left-0 bottom-16 w-full sm:hidden pl-4">
+        <span className="inline-block w-14 h-14">
+            <img src="WhatsApp-Icon.png" alt="WhatsApp-Icon" className="w-full h-full object-fill bg-transparent" />
+        </span>
+
+      </div >
+
       <div className="fixed left-0 bottom-0 w-full text-white text-center flex justify-center items-center gap-x-1 sm:hidden">
-        <span className="inline-block w-1/2 px-1 py-4 xs:p-4 text-lg font-normal font-kanit bg-purple-700" onClick={toggleModal}>
+        <span className="inline-block w-1/2 px-1 py-4 xs:p-4 text-lg font-normal font-kanit bg-black rounded-[40px]" onClick={toggleModal}>
           Speak To Us
         </span>
-        <span className="inline-block w-1/2 px-1 py-4 xs:p-4 text-lg font-normal font-kanit bg-purple-700">
+        <span className="inline-block w-1/2 px-1 py-4 xs:p-4 text-lg font-normal font-kanit bg-black rounded-[40px]">
           884915291
         </span>
       </div>
