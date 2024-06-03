@@ -10,7 +10,7 @@ import { aiSolutionHero } from "../constants/aiConstant";
 
 const AiSolutionsPage = () => {
   return (
-    <div className=" mx-auto container md:bg-gradient-to-b from-violet-100 to-white mt-0">
+    <div className=" mx-auto container md:bg-gradient-to-b from-violet-100 to-white mt-0 pt-12">
       <Hero hero={aiSolutionHero}/>
 
       <div className="container mt-10 bg- mx-auto space-y-8 px-10">

@@ -2,6 +2,7 @@ import React from "react"
 import { FaLinkedin, FaFacebook, FaTwitter, FaInstagram, FaYoutube, FaGoogle, FaLightbulb, FaSearchengin, FaHashtag,FaRegAddressCard,FaBlog,FaInstalod   } from "react-icons/fa";
 import { FaCartShopping } from "react-icons/fa6";
 import { MdGroups, MdMessage, MdMail, MdRocket, MdOutlineBrowserUpdated } from "react-icons/md";
+
 export const blogDetails = [
     { id: 'item1', date: 'March 2023', desc: '4 Insights for Smarter Short-Form Video', img: "./GettyImages-1437209223.webp" },
     { id: 'item2', date: 'March 2023', desc: 'Digital Marketing for Small Business: An Introduction', img:"./pexels-ivan-samkov-4458548.webp" },
@@ -10,7 +11,14 @@ export const blogDetails = [
     { id: 'item5', date: 'April 2023', desc: 'Google\'s march 2023 core update: winners, losers & analysis', img:"./GettyImages-1389316294.webp" },
     { id: 'item6', date: 'May 2023', desc: 'The Metaverse boom: brands unite and Apple takes a rain check', img:"./minh-pham-HI6gy-p-WBI-unsplash-Copy-768x524.webp" },
     { id: 'item7', date: 'May 2023', desc: 'Verify your site is protecting your business', img:"./GettyImages-1358427508.webp" },
-    { id: 'item8', date: 'May 2023', desc: 'The evolution of live-stream content and short-form video: a look at the TikTok revolution', img:"./milad-fakurian-58Z17lnVS4U-unsplash-Copy-768x524.webp" },
+    { id: 'item8', date: 'May 2023', desc: 'The evolution of live-stream content and short-form video: a look at the TikTok revolution', img:"./milad-fakurian-58Z17lnVS4U-unsplash-Copy-768x524.webp" }
+]
+
+export const homePageBlogDetails = [
+    { id: 'item1', date1: 'March 2023', desc1: '4 Insights for Smarter Short-Form Video', img1: "./GettyImages-1437209223.webp", date2: 'March 2023', desc2: 'Digital Marketing for Small Business: An Introduction', img2:"./pexels-ivan-samkov-4458548.webp" },
+    { id: 'item2', date1: 'March 2023', desc1: 'Average ROAS by Industry: The Most Difficult Metric to Measure', img1:"./pexels-karolina-grabowska-7681092.webp", date2: 'March 2023', desc2: 'What is SEO in Digital Marketing & How Does it work? The SEO Quick Beginner\'s Guide', img2:"./pexels-mikael-blomkvist-6483582.webp"},
+    { id: 'item3', date1: 'April 2023', desc1: 'Google\'s march 2023 core update: winners, losers & analysis', img1:"./GettyImages-1389316294.webp", date2: 'May 2023', desc2: 'The Metaverse boom: brands unite and Apple takes a rain check', img2:"./minh-pham-HI6gy-p-WBI-unsplash-Copy-768x524.webp" },
+    { id: 'item4', date1: 'May 2023', desc1: 'Verify your site is protecting your business', img1:"./GettyImages-1358427508.webp", date2: 'May 2023', desc2: 'The evolution of live-stream content and short-form video: a look at the TikTok revolution', img2:"./milad-fakurian-58Z17lnVS4U-unsplash-Copy-768x524.webp"},
 ]
 
 export const socialMediaServices = [
@@ -146,6 +154,13 @@ export const inputFields = [
         placeholder: 'Phone Number',
     },
     {
+        name: 'message',
+        type: 'message',
+        label: 'message',
+        require: 'Message is Required',
+        placeholder: 'What can we help you with?',
+    },
+    {
         name: 'subscribe',
         type: 'checkbox',
         label: 'I , Agree to the Terms & Conditions and the Privacy policy of Acumens media inc.',
@@ -272,7 +287,7 @@ export const WhoWeAreDropdown = [
     {
         icon: React.createElement(FaRegAddressCard),
         content: "About Us",
-        router: "/"
+        router: "/about.htm"
     },
     {
         icon: React.createElement(FaBlog),
@@ -299,6 +314,21 @@ export const FollowUs = [
     },
     {
         icon : React.createElement(FaYoutube),
+        router: "/"
+    }
+]
+
+export const LetsTalk = [
+    {
+        content: "Lets Talk",
+        router: "/"
+    },
+    {
+        content: "Sign Up",
+        router: "/"
+    },
+    {
+        content: "Log In",
         router: "/"
     }
 ]

@@ -2,7 +2,8 @@
 import { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { MyContext } from '../../context api/MyProvider';
-
+// import Button from './Button';
+import { IoIosArrowRoundForward } from "react-icons/io";
 
 
 function DropdownButton({ children, dropdown, classname = "" }) {
@@ -18,7 +19,7 @@ function DropdownButton({ children, dropdown, classname = "" }) {
             <button
                 onMouseEnter={() => setIsOpen(true)}
                 onMouseLeave={() => setIsOpen(false)}
-                className="inline-flex justify-center w-max px-4 py-1 bg-transparent text-[12px] font-syne font-bold tracking-tighter leading-5 uppercase text-gray-700"
+                className="inline-flex justify-center w-max px-4 py-1 bg-transparent text-[14px] font-syne font-bold tracking-tighter leading-5 uppercase text-gray-700"
             >
                 {children}
             </button>
@@ -29,7 +30,7 @@ function DropdownButton({ children, dropdown, classname = "" }) {
                     onMouseLeave={() => setIsOpen(false)}
                     className={`origin-top-right absolute top-6 xl:top-[20px] left-0 mt-2 ${classname} rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50`}
                 >
-                    {children !== "Follow Us" &&
+                    {children !== "Follow Us" && children !== "Lets Talk" &&
 
                         <div className="py-1">
                             {dropdown?.map((dropdownMenu, index) => {
@@ -40,8 +41,8 @@ function DropdownButton({ children, dropdown, classname = "" }) {
                                             setIsOpen(false);
                                             toggleMenu();
                                         }} >
-                                        <span className='text-xl text-blue-Purple'>{dropdownMenu.icon}</span>
-                                        <span>{dropdownMenu.content}</span>
+                                        {dropdownMenu?.icon && <span className='text-xl text-blue-Purple'>{dropdownMenu.icon}</span>}
+                                        <span className='font-syne font-bold tracking-tighter leading-5'>{dropdownMenu.content}</span>
                                     </Link>
                                 )
                             })}
@@ -55,13 +56,27 @@ function DropdownButton({ children, dropdown, classname = "" }) {
                             {dropdown?.map((dropdownMenu, index) => {
                                 return (
 
-                                    <Link key={index} to={dropdownMenu.route} className="p-4 text-base text-gray-700 hover:bg-gray-100 rounded-md"
+                                    <Link key={index} to={dropdownMenu.router} className="p-4 text-base text-gray-700 hover:bg-gray-100 rounded-md font-syne font-bold tracking-tighter leading-5"
                                         onClick={() => {
                                             setIsOpen(false);
                                             toggleMenu();
                                         }} >
                                         {dropdownMenu.icon}
                                     </Link>
+                                )
+                            })}
+                        </div>
+
+                    }
+                    {children === "Lets Talk" &&
+
+                        <div className='p-6'>
+                            {dropdown?.map((dropdownMenu, index) => {
+                                return (
+                             <button key={index} className='btn bg-black text-white rounded-full btn-sm mb-2 flex justify-center items-center hover:bg-black'>
+                                        <Link to={dropdown.router}>{dropdownMenu.content}</Link>
+                                        <IoIosArrowRoundForward />
+                                    </button>
                                 )
                             })}
                         </div>

@@ -15,7 +15,7 @@ import { socialMediaMarktingList, socialMediaBlogs, aboutSocialMediaServices, so
 
 const SearchEnginePage = () => {
     return (
-        <div>
+        <div className="pt-12">
             <div className="w-full pb-10">
                 <div className="container mx-auto space-y-20">
                     <Hero hero={socialMediaHero} />

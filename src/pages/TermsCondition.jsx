@@ -2,7 +2,7 @@ import { termsConditions } from "../constant/termsConditions";
 
 const TermsCondition = () => {
     return (
-        <div>
+        <div className="pt-12">
       
       <div className="bg-gray-200 p-10">
       <h6 className="text-black text-2xl py-4"> TERMS & CONDITIONS</h6>

@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { MyContext } from "../../context api/MyProvider";
 import { RxCross1, RxHamburgerMenu } from "react-icons/rx";
@@ -12,54 +12,82 @@ import {
   AiSolutionsDropdown,
   WhoWeAreDropdown,
   FollowUs,
-  AiSolutionsDropdownMobile
+  AiSolutionsDropdownMobile,
+  LetsTalk
 } from "../../constants/constant";
+
+const buttonTabs = ["Login", "Sign Up", "Lets Talk"];
 
 const Header = () => {
   const { menuOpen, setMenuOpen } = useContext(MyContext);
+  const [show, setShow] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
-  const buttonTabs = ["Login", "Sign Up", "Lets Talk"];
+
+  const controlNavbar = () => {
+    if (typeof window !== 'undefined') {
+      if (window.scrollY > lastScrollY) {   // if scroll down hide the navbar
+        setShow(false);
+      } else {                              // if scroll up show the navbar
+        setShow(true);
+      }
+      setLastScrollY(window.scrollY);
+    }
+  };
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', controlNavbar);
+
+      // cleanup function
+      return () => {
+        window.removeEventListener('scroll', controlNavbar);
+      };
+    }
+  }, [lastScrollY]);
 
   return (
     <>
-      <header className="bg-white bg-opacity-50 backdrop-blur-md shadow-lg p-4 text-black  w-full  ">
+      <header className={`bg-white bg-opacity-50 backdrop-blur-md shadow-lg px-4 py-2 text-black fixed top-0 left-0 w-full z-50 transition-transform duration-300 ${show ? 'translate-y-0' : '-translate-y-full'} `}>
         {/* Desktop View */}
         <div className="hidden xl:flex flex-1 justify-between items-center gap-x-6 container mx-auto">
           {/* Logo */}
           <Link to='/'>
-          <div className="flex items-center shrink-0">
-            <img
-              src={acumensStyleLogo}
-              alt="Acumens Logo"
-              className="w-8 h-8 xl:h-10 xl:w-10 mr-2"
-            />
-            <img src={acumensLogo} alt="Acumens Logo" className="h-8 xl:h-10" />
-          </div>
+            <div className="flex items-center shrink-0">
+              <img
+                src={acumensStyleLogo}
+                alt="Acumens Logo"
+                className="w-8 h-8 xl:h-10 xl:w-10 mr-2"
+              />
+              <img src={acumensLogo} alt="Acumens Logo" className="h-8 xl:h-10" />
+            </div>
           </Link>
           {/* Dropdown Menu */}
           <div>
-            <ul className="flex flex-row gap-x-2 items-center">
+            <ul className="flex flex-row gap-x-2">
               <Link to="/" className="cursor-pointer px-4 py-1 bg-transparent text-sm font-medium text-gray-700 ">
-                <span className="text-[12px] font-syne font-bold tracking-tighter leading-5 uppercase">
-                  Home
-                </span>
+                <button className="relative inline-block text-gray-700 rounded-full transition duration-300 ease-in-out text-[14px] font-syne font-bold leading-5 uppercase tracking-tighter">
+                  <span className="relative overflow-hidden before:content-[''] before:absolute bottom-0.5  before:-bottom-1 before:left-0 before:w-0 before:h-0.5 before:hover:bg-blue-Purple before:transition-width before:duration-500 before:ease-in-out hover:before:w-full">
+                    Home
+                  </span>
+                </button>
               </Link>
               <li className="cursor-pointer">
                 <DropdownButton dropdown={AiSolutionsDropdown} classname="w-72">
                   <Link to='/Ai-Solutions.htm'>Ai Solutions</Link>
                 </DropdownButton>
               </li>
-          <li className="cursor-pointer px-4 py-1 bg-transparent text-sm font-medium text-gray-700 ">
-          <Link to="/pricing.htm" >
-                <span className="text-[12px] font-syne font-bold tracking-tighter leading-5 uppercase">
-                  Pricing
-                </span>
+              <Link to="/pricing.htm" className="cursor-pointer px-4 py-1 bg-transparent text-sm font-medium text-gray-700 ">
+                <button className="relative inline-block text-gray-700 rounded-full transition duration-300 ease-in-out text-[14px] font-syne font-bold leading-5 uppercase tracking-tighter">
+                  <span className="relative overflow-hidden before:content-[''] before:absolute bottom-0.5 before:-bottom-1 before:left-0 before:w-0 before:h-0.5 before:hover:bg-blue-Purple before:transition-width before:duration-500 before:ease-in-out hover:before:w-full">
+                    Pricing
+                  </span>
+                </button>
               </Link>
-          </li>
               <li className="cursor-pointer">
                 <DropdownButton dropdown={WhoWeAreDropdown} classname="w-36">
                   Who We Are
@@ -80,8 +108,10 @@ const Header = () => {
               <p className="text-[12px] font-syne font-bold tracking-tighter leading-5 uppercase">
                 Support
               </p>
-              <p className="text-[12px] font-syne font-bold tracking-tighter leading-5 uppercase">
-                8884915291
+              <p className="relative inline-block text-gray-700 rounded-full transition duration-300 ease-in-out text-[14px] font-Kanit font-normal leading-5 uppercase tracking-tighter">
+                <span className="relative overflow-hidden before:content-[''] before:absolute bottom-0.5 before:-bottom-1 before:left-0 before:w-0 before:h-0.5 before:hover:bg-blue-Purple before:transition-width before:duration-500 before:ease-in-out hover:before:w-full">
+                  8884915291
+                </span>
               </p>
             </Link>
 
@@ -89,31 +119,36 @@ const Header = () => {
               <p className="text-[12px] font-syne font-bold tracking-tighter leading-5 uppercase">
                 Sales
               </p>
-              <p className="text-[12px] font-syne font-bold tracking-tighter leading-5 uppercase">
-                8009694409
+              <p className="relative inline-block text-gray-700 rounded-full transition duration-300 ease-in-out text-[14px] font-Kanit font-normal leading-5 uppercase tracking-tighter">
+                <span className="relative overflow-hidden before:content-[''] before:absolute bottom-0.5 before:-bottom-1 before:left-0 before:w-0 before:h-0.5 before:hover:bg-blue-Purple before:transition-width before:duration-500 before:ease-in-out hover:before:w-full">
+                  8009694409
+                </span>
               </p>
             </Link>
 
-            <Button>
-              <Link to="#">Lets Talk</Link>
-            </Button>
+            <div>
+              <DropdownButton dropdown={LetsTalk} classname="w-40">
+                Lets Talk
+              </DropdownButton>
+            </div>
+
           </div>
         </div>
       </header>
 
       {/* Mobile view */}
-      <header className="bg-white bg-opacity-50 backdrop-blur-md shadow-lg p-4 flex justify-between items-center xl:hidden -mt-8 fixed top-8 left-0 w-full z-50">
+      <header className={`bg-white bg-opacity-50 backdrop-blur-md shadow-lg p-4 flex justify-between items-center xl:hidden -mt-8 fixed top-8 left-0 w-full z-50 transition-transform duration-300 ${show ? 'translate-y-0' : '-translate-y-full'}`}>
         {/* Logo */}
-      <Link to="/">
-      <div className="flex items-center" onClick={toggleMenu}>
-          <img
-            src={acumensStyleLogo}
-            alt="Acumens Logo"
-            className="h-10 w-10 mr-2"
-          />
-          <img src={acumensLogo} alt="Acumens Logo" className="h-10" />
-        </div>
-      </Link>
+        <Link to="/">
+          <div className="flex items-center" onClick={toggleMenu}>
+            <img
+              src={acumensStyleLogo}
+              alt="Acumens Logo"
+              className="h-10 w-10 mr-2"
+            />
+            <img src={acumensLogo} alt="Acumens Logo" className="h-10" />
+          </div>
+        </Link>
 
         {/* Mobile menu */}
         <div

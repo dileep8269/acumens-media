@@ -63,7 +63,7 @@ const Footer = () => {
                 <div className='space-y-5'>
                     <h5 className='text-lg font-bold font-syne text-black'>About Us</h5>
                     <ul className='text-base font-normal space-y-2 cursor-pointer'>
-                        <li className='hover:text-blue-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6'><Link to='/about'>About</Link></li>
+                        <li className='hover:text-blue-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6'><Link to='/about.htm'>About</Link></li>
                         <li className="hover:text-blue-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6"><Link to='/blog.htm'>Blog</Link></li>
                         <li className="hover:text-blue-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6"><Link to='/contact.htm'>Contact</Link></li>
                     </ul>

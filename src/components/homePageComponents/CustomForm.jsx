@@ -1,23 +1,87 @@
 /* eslint-disable react/prop-types */
 import { useForm } from 'react-hook-form';
+// import { useSubmitContactFormMutation } from '../../redux/api/contactApi';
+import { toast } from 'sonner';
 // import "./CustomForm.css"
 
 
-const CustomForm = ({ fields }) => {
-
+const CustomForm = ({ fields,page }) => {
+    // const [submitContactForm]=useSubmitContactFormMutation();
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
-    
-    const onSubmit = (data) => {
-        console.log("data is fetched : ", data);
-        reset();
-        // const userData = {
-        //     userFirstName: firstName,
-        //     userLastName: lastName,
-        //     CompanyName: companyName,
-        //     userEmail: email,
-        //     userPhnNo: phoneNo,
-        //     message
-        // }
+// console.log(page);
+    const onSubmit = async (data) => {
+
+        const toastId = toast.loading("Processing...")
+        const userData = {
+            userFirstName: data?.userFirstName,
+            userLastName: data?.userLastName,
+            CompanyName: data?.CompanyName,
+            userEmail: data?.userEmail,
+            userPhnNo: data?.userPhnNo,
+            message: data?.message
+        }
+        // const userJsonData=JSON.stringify(userData)
+        try {
+         if(page==='contact'){
+            const res = await fetch('https://chat.acumensinc.com/submit', {
+                method: "POST",
+                headers: {
+                    "content-type": "application/json"
+                },
+                body: JSON.stringify(userData)
+            })
+            // eslint-disable-next-line no-unused-vars
+            const info = await res.json();
+            // console.log(info);
+            toast.success("Form submitted successfully", { id: toastId, duration: 1000 })
+            reset();
+         }
+         else if(page==='contact1'){
+            const res = await fetch('https://chat.acumensinc.com/submitVendor1', {
+                method: "POST",
+                headers: {
+                    "content-type": "application/json"
+                },
+                body: JSON.stringify(userData)
+            })
+            // eslint-disable-next-line no-unused-vars
+            const info = await res.json();
+            // console.log(info);
+            toast.success("Form submitted successfully", { id: toastId, duration: 1000 })
+            reset();
+         }
+         else if(page==='contact2'){
+            const res = await fetch('https://chat.acumensinc.com/submitVendor2', {
+                method: "POST",
+                headers: {
+                    "content-type": "application/json"
+                },
+                body: JSON.stringify(userData)
+            })
+            // eslint-disable-next-line no-unused-vars
+            const info = await res.json();
+            // console.log(info);
+            toast.success("Form submitted successfully", { id: toastId, duration: 1000 })
+            reset();
+         }
+         else if(page==='contact3'){
+            const res = await fetch('https://chat.acumensinc.com/submitVendor3', {
+                method: "POST",
+                headers: {
+                    "content-type": "application/json"
+                },
+                body: JSON.stringify(userData)
+            })
+            // eslint-disable-next-line no-unused-vars
+            const info = await res.json();
+            // console.log(info);
+            toast.success("Form submitted successfully", { id: toastId, duration: 1000 })
+            reset();
+         }
+  
+        } catch (error) {
+            console.log(error?.message);
+        }
     };
 
     return (
@@ -38,14 +102,14 @@ const CustomForm = ({ fields }) => {
                                             value: 30,
                                             message: 'you can\'t exceed 30 characters'
                                         },
-                                        minLength : {
+                                        minLength: {
                                             value: 3,
                                             message: 'character should be between 3 to 30 characters'
                                         }
                                     })}
                                     placeholder={field.placeholder}
                                     className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500 placeholder-black`}
-                                    style={{placeholder:"black"}}
+                                    style={{ placeholder: "black" }}
                                 />
                                 <p className='text-red-600 mt-2 text-md font-normal italic'>{errors[field.name]?.message}</p>
                             </>
@@ -73,7 +137,7 @@ const CustomForm = ({ fields }) => {
                                         pattern: {
                                             value: /^\+?(1|91)?[-.\s]?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$|^\+?(91)?[-.\s]?[6-9]\d{9}$/,
                                             message: 'Invalid Number',
-                                        }, required : {
+                                        }, required: {
                                             value: true,
                                             message: field.require,
                                         }
@@ -84,6 +148,24 @@ const CustomForm = ({ fields }) => {
                                 <p className='text-red-600 mt-2 text-md font-normal italic'>{errors[field.name]?.message}</p>
                             </>
                         )}
+                        {/* message */}
+                        {field?.name === 'message' && (
+                            <>
+                                <textarea
+
+                                    type="text"
+                                    id={field.name}
+                                    autoComplete="on"
+                                    {...register(field.name, {
+
+                                    })}
+                                    placeholder={field.placeholder}
+                                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500 placeholder-black textarea textarea-bordered"
+                                />
+                                <p className='text-red-600 mt-2 text-md font-normal italic'>{errors[field.name]?.message}</p>
+                            </>
+                        )}
+
                         {field.type === 'email' && (
                             <>
                                 <input
@@ -94,7 +176,7 @@ const CustomForm = ({ fields }) => {
                                         pattern: {
                                             value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.com$/,
                                             message: 'Invalid email address',
-                                        }, required : {
+                                        }, required: {
                                             value: true,
                                             message: 'Email is Required',
                                         }
@@ -124,6 +206,7 @@ const CustomForm = ({ fields }) => {
                                 <div className='flex justify-start items-start'>
                                     <input
                                         type="checkbox"
+                                        checked
                                         id={field.name}
                                         {...register(field.name, {
                                             required: {

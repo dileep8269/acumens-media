@@ -14,7 +14,7 @@ import { socialMediaMarktingList, socialMediaBlogs, aboutSocialMediaServices, so
 
 const EmailMarketingPage = () => {
     return (
-        <div>
+        <div className="pt-12">
             <div className="w-full py-10">
                 <div className="container mx-auto space-y-20">
                     <Hero hero={socialMediaHero} />
