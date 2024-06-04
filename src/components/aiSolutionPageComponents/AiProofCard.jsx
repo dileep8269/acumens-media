@@ -2,7 +2,7 @@ import { GoGraph } from "react-icons/go";
 
 const AiProofCard = ({ proofs }) => {
   return (
-    <div className="flex justify-center items-start gap-6 flex-wrap">
+    <div className="flex justify-center items-start gap-6 3xl:gap-44 flex-wrap">
       {proofs?.map((card, index) => (
         <div key={index} className='space-y-6 border border-slate-200 rounded-[40px] w-[300px] min-h-[250px] px-4 py-8'>
           <div className="flex justify-between items-center">

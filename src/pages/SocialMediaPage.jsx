@@ -17,17 +17,17 @@ const SocialMediaPage = () => {
     return (
         <div className="pt-12">
             <div className="w-full pb-10">
-                <div className="container mx-auto space-y-20">
+                <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto space-y-20">
                     <Hero hero={socialMediaHero} />
                     <MarketingSection list={socialMediaMarktingList} />
                 </div>
-                <div className="container mx-auto space-y-20">
+                <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto space-y-20">
                     <AiProcess blog={socialMediaBlogs} />
                 </div>
             </div>
 
             <div className="w-full py-10">
-                <div className="container mx-auto space-y-6">
+                <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto space-y-6">
                     <h6 className='text-center uppercase text-lg font-semibold font-syne text-black px-8'>{socialMediaServices.title}</h6>
                     <div className='flex flex-col justify-center items-center space-y-6 px-8'>
                         <h1 className='text-center text-3xl lg:text-5xl font-bold font-syne lg:w-[63%] text-black'>{socialMediaServices.heading}</h1>
@@ -40,7 +40,7 @@ const SocialMediaPage = () => {
             </div>
 
             <div className="w-full py-10">
-                <div className="container mx-auto space-y-6">
+                <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto space-y-6">
                     <h6 className='text-center uppercase text-lg font-semibold font-syne text-black px-8'>{aboutSocialMediaServices.title}</h6>
                     <div className='flex flex-col justify-center items-center space-y-6 px-8'>
                         <h1 className='text-center text-3xl lg:text-5xl font-bold font-syne lg:w-[53%] text-black'>{aboutSocialMediaServices.heading}</h1>
@@ -51,12 +51,12 @@ const SocialMediaPage = () => {
                 </div>
             </div>
 
-            <div className="w-full py-10">
+            <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto py-10">
                 <ClientReview review={clientReview}/>
             </div>
 
             <div className="w-full py-10">
-                <div className="container mx-auto space-y-6">
+                <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto space-y-6">
                     <h6 className='text-center uppercase text-lg font-semibold font-syne text-black px-8'>{socialMediaProofs.title}</h6>
                     <div className='flex flex-col justify-center items-center space-y-6 px-8'>
                         <h1 className='text-center text-3xl lg:text-5xl font-bold font-syne lg:w-[63%] text-black'>{socialMediaProofs.heading}</h1>
@@ -68,7 +68,7 @@ const SocialMediaPage = () => {
             </div>
 
             <div className="w-full py-10">
-                <div className="container mx-auto space-y-6">
+                <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto space-y-6">
                     <h6 className='text-center uppercase text-lg font-semibold font-syne text-black px-8'>{socialMediaFaqs.title}</h6>
                     <div className='flex flex-col justify-center items-center space-y-6 px-8'>
                         <h1 className='text-center text-3xl lg:text-5xl font-bold font-syne lg:w-[63%] text-black'>{socialMediaFaqs.heading}</h1>
@@ -81,7 +81,7 @@ const SocialMediaPage = () => {
             </div>
 
             <div className="w-full py-5">
-                <div className="container mx-auto space-y-6 bg-gray-100 py-10 rounded-[40px]">
+                <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto space-y-6 bg-gray-100 py-10 rounded-[40px]">
                     <div className="flex justify-center items-center">
                         <img src={banner.photo} alt={banner.photo} className="object-contain h-15 w-28"/>
                     </div>
@@ -94,7 +94,7 @@ const SocialMediaPage = () => {
             </div>
 
             <div className="w-full py-10">
-                <div className="container mx-auto">
+                <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto">
                     <Contact message={contactMessage}/>
                 </div>
             </div>

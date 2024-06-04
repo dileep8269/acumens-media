@@ -9,7 +9,7 @@ export const socialMediaHero = {
     heading : "Expand reach with our Google Business Services.",
     context1: "Expand your business visibility like never before with our AI-Fueled Google Service. Let AI precision target and captivate your ideal audience, skyrocketing your Business reach on Google's vast & global landscape like google Map, Google Business & AI-Created YouTube videos.",
     buttonText : "Expand Now",
-    photo : "https://acumensinc.com/wp-content/uploads/2023/06/pexels-cottonbro-studio-5076516-1024x948.webp"
+    photo : "pexels-cottonbro-studio-5076516-1024x948.webp"
 }
 
 export const socialMediaMarktingList = {

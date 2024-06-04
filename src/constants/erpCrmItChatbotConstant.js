@@ -9,7 +9,7 @@ export const socialMediaHero = {
     heading : "Elevate Your Operations with Cutting-Edge Integration",
     context1: "Are you ready to witness the convergence of cutting-edge ERP, CRM, IT, and Chatbot systems, amplified by the prowess of AI integration? Revolutionize your business's efficiency and growth potential through the seamless fusion of ERP, CRM, IT, and Chatbot technologies empowered by AI integration.",
     buttonText : "Get An Audit",
-    photo : "https://acumensinc.com/wp-content/uploads/2023/06/pexels-oladimeji-ajegbile-3314294-1024x948.webp"
+    photo : "pexels-oladimeji-ajegbile-3314294-1024x948.webp"
 }
 
 export const socialMediaMarktingList = {

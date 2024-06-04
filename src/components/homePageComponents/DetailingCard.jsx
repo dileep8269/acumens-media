@@ -17,7 +17,7 @@ const DetailingCard = () => {
 
     return (
         <div className="container mx-auto">
-            <div className="flex flex-row flex-wrap gap-2 p-3 justify-center items-start">
+            <div className="flex flex-row flex-wrap 2xl:gap-10 xl:gap-x-20 justify-center items-start">
                 {
                     acumensincDatail.map((item, index) => (
                         <div key={index} className='flex flex-col w-[300px] h-auto justify-items-start p-5 space-y-4 rounded-2xl'>

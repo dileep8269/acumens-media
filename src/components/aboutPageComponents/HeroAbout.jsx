@@ -6,16 +6,16 @@ const HeroAbout = () => {
             <h6 className="text-left uppercase text-lg font-semibold font-syne text-black">
               About Us
             </h6>
-            <h1 className="text-left text-3xl lg:text-6xl font-bold font-syne lg:w-[80%] text-black">
+            <h1 className="text-left text-3xl lg:text-6xl font-bold font-syne lg:w-[95%] text-black">
               Digital marketing solutions designed to generate revenue for your
               business
             </h1>
           </div>
-          <div className="w-full md:w-1/2 flex justify-center items-center">
+          <div className="w-full md:w-1/2 flex lg:justify-end justify-center items-center">
             <img
               src="./pexels-moe-magners-7495410.webp"
               alt="sdsds"
-              className="w-[400px] h-[400px] object-cover rounded-[40px] transition-transform duration-1000 hover:scale-95"
+              className="w-[400px] h-[400px] object-cover rounded-[40px]  transition-transform duration-1000 hover:scale-95"
             />
           </div>
         </div>

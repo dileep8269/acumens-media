@@ -1,30 +1,19 @@
 
+
 const Branding = () => {
   return (
     <div className=' box-border p-8 justify-center'>
       <div className='flex justify-center'>
       <h1 className=' font-syne font-bold text-xl items-center text-black'>The Best Brands Choose Acumens<br/></h1>
       </div>
-         <div className='flex flex-row flex-wrap mt-16 justify-center items-center gap-16 w-full h-2/5'>
-             <div className=' box-content h-[90px] w-[150px]'>
-                 <img src='jolie-1.webp'/>
-             </div>
-             <div className=' box-content h-[90px] w-[150px]'>
-                 <img src='caridad.webp'/>
-             </div>
-             <div className=' box-content h-[90px] w-[150px]'>
-                 <img src='F7.webp'/>
-             </div>
-             <div className=' box-content h-[90px] w-[150px]'>
-                 <img src='Scuola_Logo_OnlyTop-1.webp'/>
-             </div>
-             <div className='box-content h-[90px] w-[150px]'>
-                 <img src='petmania.webp'/>
-             </div>
-             <div className=' box-content h-[90px] w-[150px]'>
-                 <img src='tecnologia.webp'/>
-             </div>
-         </div>
+      <div className="flex flex-col flex-wrap md:flex-row justify-center items-center md:my-10 3xl:gap-28 2xl:gap-30 xl:gap-24 gap-16 mx-auto mt-10">
+      <img src="./jolie-1.webp" className=""/>
+      <img src="./caridad.webp" className=""/>
+      <img src="./F7.webp" className=""/>
+      <img src="./Scuola_Logo_OnlyTop-1.webp" className=""/>
+      <img src="./petmania.webp" className=""/>
+      <img src="./tecnologia.webp" className=""/>
+      </div>
 
       </div>
     
