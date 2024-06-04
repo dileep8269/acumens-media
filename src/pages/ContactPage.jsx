@@ -5,9 +5,9 @@ import Contact from "../components/aiSolutionPageComponents/Contact";
 
 const ContactPage = () => {
   return (
-    <div className="pt-12">
-    <div className="container mx-auto">
-      <div className=" bg-gradient-to-b from-light-purple to-gray-100 flex flex-col  px-4 py-16 md:flex-row">
+    <div className="pt-12 bg-gradient-to-b from-light-purple to-gray-100 ">
+    <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto">
+      <div className=" flex flex-col  px-4 py-16 md:flex-row">
         <div className=" w-full md:w-1/2 text-left p-4 space-y-6 ">
           <h6 className="text-base font-bold font-syne uppercase text-black">
             contact
@@ -57,7 +57,7 @@ const ContactPage = () => {
       </div>
       </div>
       <div className="w-full px-8 py-10">
-        <div className="container mx-auto">
+        <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto">
           <Contact message="See how we can help your business grow with digital marketing" />
         </div>
       </div>

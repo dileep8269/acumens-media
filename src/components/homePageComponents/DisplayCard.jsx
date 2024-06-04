@@ -5,7 +5,7 @@ import { socialMediaServices } from '../../constants/constant';
 const DisplayCard = () => {
     return (
 
-        <div className='md:gap-5  p-5 gap-3 flex lg:flex-row
+        <div className='3xl:gap-16 px-8 md:px-0 gap-3 flex lg:flex-row
          flex-col justify-center items-center'>
 
             {

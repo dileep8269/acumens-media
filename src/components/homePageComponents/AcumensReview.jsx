@@ -3,7 +3,7 @@ import { companyFeedback } from "../../constants/constant";
 
 const AcumensReview = () => {
     return (
-        <div className='flex flex-col lg:flex-row justify-center items-center gap-x-4'>
+        <div className='flex flex-col bg-red-400 lg:flex-row justify-center items-center gap-x-4'>
             <div className='w-full lg:w-[50%] h-full p-3 space-y-10 lg:border-r lg:border-black'>
                 <h1 className="text-center text-4xl lg:text-5xl align-middle font-bold font-syne text-black">Driving digital <br></br> revenue for our <br></br> 1000+ satisfied <br></br> customers</h1>
                 <div className="px-[5%] lg:px-[15%]">

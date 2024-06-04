@@ -9,7 +9,7 @@ export const socialMediaHero = {
     heading : "Web Designing & Web Hosting Services",
     context1: "Welcome to the future of web design, where innovation meets aesthetics seamlessly. Our AI-integrated web design services redefine the way you engage with your audience, ensuring a digital presence that captivates and converts.",
     buttonText : "Get An Audit",
-    photo : "https://acumensinc.com/wp-content/uploads/2023/06/pexels-monstera-6282022-1024x948.webp"
+    photo : "pexels-monstera-6282022-1024x948.webp"
 }
 
 export const socialMediaMarktingList = {

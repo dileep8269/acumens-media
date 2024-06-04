@@ -9,7 +9,7 @@ export const socialMediaHero = {
     heading : "AI-Driven E-commerce Solutions",
     context1: "Seeking a visionary AI-powered E-commerce store? Our team specializes in creating unique, AI-enhanced online platforms tailored to achieve your business goals effectively.",
     buttonText : "Get An Audit",
-    photo : "https://acumensinc.com/wp-content/uploads/2023/06/pexels-darina-belonogova-8788815-1024x948.webp"
+    photo : "pexels-darina-belonogova-8788815-1024x948.webp"
 }
 
 export const socialMediaMarktingList = {

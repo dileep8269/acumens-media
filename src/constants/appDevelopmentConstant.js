@@ -9,7 +9,7 @@ export const socialMediaHero = {
     heading : "AI-Enhanced App Development Solutions",
     context1: "Embarking on a journey to redefine application development, our AI-infused services represent a groundbreaking approach to innovation and client success. At Acumens, we harness the power of artificial intelligence to augment our team of skilled developers, ensuring the delivery of cutting-edge applications that seamlessly blend creativity and functionality.",
     buttonText : "Get An Audit",
-    photo : "https://acumensinc.com/wp-content/uploads/2023/06/GettyImages-1370442804-1.webp"
+    photo : "GettyImages-1370442804-1.webp"
 }
 
 export const socialMediaMarktingList = {

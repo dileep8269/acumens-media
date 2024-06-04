@@ -10,7 +10,7 @@ export const socialMediaHero = {
     context1: "Welcome to the future of email marketing! Our cutting-edge platform seamlessly integrates Artificial Intelligence to revolutionize your email campaigns.",
     context2: "Say goodbye to generic messages and Join the world of personalized, targeted communication that engages your audience.",
     buttonText : "Join Now",
-    photo : "https://acumensinc.com/wp-content/uploads/2023/06/pexels-teona-swift-6912829-1024x948.webp"
+    photo : "pexels-teona-swift-6912829-1024x948.webp"
 }
 
 export const socialMediaMarktingList = {

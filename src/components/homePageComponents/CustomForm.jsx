@@ -6,7 +6,7 @@ import Button from './Button';
 // import "./CustomForm.css"
 
 
-const CustomForm = ({ fields, page }) => {
+const CustomForm = ({ fields, page, message }) => {
     // const [submitContactForm]=useSubmitContactFormMutation();
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
     // console.log(page);
@@ -86,8 +86,8 @@ const CustomForm = ({ fields, page }) => {
     };
 
     return (
-        <div className="bg-white p-12 rounded-[40px] shadow-lg shadow-black w-auto lg:w-[600px] text-base font-kanit font-light leading-6 tracking-normal text-black">
-            <h2 className="text-4xl mb-8 font-syne font-bold">Contact Us</h2>
+        <div className="bg-white p-12 rounded-[40px] shadow-lg shadow-black w-auto xl:w-[600px] text-base font-kanit font-light leading-6 tracking-normal text-black">
+            <h2 className="text-4xl mb-8 font-syne font-bold">{message}</h2>
             <form onSubmit={handleSubmit(onSubmit)}>
                 {fields?.map((field) => (
                     <div key={field.name} className="mb-4">

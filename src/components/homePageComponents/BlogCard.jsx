@@ -12,9 +12,9 @@ const BlogCard = () => {
 
                         <div key={blog.id} id={blog.id} className="carousel-item w-full flex justify-center">
 
-                            <div className='flex flex-row justify-center items-start gap-2 py-10 md:p-5 md:py-0'>
+                            <div className='flex flex-row justify-center items-start gap-2 py-10 md:p-5 md:py-5'>
 
-                                <div className="max-w-[50%] overflow-hidden shadow-lg bg-white rounded-[40px] h-[450px] lg:h-[560px]">
+                                <div className="max-w-[50%] overflow-hidden shadow-lg bg-white rounded-[40px] h-[450px] xl:h-[480px] 3xl:h-[560px]">
                                     <img src={blog.img1} alt="Card image" className='object-cover w-full' />
                                     <div className="p-8">
                                         <h4 className="font-light font-kanit leading-6 tracking-normal text-base mb-2">{blog.date1}</h4>
@@ -24,7 +24,7 @@ const BlogCard = () => {
                                     </div>
                                 </div>
 
-                                <div className="max-w-[50%] overflow-hidden shadow-lg bg-white rounded-[40px] h-[450px] lg:h-[560px]">
+                                <div className="max-w-[50%] overflow-hidden shadow-lg bg-white rounded-[40px] h-[450px] xl:h-[480px] 3xl:h-[560px]">
                                     <img src={blog.img2} alt="Card image" className='object-cover w-full' />
                                     <div className="p-8">
                                         <h4 className="font-light font-kanit leading-6 tracking-normal text-base mb-2">{blog.date2}</h4>

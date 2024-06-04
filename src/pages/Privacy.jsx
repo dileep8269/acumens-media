@@ -1,7 +1,7 @@
 
 const Privacy = () => {
     return (
-        <div className="bg-gray-200 pt-24 px-10  rounded-lg shadow-md ">
+        <div className="bg-gray-200 pt-24 px-10 pb-10  rounded-lg shadow-md ">
         <h5 className="text-lg font-bold mb-4">PRIVACY POLICY (UNDER UPDATION, TO BE UPDATED BY 03/10/24)</h5>
         <h5 className="text-4xl font-bold mb-4">Privacy Policy</h5>
   
