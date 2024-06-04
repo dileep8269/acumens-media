@@ -71,11 +71,11 @@ const Footer = () => {
                     <div className='space-y-5 '>
                         <h5 className='text-lg font-medium'>Follow Us</h5>
                         <ul className='flex flex-row justify-start items-center gap-5'>
-                            <li className="text-xl cursor-pointer hover:scale-150 transition-transform duration-700"><FaLinkedin /></li>
-                            <li className="text-xl cursor-pointer hover:scale-150 transition-transform duration-700"><FaFacebook /></li>
-                            <li className="text-xl cursor-pointer hover:scale-150 transition-transform duration-700"><FaTwitter /></li>
-                            <li className="text-xl cursor-pointer hover:scale-150 transition-transform duration-700"><FaInstagram /></li>
-                            <li className="text-xl cursor-pointer hover:scale-150 transition-transform duration-700"><FaYoutube /></li>
+                            <li className="text-xl cursor-pointer hover:scale-150 transition-transform duration-700"><Link to='/'><FaLinkedin /></Link></li>
+                            <li className="text-xl cursor-pointer hover:scale-150 transition-transform duration-700"><Link to='/'><FaFacebook /></Link></li>
+                            <li className="text-xl cursor-pointer hover:scale-150 transition-transform duration-700"><Link to='/'><FaTwitter /></Link></li>
+                            <li className="text-xl cursor-pointer hover:scale-150 transition-transform duration-700"><Link to='/'><FaInstagram /></Link></li>
+                            <li className="text-xl cursor-pointer hover:scale-150 transition-transform duration-700"><Link to='/'><FaYoutube /></Link></li>
                         </ul>
                     </div>
                 </div>

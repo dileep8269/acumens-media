@@ -6,7 +6,7 @@ import { MyContext } from '../../context api/MyProvider';
 import { IoIosArrowRoundForward } from "react-icons/io";
 
 
-function DropdownButton({ children, dropdown, classname = "" }) {
+function DropdownButton({ children, dropdown, classname = "",isHandBar=false }) {
     const [isOpen, setIsOpen] = useState(false);
     const { menuOpen, setMenuOpen } = useContext(MyContext);
 
@@ -30,7 +30,7 @@ function DropdownButton({ children, dropdown, classname = "" }) {
                     onMouseLeave={() => setIsOpen(false)}
                     className={`origin-top-right absolute top-6 xl:top-[20px] left-0 mt-2 ${classname} rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50`}
                 >
-                    {children !== "Follow Us" && children !== "Lets Talk" &&
+                    {children !== "Follow Us" && isHandBar !== true &&
 
                         <div className="py-1">
                             {dropdown?.map((dropdownMenu, index) => {
@@ -68,7 +68,7 @@ function DropdownButton({ children, dropdown, classname = "" }) {
                         </div>
 
                     }
-                    {children === "Lets Talk" &&
+                    {isHandBar === true &&
 
                         <div className='p-6'>
                             {dropdown?.map((dropdownMenu, index) => {

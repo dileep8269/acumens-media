@@ -6,6 +6,7 @@ import acumensLogo from "../../assets/acumens-logoo_new2.webp";
 import acumensStyleLogo from "../../assets/acumenslogo2.webp";
 import DropdownButton from "./DropdownButton";
 import Button from "./Button";
+import { FaBars } from "react-icons/fa";
 
 // importing dropdown list from constant folder
 import {
@@ -129,8 +130,9 @@ const Header = () => {
             </Link>
 
             <div>
-              <DropdownButton dropdown={LetsTalk} classname="w-40">
-                Lets Talk
+              <DropdownButton isHandBar={true} dropdown={LetsTalk} classname="w-40">
+                <FaBars className="w-20 h-6" />
+                
               </DropdownButton>
             </div>
 

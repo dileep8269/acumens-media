@@ -3,7 +3,8 @@ import "../homePageComponents/DisplayCard.css"
 
 const ServiceCard = ({ services }) => {
     return (
-        <div className='grid lg:grid-cols-4 grid-cols-1 gap-5 p-4'>
+        <div className='md:gap-5  p-5 gap-3 flex lg:flex-row
+        flex-col justify-center items-center'>
 
             {
                 services?.map((service, index) => (
