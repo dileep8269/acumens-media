@@ -8,7 +8,7 @@ const ResultsCard = () => {
         Driving Real Results:
       </h1>
       <div className="flex flex-wrap flex-row justify-center items-center gap-16">
-        <div className="border border-gray-300 w-44 h-44 rounded-full">
+        <div className="border border-gray-300 transition-transform duration-1000 hover:scale-95 w-44 h-44 rounded-full">
           <div className="border border-blue-Purple w-32 h-32 m-6 ml-[23px] rounded-full">
             <h1 className=" text-3xl font-syne font-bold m-6 mt-10">
               500+ <br />
@@ -19,7 +19,7 @@ const ResultsCard = () => {
             International Clients
           </h1>
         </div>
-        <div className="border border-gray-300 w-44 h-44 rounded-full">
+        <div className="border border-gray-300 w-44 h-44 transition-transform duration-1000 hover:scale-95 rounded-full">
           <div className="border border-blue-Purple w-32 h-32 m-6 ml-[23px] rounded-full">
             <h1 className=" text-3xl font-syne font-bold m-6 mt-10">
               100% <br />
@@ -30,7 +30,7 @@ const ResultsCard = () => {
             Guaranteed Growth
           </h1>
         </div>
-        <div className="border border-gray-300 w-44 h-44 rounded-full">
+        <div className="border border-gray-300 w-44 h-44 transition-transform duration-1000 hover:scale-95 rounded-full">
           <div className="border border-blue-Purple w-32 h-32 m-6 ml-[23px] rounded-full">
             <h1 className=" text-3xl font-syne font-bold m-6 mt-10">
               15m <br />
@@ -41,7 +41,7 @@ const ResultsCard = () => {
             Managed budgets
           </h1>
         </div>
-        <div className=" flex flex-col border bg-lightest-purple w-96 h-48 rounded-2xl">
+        <div className=" flex flex-col border bg-light-purple transition-transform duration-1000 hover:scale-95 w-96 h-48 rounded-2xl">
           <h1 className=" text-3xl font-syne text-center font-bold mt-10">
             282,000+
           </h1>

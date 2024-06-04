@@ -25,7 +25,7 @@ const DetailsCard = () => {
         {
             aiSolDetail?.map((service, index) => (
 
-                <div key={index} className='flex flex-col w-[380px] h-64 justify-items-start border border-transparent bg-white hover:shadow-xl p-5 space-y-4 rounded-2xl'>
+                <div key={index} className='flex flex-col w-[220px] h-96 justify-items-start border border-transparent bg-white hover:shadow-xl p-5 space-y-4 rounded-2xl'>
                     <span className="w-14 h-14 rounded-full flex justify-center items-center text-3xl bg-gray-100 text-purple-900">{service?.icon}</span>
                     <h6 className="font-bold text-base font-syne text-black">{service?.title}</h6>
                     <p className="text-base font-light font-kanit leading-6 tracking-normal">{service?.desc}</p>

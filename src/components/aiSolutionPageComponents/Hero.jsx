@@ -12,7 +12,7 @@ const Hero = ({ hero }) => {
         <Button>{hero?.buttonText}</Button>
       </div>
       <div className='w-full md:w-1/2 flex justify-center items-center'>
-        <img src={hero?.photo} alt="sdsds" className='w-[400px] h-[400px] object-cover rounded-[40px]' />
+        <img src={hero?.photo} alt="sdsds" className='w-[400px] h-[400px] object-cover rounded-[40px] transition-transform duration-1000 hover:scale-95' />
       </div>
     </div>
   )

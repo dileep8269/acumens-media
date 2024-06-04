@@ -10,7 +10,7 @@ const StrategyCard = () => {
         <Button to="/audit.htm">CONSULT NOW</Button>
       </div>
       <div className='w-full md:w-1/2 flex justify-center items-center'>
-        <img src="../AiSolutions/pexels-pavel-danilyuk-7675014.webp" alt="sdsds" className='w-[550px] h-[450px] object-cover rounded-[40px] transition-transform duration-1000 hover:scale-95' />
+        <img src="../AiSolutions/pexels-pavel-danilyuk-7675014.webp" alt="sdsds" className='md:w-[550px] w-full md:h-[450px] h-full object-cover rounded-[40px] transition-transform duration-1000 hover:scale-95' />
       </div>
     </div>
   )

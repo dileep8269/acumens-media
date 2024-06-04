@@ -1,4 +1,5 @@
 import Branding from "../components/aiSolutionPageComponents/Branding";
+import Contact from "../components/aiSolutionPageComponents/Contact";
 import DetailsCard from "../components/aiSolutionPageComponents/DetailsCard";
 import Hero from "../components/aiSolutionPageComponents/Hero";
 import ResultsCard from "../components/aiSolutionPageComponents/ResultsCard";
@@ -44,6 +45,11 @@ const AiSolutionsPage = () => {
                 <Button to="/audit.htm">GET A PROPOSAL</Button>
             </div>
         </div>
+        </div>
+      </div>
+      <div className="w-full px-8 py-10">
+        <div className="container mx-auto">
+          <Contact message="See how we can help your business grow with digital marketing" />
         </div>
       </div>
     </div>
