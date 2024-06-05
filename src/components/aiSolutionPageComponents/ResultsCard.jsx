@@ -7,7 +7,7 @@ const ResultsCard = () => {
       <h1 className=" font-syne text-3xl font-bold mb-8">
         Driving Real Results:
       </h1>
-      <div className="flex flex-wrap flex-row justify-center items-center 3xl:gap-40 2xl:gap-28 xl:gap-9 gap-8">
+      <div className="flex flex-wrap flex-row justify-center items-center 3xl:gap-40 2xl:gap-28 xl:gap-9 gap-20">
         <div className="border border-gray-300 transition-transform duration-1000 hover:scale-95 w-44 h-44 rounded-full">
           <div className="border border-blue-Purple w-32 h-32 m-6 ml-[23px] rounded-full">
             <h1 className=" text-3xl font-syne font-bold m-6 mt-10">

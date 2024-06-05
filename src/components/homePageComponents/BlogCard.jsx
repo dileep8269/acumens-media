@@ -1,61 +1,73 @@
 import { blogDetails } from "../../constants/constant"
-import { homePageBlogDetails } from "../../constants/constant"
+import { Swiper, SwiperSlide } from 'swiper/react';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+//import required modules
+import { Pagination, Navigation } from 'swiper/modules';
+import { useEffect, useState } from "react";
 
 const BlogCard = () => {
 
+    const [noOfCards, setNoOfCards] = useState(2);
+
+    useEffect(() => {
+      const handleNoOfCards = () => {
+        if (window.innerWidth < 460)
+        {
+            setNoOfCards(1)
+        } else
+        {
+            setNoOfCards(2)
+        }
+      };
+  
+      // Add event listener
+      window.addEventListener('resize', handleNoOfCards);
+  
+      // Cleanup event listener on component unmount
+      return () => {
+        window.removeEventListener('resize', handleNoOfCards);
+      };
+    }, []);
+  
+
     return (
         <>
-            <div className="carousel w-full">
+        <Swiper
+                slidesPerView={noOfCards}
+                spaceBetween={30}
+                loop={true}
+                pagination={{
+                  clickable: true,
+                }}
+                navigation={true}
+                modules={[Pagination, Navigation]}
+              >
 
                 {
-                    homePageBlogDetails.map((blog) => (
+                    blogDetails.map((blog) => (
 
-                        <div key={blog.id} id={blog.id} className="carousel-item w-full flex justify-center">
+                        <SwiperSlide key={blog.id}>
 
-                            <div className='flex flex-row justify-center items-start gap-2 py-10 md:p-5 md:py-5'>
-
-                                <div className="max-w-[50%] overflow-hidden shadow-lg bg-white rounded-[40px] h-[450px] xl:h-[480px] 3xl:h-[560px]">
-                                    <img src={blog.img1} alt="Card image" className='object-cover w-full' />
+                                <div className=" overflow-hidden shadow-lg h-[450px] xl:h-[480px] 3xl:h-[560px] bg-white rounded-[40px]">
+                                    <img src={blog.img} alt="Card image" className='object-cover w-full' />
                                     <div className="p-8">
-                                        <h4 className="font-light font-kanit leading-6 tracking-normal text-base mb-2">{blog.date1}</h4>
+                                        <h4 className="font-light font-kanit leading-6 tracking-normal text-base mb-2">{blog.date}</h4>
                                         <p className="text-black text-xl font-bold font-syne tracking-tighter leading-6 cursor-pointer">
-                                            {blog.desc1}
+                                            {blog.desc}
                                         </p>
                                     </div>
                                 </div>
+                        
 
-                                <div className="max-w-[50%] overflow-hidden shadow-lg bg-white rounded-[40px] h-[450px] xl:h-[480px] 3xl:h-[560px]">
-                                    <img src={blog.img2} alt="Card image" className='object-cover w-full' />
-                                    <div className="p-8">
-                                        <h4 className="font-light font-kanit leading-6 tracking-normal text-base mb-2">{blog.date2}</h4>
-                                        <p className="text-black text-xl font-bold font-syne tracking-tighter leading-6 cursor-pointer">
-                                            {blog.desc2}
-                                        </p>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
+                        </SwiperSlide>
                     ))
                 }
 
 
-            </div>
-
-            <div className="flex justify-center w-full py-8 gap-2">
-
-                {
-                    homePageBlogDetails.map((blog) => (
-
-                        <a key={blog.id} href={`#${blog.id}`} className="w-2 h-2 rounded-full bg-black"></a>
-
-                    ))
-                }
-            </div>
-
-
-
+            </Swiper>
         </>
     )
 }

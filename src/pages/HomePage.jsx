@@ -94,7 +94,7 @@ const HomePage = () => {
 
             </div>
 
-            <div className="w-full md:w-[70%]">
+            <div className="w-full lg:h-[550px] md:w-[70%] py-10 lg:py-0">
 
               <BlogCard />
 

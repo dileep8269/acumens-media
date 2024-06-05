@@ -2,7 +2,7 @@ import Button from "../homePageComponents/Button"
 
 const StrategyCard = () => {
   return (
-    <div className='flex flex-col md:flex-row-reverse lg:justify-between justify-center items-start gap-6 mt-28 mb-14'>
+    <div className='flex flex-col md:flex-row-reverse px-8 lg:px-0 lg:justify-between justify-center items-start gap-6 mt-28 mb-14'>
       <div className='w-full md:w-1/2 space-y-6 text-left lg:pt-10 md:ml-14'>
         <h6 className='text-left uppercase text-lg font-bold font-syne text-black'>AI SOLUTIONS</h6>
         <h1 className='text-left text-3xl lg:text-4xl font-bold font-syne lg:w-[90%] text-black'>Strategic Synergy: Elevating Your Vision with Our Dedicated Services</h1>
