@@ -19,6 +19,7 @@ import { whatWeDo, aboutAcumensic, partnerImages, brandImages, marketingList, aw
 import { FaCheckCircle } from "react-icons/fa";
 import { useContext } from "react"
 import { MyContext } from "../context api/MyProvider"
+// import { Link } from "react-router-dom"
 
 
 const HomePage = () => {
@@ -165,7 +166,7 @@ const HomePage = () => {
         </span>
       </div>
 
-
+    
     </div>
   )
 }

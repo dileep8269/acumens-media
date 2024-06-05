@@ -19,6 +19,7 @@ input[type='number']::-webkit-inner-spin-button {
 }
 
 
+<<<<<<< HEAD
 .swiper {
     width: 100%;
     height: 100%;
@@ -43,3 +44,5 @@ input[type='number']::-webkit-inner-spin-button {
     margin-left: auto;
     margin-right: auto;
 }
+=======
+>>>>>>> 65c2e9306fcc569a71656950fc37111582038180
