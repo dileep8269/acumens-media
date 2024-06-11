@@ -2,8 +2,9 @@
 import { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { MyContext } from '../../context api/MyProvider';
+
 // import Button from './Button';
-import { IoIosArrowRoundForward } from "react-icons/io";
+import Button from './Button';
 
 
 function DropdownButton({ children, dropdown, classname = "",isHandBar=false }) {
@@ -56,7 +57,7 @@ function DropdownButton({ children, dropdown, classname = "",isHandBar=false }) 
                             {dropdown?.map((dropdownMenu, index) => {
                                 return (
 
-                                    <Link key={index} to={dropdownMenu.router} className="p-4 text-base text-gray-700 hover:bg-gray-100 rounded-md font-syne font-bold tracking-tighter leading-5"
+                                    <Link key={index} to={dropdownMenu.router} className="p-4 text-base text-gray-700 rounded-md font-syne font-bold tracking-tighter leading-5 cursor-pointer hover:scale-150 transition-all duration-700 hover:text-blue-Purple"
                                         onClick={() => {
                                             setIsOpen(false);
                                             toggleMenu();
@@ -70,13 +71,16 @@ function DropdownButton({ children, dropdown, classname = "",isHandBar=false }) 
                     }
                     {isHandBar === true &&
 
-                        <div className='p-6'>
+                        <div className='px-2 py-3 space-y-2'>
                             {dropdown?.map((dropdownMenu, index) => {
                                 return (
-                             <button key={index} className='btn bg-black text-white rounded-full btn-sm mb-2 flex justify-center items-center hover:bg-black'>
+                                    <Button key={index}>
                                         <Link to={dropdown.router}>{dropdownMenu.content}</Link>
-                                        <IoIosArrowRoundForward />
-                                    </button>
+                                    </Button>
+                            //  <button key={index} className='btn bg-black text-white rounded-full btn-sm mb-2 flex justify-center items-center hover:bg-black'>
+                            //             <Link to={dropdown.router}>{dropdownMenu.content}</Link>
+                            //             <IoIosArrowRoundForward />
+                            //         </button>
                                 )
                             })}
                         </div>

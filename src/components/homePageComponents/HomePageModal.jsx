@@ -34,7 +34,8 @@ const HomePageModal = () => {
 
                         {/* Popup content */}
                         <div className="w-[320px] h-[450px] sm:w-[500px] sm:h-[500px] md:w-[700px] md:h-[640px] overflow-auto">
-                            <button className="btn btn-secondary text-2xl text-center font-bold font-syne text-black">Speak To Us</button>
+                            
+                            <h1 className="text-2xl text-center font-bold font-syne text-black">Speak To Us</h1>
 
                             <div className='py-10 px-8'>
                                 <form onSubmit={handleSubmit(onSubmit)}>

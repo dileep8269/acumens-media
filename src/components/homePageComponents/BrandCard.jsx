@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { companyReview } from "../../constants/constant"
 
 const BrandCard = () => {
@@ -18,7 +19,13 @@ const BrandCard = () => {
                                 <p className="font-kanit text-base font-light">{company.domain}</p>
                             </div>
                             <div className='flex justify-center items-center'>
-                                <a href="" className="underline underline-offset-8 decoration-2 decoration-blue-Purple font-bold uppercase text-sm font-syne">{company.button}</a>
+
+                                <div className="relative inline-block rounded-full transition duration-300 ease-in-out">
+                                    <span className="relative overflow-hidden before:content-[''] before:absolute bottom-0.5  before:-bottom-1 before:left-0 before:w-0 before:h-0.5 before:hover:bg-blue-Purple before:transition-width before:duration-500 before:ease-in-out hover:before:w-full">
+                                        <Link to={"#"} className="font-bold uppercase text-sm font-syne">{company.button}</Link>
+                                    </span>
+                                </div>
+
                             </div>
                         </div>
                     </div>

@@ -1,7 +1,8 @@
 import { RiDoubleQuotesR } from "react-icons/ri";
 import { FaStar } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
-const ClientReview = ({review}) => {
+const ClientReview = ({ review }) => {
     return (
         <div className='flex flex-col md:flex-row gap-6 justify-center items-center container mx-auto'>
             <div className='w-full md:w-1/2 space-y-20 py-20 px-20'>
@@ -29,9 +30,13 @@ const ClientReview = ({review}) => {
                         </div>
                     </div>
 
-                    <div>
-                        <a href="" className="underline underline-offset-8 decoration-2 decoration-purple-700 font-bold uppercase text-[10px] md:text-sm font-syne">View All Reviews</a>
+
+                    <div className="relative inline-block rounded-full transition duration-300 ease-in-out">
+                        <span className="relative overflow-hidden before:content-[''] before:absolute bottom-0.5  before:-bottom-1 before:left-0 before:w-0 before:h-0.5 before:hover:bg-blue-Purple before:transition-width before:duration-500 before:ease-in-out hover:before:w-full">
+                            <Link to="#" className="font-bold uppercase text-[10px] md:text-sm font-syne">View All Reviews</Link>
+                        </span>
                     </div>
+
 
                 </div>
             </div>

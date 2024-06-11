@@ -2,6 +2,9 @@ import { FaLinkedin, FaFacebook, FaTwitter, FaInstagram, FaYoutube } from "react
 import { SiGooglemaps } from "react-icons/si";
 import { Link } from "react-router-dom";
 
+// importing Footer constants from constants folder
+import { footerServiceLinks1, footerServiceLinks2, AboutUs } from "../../constants/constant";
+
 const Footer = () => {
     return (
         <footer>
@@ -16,43 +19,53 @@ const Footer = () => {
                         Covina,
                         CA 91723
                     </p>
-                    <a href="" className="underline underline-offset-8 decoration-2 decoration-purple-700 font-bold uppercase text-sm font-syne">view on map</a>
+                    <div className="relative inline-block rounded-full transition duration-300 ease-in-out">
+                        <span className="relative overflow-hidden before:content-[''] before:absolute bottom-0.5  before:-bottom-1 before:left-0 before:w-0 before:h-0.5 before:hover:bg-blue-Purple before:transition-width before:duration-500 before:ease-in-out hover:before:w-full">
+                            <Link to="" className="font-bold uppercase text-sm font-syne">view on map</Link>
+                        </span>
+                    </div>
                 </div>
 
                 <div className='space-y-5'>
                     <h5 className='text-lg font-bold font-syne text-black text-center'>Services</h5>
                     <div className="flex justify-between items-start gap-8">
                         <div>
-                            <ul className='text-base font-normal space-y-2 cursor-pointer'>
-                     
-                         <li className='hover:text-blue-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6'><Link to='/Social-media-automation.htm'>Social Media Automation</Link></li>
-              
-                     
-                             <li className="hover:text-blue-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6"><Link to='/Google-suite.htm'>AI-Fueled Google Business Services</Link></li>
-                    
-                          <li className="hover:text-blue-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6"><Link to='/E-commerce.htm'>AI-Driven E-Commerce Solutions</Link></li>
-                      
-                           
-                             <li className="hover:text-blue-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6"><Link to='/app-development.htm'>AI-Enhanced App Development</Link></li>
-                     
-           
-                   <li className="hover:text-blue-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6"><Link to='/Content-writing.htm'>Content Writing</Link></li>
-       
+                            <ul className='cursor-pointer flex flex-col gap-y-2'>
+                                {
+                                    footerServiceLinks1?.map((link, index) => (
+
+                                        <Link to={link.route} className="text-base font-kanit font-light tracking-normal leading-6">
+
+                                            <div key={index} className="relative inline-block rounded-full transition duration-300 ease-in-out">
+                                                <span className="relative overflow-hidden before:content-[''] before:absolute bottom-0.5  before:-bottom-1 before:left-0 before:w-0 before:h-0.5 before:hover:bg-blue-Purple before:transition-width before:duration-500 before:ease-in-out hover:before:w-full">
+                                                    {link.name}
+                                                </span>
+                                            </div>
+
+                                        </Link>
+                                    ))
+                                }
+
                             </ul>
 
                         </div>
                         <div>
-                            <ul className='text-base font-normal space-y-2 cursor-pointer'>
-                 
-                           <li className='hover:text-blue-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6'><Link to='/Seo.htm'>Search Engine Services (SEO/SEM)</Link></li>
-                   
-               
-                                <li className="hover:text-blue-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6"><Link to='/Email-Marketing.htm'>AI-Powered Email Marketing</Link></li>
+                            <ul className='cursor-pointer flex flex-col gap-y-2'>
+                                {
+                                    footerServiceLinks2?.map((link, index) => (
 
-                    
-                                <li className="hover:text-blue-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6"><Link to='/Web-Design-Hosting.htm'>AI-Integrated Web Design & Hosting</Link></li>
-                                <li className="hover:text-blue-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6"><Link to='/Erp-Crm-It-Chatbots.htm'>ERP / CRM / IT / ChatBots</Link></li>
-                                <li className="hover:text-blue-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6"><Link to='/CCaaS-Outsourcing-Consulting.htm'>CCaaS / Outsourcing & Consulting.</Link></li>
+                                        <Link to={link.route} className="text-base font-kanit font-light tracking-normal leading-6">
+
+                                            <div key={index} className="relative inline-block rounded-full transition duration-300 ease-in-out">
+                                                <span className="relative overflow-hidden before:content-[''] before:absolute bottom-0.5  before:-bottom-1 before:left-0 before:w-0 before:h-0.5 before:hover:bg-blue-Purple before:transition-width before:duration-500 before:ease-in-out hover:before:w-full">
+                                                    {link.name}
+                                                </span>
+                                            </div>
+
+                                        </Link>
+                                    ))
+                                }
+
                             </ul>
 
                         </div>
@@ -62,20 +75,32 @@ const Footer = () => {
 
                 <div className='space-y-5'>
                     <h5 className='text-lg font-bold font-syne text-black'>About Us</h5>
-                    <ul className='text-base font-normal space-y-2 cursor-pointer'>
-                        <li className='hover:text-blue-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6'><Link to='/about.htm'>About</Link></li>
-                        <li className="hover:text-blue-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6"><Link to='/blog.htm'>Blog</Link></li>
-                        <li className="hover:text-blue-500 transition-colors duration-300 text-base font-kanit font-light tracking-normal leading-6"><Link to='/contact.htm'>Contact</Link></li>
-                    </ul>
+                    <ul className='cursor-pointer flex flex-col gap-y-2'>
+                                {
+                                    AboutUs?.map((link, index) => (
+
+                                        <Link to={link.route} className="text-base font-kanit font-light tracking-normal leading-6">
+
+                                            <div key={index} className="relative inline-block rounded-full transition duration-300 ease-in-out">
+                                                <span className="relative overflow-hidden before:content-[''] before:absolute bottom-0.5  before:-bottom-1 before:left-0 before:w-0 before:h-0.5 before:hover:bg-blue-Purple before:transition-width before:duration-500 before:ease-in-out hover:before:w-full">
+                                                    {link.name}
+                                                </span>
+                                            </div>
+
+                                        </Link>
+                                    ))
+                                }
+
+                            </ul>
 
                     <div className='space-y-5 '>
                         <h5 className='text-lg font-medium'>Follow Us</h5>
                         <ul className='flex flex-row justify-start items-center gap-5'>
-                            <li className="text-xl cursor-pointer hover:scale-150 transition-transform duration-700"><Link to='/'><FaLinkedin /></Link></li>
-                            <li className="text-xl cursor-pointer hover:scale-150 transition-transform duration-700"><Link to='/'><FaFacebook /></Link></li>
-                            <li className="text-xl cursor-pointer hover:scale-150 transition-transform duration-700"><Link to='/'><FaTwitter /></Link></li>
-                            <li className="text-xl cursor-pointer hover:scale-150 transition-transform duration-700"><Link to='/'><FaInstagram /></Link></li>
-                            <li className="text-xl cursor-pointer hover:scale-150 transition-transform duration-700"><Link to='/'><FaYoutube /></Link></li>
+                            <li className="text-xl cursor-pointer hover:scale-150 transition-all duration-700 hover:text-blue-Purple"><Link to='/'><FaLinkedin /></Link></li>
+                            <li className="text-xl cursor-pointer hover:scale-150 transition-all duration-700 hover:text-blue-Purple"><Link to='/'><FaFacebook /></Link></li>
+                            <li className="text-xl cursor-pointer hover:scale-150 transition-all duration-700 hover:text-blue-Purple"><Link to='/'><FaTwitter /></Link></li>
+                            <li className="text-xl cursor-pointer hover:scale-150 transition-all duration-700 hover:text-blue-Purple"><Link to='/'><FaInstagram /></Link></li>
+                            <li className="text-xl cursor-pointer hover:scale-150 transition-all duration-700 hover:text-blue-Purple"><Link to='/'><FaYoutube /></Link></li>
                         </ul>
                     </div>
                 </div>

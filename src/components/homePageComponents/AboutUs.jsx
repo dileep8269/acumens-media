@@ -2,7 +2,7 @@
 
 import { Link } from "react-router-dom"
 
-const AboutUs = ({about}) => {
+const AboutUs = ({ about }) => {
     return (
         <div className='p-7'>
             <h2 className='text-left uppercase text-lg font-semibold font-syne text-black'>{about.title}</h2>
@@ -11,9 +11,15 @@ const AboutUs = ({about}) => {
                     <p className='text-left text-2xl lg:text-3xl font-bold font-syne w-[90%]  text-black'>{about.overView}</p>
                 </div>
                 <div className='w-full md:w-1/2 py-5'>
+
                     <p className='text-left text-base font-kanit font-light tracking-normal leading-6 text-black mb-5 '>{about.about}</p>
 
-                    <Link to="/Ai-Solutions.htm" className="underline underline-offset-8 decoration-2 decoration-blue-Purple font-bold uppercase text-sm font-syne">{about.buttonTitle}</Link>
+                    <div className="relative inline-block rounded-full transition duration-300 ease-in-out">
+                        <span className="relative overflow-hidden before:content-[''] before:absolute bottom-0.5  before:-bottom-1 before:left-0 before:w-0 before:h-0.5 before:hover:bg-blue-Purple before:transition-width before:duration-500 before:ease-in-out hover:before:w-full">
+                            <Link to="/Ai-Solutions.htm" className="font-bold uppercase text-sm font-syne">{about.buttonTitle}</Link>
+                        </span>
+                    </div>
+
                 </div>
             </div>
 
