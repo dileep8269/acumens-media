@@ -22,6 +22,7 @@ import AboutPage from "../pages/AboutPage";
 import ContactPage1 from "../pages/ContactPage1";
 import ContactPage2 from "../pages/ContactPage2";
 import ContactPage3 from "../pages/ContactPage3";
+import LandingPage from "../pages/LandingPage";
 
 
 
@@ -129,6 +130,10 @@ const router = createBrowserRouter([
         {
             path: "/Erp-crm-it-chatbot",
             element: <AiChatbotPage/>,
+        },
+        {
+            path: "/LandingPage",
+            element: <LandingPage />,
         },
       ]
     },
