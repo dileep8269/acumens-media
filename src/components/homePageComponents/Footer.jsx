@@ -34,7 +34,7 @@ const Footer = () => {
                                 {
                                     footerServiceLinks1?.map((link, index) => (
 
-                                        <Link to={link.route} className="text-base font-kanit font-light tracking-normal leading-6">
+                                        <Link key={index} to={link.route} className="text-base font-kanit font-light tracking-normal leading-6">
 
                                             <div key={index} className="relative inline-block rounded-full transition duration-300 ease-in-out">
                                                 <span className="relative overflow-hidden before:content-[''] before:absolute bottom-0.5  before:-bottom-1 before:left-0 before:w-0 before:h-0.5 before:hover:bg-blue-Purple before:transition-width before:duration-500 before:ease-in-out hover:before:w-full">
@@ -54,7 +54,7 @@ const Footer = () => {
                                 {
                                     footerServiceLinks2?.map((link, index) => (
 
-                                        <Link to={link.route} className="text-base font-kanit font-light tracking-normal leading-6">
+                                        <Link key={index} to={link.route} className="text-base font-kanit font-light tracking-normal leading-6">
 
                                             <div key={index} className="relative inline-block rounded-full transition duration-300 ease-in-out">
                                                 <span className="relative overflow-hidden before:content-[''] before:absolute bottom-0.5  before:-bottom-1 before:left-0 before:w-0 before:h-0.5 before:hover:bg-blue-Purple before:transition-width before:duration-500 before:ease-in-out hover:before:w-full">
@@ -79,7 +79,7 @@ const Footer = () => {
                                 {
                                     AboutUs?.map((link, index) => (
 
-                                        <Link to={link.route} className="text-base font-kanit font-light tracking-normal leading-6">
+                                        <Link key={index} to={link.route} className="text-base font-kanit font-light tracking-normal leading-6">
 
                                             <div key={index} className="relative inline-block rounded-full transition duration-300 ease-in-out">
                                                 <span className="relative overflow-hidden before:content-[''] before:absolute bottom-0.5  before:-bottom-1 before:left-0 before:w-0 before:h-0.5 before:hover:bg-blue-Purple before:transition-width before:duration-500 before:ease-in-out hover:before:w-full">

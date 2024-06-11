@@ -203,7 +203,7 @@ export const AiSolutionsDropdown = [
     {
         icon: React.createElement(MdGroups),
         content: "ERP / CRM / IT /Chatbots",
-        router: "/Erp-crm-it-chatbot"
+        router: "/Erp-crm-it-chatbot.htm"
     },
     {
         icon: React.createElement(FaLightbulb),
@@ -261,7 +261,7 @@ export const AiSolutionsDropdownMobile = [
     {
         icon: React.createElement(MdGroups),
         content: "ERP / CRM / IT /Chatbots",
-        router: "/Erp-crm-it-chatbot"
+        router: "/Erp-crm-it-chatbot.htm"
     },
     {
         icon: React.createElement(FaLightbulb),

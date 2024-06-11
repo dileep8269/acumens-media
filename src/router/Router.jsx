@@ -128,11 +128,11 @@ const router = createBrowserRouter([
             element: <ConsultingPage />,
         },
         {
-            path: "/Erp-crm-it-chatbot",
+            path: "/Erp-crm-it-chatbot.htm",
             element: <AiChatbotPage/>,
         },
         {
-            path: "/LandingPage",
+            path: "/LandingPage.htm",
             element: <LandingPage />,
         },
       ]
