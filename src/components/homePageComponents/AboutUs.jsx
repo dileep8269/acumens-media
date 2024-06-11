@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 
 const AboutUs = ({ about }) => {
     return (
-        <div className='p-7'>
+        <div>
             <h2 className='text-left uppercase text-lg font-semibold font-syne text-black'>{about.title}</h2>
             <div className='flex flex-col md:flex-row justify-center items-start gap-x-7'>
                 <div className='w-full md:w-1/2 py-5'>

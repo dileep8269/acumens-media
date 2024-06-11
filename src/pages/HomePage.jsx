@@ -23,11 +23,13 @@ import { MyContext } from "../context api/MyProvider"
 
 
 const HomePage = () => {
+  
   const { setIsModalOpen } = useContext(MyContext);
 
   const toggleModal = () => {
     setIsModalOpen((prevValue) => !prevValue);
   }
+
   return (
     <div>
 

@@ -29,7 +29,7 @@ function DropdownButton({ children, dropdown, classname = "",isHandBar=false }) 
                 <div
                     onMouseEnter={() => setIsOpen(true)}
                     onMouseLeave={() => setIsOpen(false)}
-                    className={`origin-top-right absolute top-6 xl:top-[20px] left-0 mt-2 ${classname} rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50`}
+                    className={`origin-top-right absolute top-6 xl:top-[20px] left-0 mt-2 ${classname} rounded-md shadow-lg bg-white bg-opacity-50 backdrop-blur-md ring-1 ring-black ring-opacity-5 z-50`}
                 >
                     {children !== "Follow Us" && isHandBar !== true &&
 

@@ -1,6 +1,6 @@
 import { FaStar } from "react-icons/fa";
 
-const Review = ({ review }) => {
+const Review = ({ review,borderColor }) => {
 
     return (
         <div className="space-y-4">
@@ -18,7 +18,7 @@ const Review = ({ review }) => {
 
             </div>
             
-            <p> Rating : <span className='border-r-[1px] border-black pr-1 font-kanit font-normal leading-6 tracking-normal'>{review.scores.ratingScore}</span> <span className='font-kanit font-normal leading-6 tracking-normal'>{review.scores.reviewsCount}</span> reviews</p>
+            <p> Rating : <span className={`border-r-[1px] ${borderColor} pr-1 font-kanit font-normal leading-6 tracking-normal`}>{review.scores.ratingScore}</span> <span className='font-kanit font-normal leading-6 tracking-normal'>{review.scores.reviewsCount}</span> reviews</p>
             
         </div>
     )
