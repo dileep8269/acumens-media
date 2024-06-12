@@ -8,7 +8,7 @@ import { useState } from 'react';
 import { FaChevronCircleDown } from "react-icons/fa";
 
 
-const CustomForm = ({  page, message }) => {
+const CustomForm = ({ page, message }) => {
     const [phnNo, setPhnNo] = useState('')
     // const [otp, setOtp] = useState('')
     const [isOtpSent, setIsOtpSent] = useState(false)
@@ -26,7 +26,7 @@ const CustomForm = ({  page, message }) => {
             userPhnNo: phnNo,
             message: data?.message
         }
-        console.log({userData});
+        console.log({ userData });
         try {
             if (page === 'contact') {
                 const res = await fetch('https://chat.acumensinc.com/submit', {
@@ -143,7 +143,7 @@ const CustomForm = ({  page, message }) => {
                         setIsOtpSent(false);
                         toast.success("Otp verify successfully", { id: toastId, duration: 1000 })
                         setIsOtpVerify(true)
-                    }else{
+                    } else {
                         toast.error("Invalid otp", { id: toastId, duration: 1000 })
                     }
                 })
@@ -153,7 +153,7 @@ const CustomForm = ({  page, message }) => {
     }
 
     return (
-        <div className="bg-white p-12 rounded-[40px] shadow-lg shadow-black w-auto xl:w-[600px] text-base font-kanit font-light leading-6 tracking-normal text-black">
+        <div className="bg-white p-8 lg:p-12 rounded-[40px] shadow-lg shadow-black w-auto xl:w-[600px] text-base font-kanit font-light leading-6 tracking-normal text-black">
             <h2 className="text-4xl mb-8 font-syne font-bold">{message}</h2>
             <form onSubmit={handleSubmit(onSubmit)}>
 
@@ -256,9 +256,9 @@ const CustomForm = ({  page, message }) => {
                                 </label>
 
 
-                        <button onClick={handleSendOtp} className={`btn rounded-full w-fit px-5 py-2 bg-black text-white transition-colors duration-700 hover:bg-blue-Purple  cursor-pointer text-[12px] font-bold font-syne uppercase shrink-0 flex justify-center items-center gap-1 ${phnNo ?
-                                "cursor-pointer":"cursor-not-allowed"}`} type='button' disabled={!phnNo} >
-                                    Verify
+                                <button onClick={handleSendOtp} className={`btn rounded-full w-fit px-4 py-2 bg-black text-white transition-colors duration-700 hover:bg-blue-Purple  cursor-pointer text-[12px] font-bold font-syne uppercase shrink-0 flex justify-center items-center gap-1 ${phnNo ?
+                                    "cursor-pointer" : "cursor-not-allowed"}`} type='button' disabled={!phnNo} >
+                                    <span className='hidden md:block'>Verify</span>
                                     <span className="text-2xl">
                                         <IoIosArrowRoundForward />
                                     </span>
@@ -268,21 +268,21 @@ const CustomForm = ({  page, message }) => {
                     }
 
                 </div>
-                <>
-                    <textarea
 
-                        type="text"
-                        id="message"
-                        autoComplete="on"
-                        required
-                        {...register("message", {
+                <textarea
 
-                        })}
-                        placeholder="What can we help you with?"
-                        className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500 placeholder-black textarea textarea-bordered mt-5"
-                    />
+                    type="text"
+                    id="message"
+                    autoComplete="on"
+                    required
+                    {...register("message", {
 
-                </>
+                    })}
+                    placeholder="What can we help you with?"
+                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500 placeholder-black textarea textarea-bordered mt-5"
+                />
+
+
 
 
                 {/* <p className='text-red-600 mt-2 text-md font-normal italic'>{errors[field.name]?.message}</p> */}
@@ -302,7 +302,7 @@ const CustomForm = ({  page, message }) => {
                         className="mr-3 mt-1"
                     />
                     <label className="block text-black font-light text-[13px]">
-                    I , Agree to the Terms & Conditions and the Privacy policy of Acumens media inc.
+                        I , Agree to the Terms & Conditions and the Privacy policy of Acumens media inc.
                     </label>
 
 
@@ -331,15 +331,14 @@ const CustomForm = ({  page, message }) => {
 
 
                 <button
-                    className={`btn rounded-full w-fit px-5 py-2 transition-colors duration-700  text-[12px] font-bold font-syne uppercase shrink-0 flex justify-center items-center gap-1 bg-black text-white hover:bg-blue-Purple ${
-                        isOtpVerify
+                    className={`btn rounded-full w-fit px-5 py-2 transition-colors duration-700  text-[12px] font-bold font-syne uppercase shrink-0 flex justify-center items-center gap-1 bg-black text-white hover:bg-blue-Purple ${isOtpVerify
                             ? 'bg-black text-white hover:bg-blue-Purple'
                             : 'bg-black text-white hover:bg-blue-Purple cursor-not-allowed tooltip tooltip-bottom'
-                    }`}
-                 type="submit"
-                // disabled={!isOtpVerify}
-                data-tip="Verify phone number"
-                 >
+                        }`}
+                    type="submit"
+                    // disabled={!isOtpVerify}
+                    data-tip="Verify phone number"
+                >
                     Submit
                     <span className="text-2xl">
                         <IoIosArrowRoundForward />

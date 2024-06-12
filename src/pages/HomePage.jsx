@@ -23,7 +23,7 @@ import { MyContext } from "../context api/MyProvider"
 
 
 const HomePage = () => {
-  
+
   const { setIsModalOpen } = useContext(MyContext);
 
   const toggleModal = () => {
@@ -38,10 +38,10 @@ const HomePage = () => {
           <Hero />
         </div>
       </div>
-      
+
       <ImageSlider images={partnerImages} />
-     
-      <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto">
+
+      <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto px-8 lg:px-0">
         <AboutUs about={whatWeDo} />
       </div>
 
@@ -49,7 +49,7 @@ const HomePage = () => {
         <DisplayCard />
       </div>
 
-      <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto">
+      <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto px-8 lg:px-0">
         <AboutUs about={aboutAcumensic} />
       </div>
 
@@ -73,7 +73,18 @@ const HomePage = () => {
         <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto">
           <AcumensReview />
         </div>
-        <ImageSlider images={brandImages} />
+        <div className="flex justify-center items-center gap-24 flex-wrap py-2 px-8 lg:px-0">
+          {
+            brandImages.map((image, index) => (
+
+              <div key={index}>
+
+                <img src={image} alt={image} />
+
+              </div>
+            ))
+          }
+        </div>
       </div>
 
 
@@ -97,7 +108,7 @@ const HomePage = () => {
 
             </div>
 
-            <div className="w-full lg:h-[550px] 3xl:h-[620px] md:w-[70%] py-10 lg:py-0">
+            <div className="w-full h-[580px] 3xl:h-[620px] md:w-[70%] py-10 lg:py-0">
 
               <BlogCard />
 
@@ -145,21 +156,21 @@ const HomePage = () => {
             </div>
             <div className="w-full md:w-[50%] flex flex-col justify-center md:justify-start items-center">
               <CustomForm fields={inputFields} message="Get you free audit" />
-
+        
             </div>
 
           </div>
         </div>
 
       </div>
-      <div className="fixed left-0 bottom-16 w-full sm:hidden pl-4">
+      <div className="fixed left-0 bottom-16 w-full sm:hidden pl-4 z-50">
         <span className="inline-block w-14 h-14">
-            <img src="WhatsApp-Icon.png" alt="WhatsApp-Icon" className="w-full h-full object-fill bg-transparent" />
+          <img src="WhatsApp-Icon.png" alt="WhatsApp-Icon" className="w-full h-full object-fill bg-transparent" />
         </span>
 
       </div >
 
-      <div className="fixed left-0 bottom-0 w-full text-white text-center flex justify-center items-center gap-x-1 sm:hidden">
+      <div className="fixed left-0 bottom-0 w-full text-white text-center flex justify-center items-center gap-x-1 sm:hidden z-50">
         <span className="inline-block w-1/2 px-1 py-4 xs:p-4 text-lg font-normal font-kanit bg-black rounded-[40px]" onClick={toggleModal}>
           Speak To Us
         </span>
@@ -168,7 +179,7 @@ const HomePage = () => {
         </span>
       </div>
 
-    
+
     </div>
   )
 }
