@@ -10,12 +10,12 @@ const Footer = () => {
         <footer>
             <div className='grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 gap-5 text-center lg:text-left justify-items-center items-start py-5 px-3 '>
 
-                <div className="space-y-5 flex flex-col justify-center items-center text-center">
+                <div className="space-y-3 flex flex-col justify-center items-center text-center">
                     <h5 className='text-lg font-bold font-syne text-black'>Address</h5>
                     <div className="w-16 h-16 rounded-full bg-gray-300 flex justify-center items-center">
                         <span className="text-2xl "><SiGooglemaps /></span>
                     </div>
-                    <p className=" w-48 text-lg font-normal font-syne text-black">440 N Barranca Ave.,
+                    <p className=" w-48 text-base font-normal font-syne  text-black">440 N Barranca Ave.,
                         Covina,
                         CA 91723
                     </p>
@@ -34,7 +34,7 @@ const Footer = () => {
                                 {
                                     footerServiceLinks1?.map((link, index) => (
 
-                                        <Link key={index} to={link.route} className="text-[15px] font-kanit font-light tracking-normal leading-6">
+                                        <Link key={index} to={link.route} className="text-[14px] font-kanit font-light tracking-normal leading-6">
 
                                             <div key={index} className="relative inline-block rounded-full transition duration-300 ease-in-out">
                                                 <span className="relative overflow-hidden before:content-[''] before:absolute bottom-0.5  before:-bottom-1 before:left-0 before:w-0 before:h-0.5 before:hover:bg-blue-Purple before:transition-width before:duration-500 before:ease-in-out hover:before:w-full">
@@ -54,7 +54,7 @@ const Footer = () => {
                                 {
                                     footerServiceLinks2?.map((link, index) => (
 
-                                        <Link key={index} to={link.route} className="text-[15px] font-kanit font-light tracking-normal leading-6">
+                                        <Link key={index} to={link.route} className="text-[14.5px] font-kanit font-light tracking-normal leading-6">
 
                                             <div key={index} className="relative inline-block rounded-full transition duration-300 ease-in-out">
                                                 <span className="relative overflow-hidden before:content-[''] before:absolute bottom-0.5  before:-bottom-1 before:left-0 before:w-0 before:h-0.5 before:hover:bg-blue-Purple before:transition-width before:duration-500 before:ease-in-out hover:before:w-full">
@@ -79,7 +79,7 @@ const Footer = () => {
                                 {
                                     AboutUs?.map((link, index) => (
 
-                                        <Link key={index} to={link.route} className="text-[15px] font-kanit font-light tracking-normal leading-6">
+                                        <Link key={index} to={link.route} className="text-[14px] font-kanit font-light tracking-normal leading-6">
 
                                             <div key={index} className="relative inline-block rounded-full transition duration-300 ease-in-out">
                                                 <span className="relative overflow-hidden before:content-[''] before:absolute bottom-0.5  before:-bottom-1 before:left-0 before:w-0 before:h-0.5 before:hover:bg-blue-Purple before:transition-width before:duration-500 before:ease-in-out hover:before:w-full">
