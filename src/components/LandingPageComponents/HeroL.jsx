@@ -5,25 +5,25 @@ const HeroL = ({borderColor,buttonBg,listColor}) => {
   return (
     <div className=''>
 
-      <div className="flex justify-center items-center">
-        <div className="w-full md:w-[48%]">
-          <img src='GettyImages-1437209359.webp' alt="sdsds" className='w-full h-[700px] object-cover rounded-[40px] ' />
+      <div className="flex justify-center items-start">
+        <div className="w-full md:w-[38%]">
+          <img src='GettyImages-1437209359.webp' alt="sdsds" className='w-full h-[500px] object-cover rounded-[40px] ' />
         </div>
-        <div className="w-full md:w-[4%] text-center space-y-2">
-          <div className={`w-8 border-r h-[300px] ${borderColor}`}></div>
-          <h1 className="text-3xl font-syne font-bold leading-6 tracking-normal"> v <br /> s </h1>
-          <div className={`w-8 border-r h-[300px] ${borderColor}`}></div>
+        <div className="flex  justify-center items-center gap-2 flex-col w-full md:w-[20%] space-y-2">
+          <div className={`w-4 border h-[215px] ${borderColor}`}></div>
+          <h1 className="text-3xl font-syne font-bold leading-6 tracking-normal"> v/s </h1>
+          <div className={`w-4 border h-[215px] ${borderColor}`}></div>
         </div>
-        <div className="w-full md:w-[48%]">
-          <img src='GettyImages-1437209359.webp' alt="sdsds" className='w-full h-[700px] object-cover rounded-[40px]' />
+        <div className="w-full md:w-[38%]">
+          <img src='GettyImages-1437209359.webp' alt="sdsds" className='w-full h-[500px] object-cover rounded-[40px]' />
         </div>
       </div>
 
       <div className="flex justify-center items-center">
 
-        <div className="w-full md:w-[48%] space-y-4 text-left p-4">
+        <div className="w-full md:w-[38%] space-y-4 text-left p-4">
 
-          <h1 className='text-left text-3xl lg:text-[34] font-bold font-syne  '>Everything You Need to Create a Website</h1>
+          <h1 className='text-left text-2xl lg:text-[34] font-bold font-syne  '>Everything You Need to Create a Website</h1>
           <h6 className='text-left uppercase text-lg font-semibold font-syne '>Up to 83% off Hosting + Website Builder</h6>
           <ul className='text-left list-disc text-lg font-kanit font-normal tracking-normal leading-6  mb-5 space-y-4'>
 
@@ -41,15 +41,15 @@ const HeroL = ({borderColor,buttonBg,listColor}) => {
 
         </div>
 
-        <div className="w-full md:w-[4%] text-center space-y-2">
-          <div className={`w-8 border-r h-[200px] ${borderColor}`}></div>
-          <h1 className="text-3xl font-syne font-bold leading-6 tracking-normal"> v <br /> s </h1>
-          <div className={`w-8 border-r h-[200px] ${borderColor}`}></div>
+        <div className="flex  justify-center items-center gap-2 flex-col w-full md:w-[20%] space-y-2">
+          <div className={`w-4 border h-[180px] ${borderColor}`}></div>
+          <h1 className="text-3xl font-syne font-bold leading-6 tracking-normal"> v/s </h1>
+          <div className={`w-4 border h-[180px] ${borderColor}`}></div>
         </div>
 
-        <div className="w-full md:w-[48%] flex flex-col justify-end items-end space-y-4 p-4">
+        <div className="w-full md:w-[38%] flex flex-col justify-end items-end space-y-4 p-4">
 
-          <h6 className=' text-3xl lg:text-[34] font-bold font-syne  '>Everything You Need to Create a Website</h6>
+          <h6 className=' text-2xl lg:text-[34] font-bold font-syne  '>Everything You Need to Create a Website</h6>
           <h6 className=' uppercase text-lg font-semibold font-syne '>Up to 83% off Hosting + Website Builder</h6>
           <ul className='text-lg font-kanit font-normal tracking-normal leading-6  mb-5 space-y-4'>
 
