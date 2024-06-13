@@ -7,6 +7,7 @@ import {
 } from "react-icons/md";
 import { RiRobot3Line } from "react-icons/ri";
 import { FaGoogle, FaCode, FaMobileAlt, FaSearchengin } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const aiSolDetail = [
   {
@@ -73,23 +74,31 @@ const aiSolDetail = [
 
 const DetailsCard = () => {
   return (
-    <div className="flex flex-row flex-wrap 3xl:gap-x-28 3xl:gap-y-10 2xl:gap-x-20 2xl:gap-y-8 xl:gap-x-16 xl:gap-y-12 lg:gap-x-9 lg:gap-y-7 gap-x-7 gap-y-5 justify-center mb-10 items-start">
-      {aiSolDetail?.map((service, index) => (
-        <div
-          key={index}
-          className="flex flex-col w-[220px] h-96 justify-items-start border border-transparent bg-white hover:shadow-xl p-5 space-y-4 rounded-2xl"
-        >
-          <span className="w-14 h-14 rounded-full flex justify-center items-center text-3xl bg-gray-100 text-purple-900">
-            {service?.icon}
-          </span>
-          <h6 className="font-bold text-base font-syne text-black">
-            {service?.title}
-          </h6>
-          <p className="text-base font-light font-kanit leading-6 tracking-normal">
-            {service?.desc}
-          </p>
-        </div>
-      ))}
+    <div className="grid grid-col-1 md:grid-col-3 lg:grid-cols-5 gap-6 px-8 lg:px-0">
+
+      {
+        aiSolDetail?.map((service, index) => (
+
+          <div key={index} className='flex flex-col justify-between items-start p-10 gap-y-10 rounded-[40px] bg-white'>
+            <div className="space-y-4">
+              <span className="w-14 h-14 rounded-full flex justify-center items-center text-3xl bg-gray-100 text-blue-Purple">{service?.icon}</span>
+              <h6 className="font-bold text-base font-syne text-black">{service?.title}</h6>
+              <p className="text-base font-light font-kanit leading-6 tracking-normal">{service?.desc}</p>
+
+            </div>
+
+            <div >
+              <div className="relative inline-block rounded-full transition duration-300 ease-in-out">
+                <span className="relative overflow-hidden before:content-[''] before:absolute bottom-0.5  before:-bottom-1 before:left-0 before:w-0 before:h-0.5 before:hover:bg-blue-Purple before:transition-width before:duration-500 before:ease-in-out hover:before:w-full">
+                  <Link to={service.link} className="font-syne uppercase text-sm tracking-tight font-bold leading-6">Get Started Now</Link>
+                </span>
+              </div>
+            </div>
+          </div>
+        ))
+      }
+
+
     </div>
   );
 };
