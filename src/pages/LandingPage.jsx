@@ -10,20 +10,22 @@ const LandingPage = () => {
 
       <div className="mt-6 p-10">
         <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto">
-        <div className="hidden md:block">  
-        <HeroL
-            borderColor={"border-black"}
-            buttonBg={"bg-blue-Purple"}
-            listColor={"text-blue-Purple"}
-            bgColor={"bg-black"}
-          /></div>
+          <div className="hidden md:block">
+            <HeroL
+              borderColor={"border-black"}
+              buttonBg={"bg-blue-Purple"}
+              listColor={"text-blue-Purple"}
+              bgColor={"bg-black"}
+            />
+          </div>
           <div className="block md:hidden">
-          <HeroS
-            borderColor={"border-black"}
-            buttonBg={"bg-blue-Purple"}
-            listColor={"text-blue-Purple"}
-            bgColor={"bg-black"}
-          /></div>
+            <HeroS
+              borderColor={"border-black"}
+              buttonBg={"bg-blue-Purple"}
+              listColor={"text-blue-Purple"}
+              bgColor={"bg-black"}
+            />
+          </div>
           <BannerL color={"text-black"} />
           <div className="flex justify-center items-center lg:justify-between gap-6 flex-wrap py-10">
             {landingPageReview.map((review, index) => (
@@ -38,20 +40,22 @@ const LandingPage = () => {
       </div>
       <div className="bg-gray-100 p-10">
         <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto">
-        <div className="hidden md:block">  
-        <HeroL
-            borderColor={"border-black"}
-            buttonBg={"bg-blue-Purple"}
-            listColor={"text-blue-Purple"}
-            bgColor={"bg-black"}
-          /></div>
+          <div className="hidden md:block">
+            <HeroL
+              borderColor={"border-black"}
+              buttonBg={"bg-blue-Purple"}
+              listColor={"text-blue-Purple"}
+              bgColor={"bg-black"}
+            />
+          </div>
           <div className="block md:hidden">
-          <HeroS
-            borderColor={"border-black"}
-            buttonBg={"bg-blue-Purple"}
-            listColor={"text-blue-Purple"}
-            bgColor={"bg-black"}
-          /></div>
+            <HeroS
+              borderColor={"border-black"}
+              buttonBg={"bg-blue-Purple"}
+              listColor={"text-blue-Purple"}
+              bgColor={"bg-black"}
+            />
+          </div>
           <BannerL color={"text-black"} />
           <div className="flex justify-center items-center lg:justify-between gap-6 flex-wrap py-10">
             {landingPageReview.map((review, index) => (
@@ -67,22 +71,24 @@ const LandingPage = () => {
 
       <div className="bg-black p-10 text-white ">
         <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto">
-        <div className="hidden md:block">
-          <HeroL
-            borderColor={"border-white"}
-            buttonBg={"bg-blue-Purple"}
-            listColor={"text-blue-Purple"}
-            bgColor={"bg-white"}
+          <div className="hidden md:block">
+            <HeroL
+              borderColor={"border-white"}
+              buttonBg={"bg-blue-Purple"}
+              listColor={"text-blue-Purple"}
+              bgColor={"bg-white"}
 
-          /></div>
+            />
+          </div>
           <div className="block md:hidden">
-          <HeroS
-            borderColor={"border-white"}
-            buttonBg={"bg-blue-Purple"}
-            listColor={"text-blue-Purple"}
-            bgColor={"bg-white"}
+            <HeroS
+              borderColor={"border-white"}
+              buttonBg={"bg-blue-Purple"}
+              listColor={"text-blue-Purple"}
+              bgColor={"bg-white"}
 
-          /></div>
+            />
+          </div>
 
           <BannerL color={"text-white"} />
 
@@ -100,20 +106,22 @@ const LandingPage = () => {
 
       <div className="bg-blue-Purple p-10 text-white ">
         <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto">
-        <div className="hidden md:block"> 
-        <HeroL
-            borderColor={"border-white"}
-            buttonBg={"bg-dark"}
-            listColor={"text-black"}
-            bgColor={"bg-white"}
-          /></div> 
+          <div className="hidden md:block">
+            <HeroL
+              borderColor={"border-white"}
+              buttonBg={"bg-dark"}
+              listColor={"text-black"}
+              bgColor={"bg-white"}
+            />
+          </div>
           <div className="block md:hidden">
-          <HeroS
-            borderColor={"border-white"}
-            buttonBg={"bg-dark"}
-            listColor={"text-black"}
-            bgColor={"bg-white"}
-          /></div>
+            <HeroS
+              borderColor={"border-white"}
+              buttonBg={"bg-dark"}
+              listColor={"text-black"}
+              bgColor={"bg-white"}
+            />
+          </div>
 
           <BannerL color={"text-white"} />
 

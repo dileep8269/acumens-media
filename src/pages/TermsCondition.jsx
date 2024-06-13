@@ -1,4 +1,4 @@
-import { termsConditions } from "../constant/termsConditions";
+import { termsConditions } from "../constants/termsConditions";
 
 const TermsCondition = () => {
     return (

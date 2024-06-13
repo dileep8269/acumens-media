@@ -3,7 +3,7 @@ import Button from "../homePageComponents/Button";
 const HeroS = ({ borderColor, buttonBg, listColor, bgColor }) => {
   return (
     <div className="space-y-6">
-      <div className="flex flex-col  justify-center items-start gap-4">
+      <div className="flex flex-col justify-center items-start gap-4">
         <div className="w-full ">
           <img
             src="GettyImages-1437209359.webp"
@@ -38,12 +38,12 @@ const HeroS = ({ borderColor, buttonBg, listColor, bgColor }) => {
               <span>24/7 Customer Support</span>
             </li>
           </ul>
-          <p className="text-left text-lg font-kanit font-normal tracking-normal leading-6 mb-5">
+          <p className="text-left text-lg font-kanit font-normal tracking-normal leading-6">
             ₹<span className="text-4xl">69.00</span>/mo + 3 Months Free
           </p>
           <Button className={`${buttonBg}`}>Start Now</Button>
         </div>
-        <div className="flex justify-center items-center gap-2  w-full  py-4">
+        <div className="flex justify-center items-center gap-2 w-full pb-4">
           <div
             className={`w-[40%] ${bgColor} border h-2  ${borderColor}`}
           ></div>
@@ -61,8 +61,6 @@ const HeroS = ({ borderColor, buttonBg, listColor, bgColor }) => {
             className="w-full h-[300px]  object-cover rounded-[40px]"
           />
         </div>
-      </div>
-      <div className="flex flex-col  justify-center items-start  gap-4">
         <div className="w-full  space-y-4 text-left  p-4">
           <h6 className="text-xl  font-bold font-syne">
             Everything You Need to Create a Website
