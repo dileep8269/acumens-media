@@ -2,9 +2,9 @@ import { GoGraph } from "react-icons/go";
 
 const AiProofCard = ({ proofs }) => {
   return (
-    <div className="flex justify-center items-start gap-6 3xl:gap-44 flex-wrap">
+    <div className="grid grid-col-1 lg:grid-cols-3 gap-6 px-8 lg:px-0">
       {proofs?.map((card, index) => (
-        <div key={index} className='space-y-6 border border-slate-200 rounded-[40px] w-[300px] min-h-[250px] px-4 py-8'>
+        <div key={index} className='space-y-6 border border-slate-200 rounded-[40px] px-10 py-8'>
           <div className="flex justify-between items-center">
             <div className="w-[80%]">
               <h1 className='text-left text-3xl lg:text-5xl font-bold font-syne lg:w-[63%] text-black'>{card.percentage}</h1>

@@ -8,7 +8,7 @@ import { footerServiceLinks1, footerServiceLinks2, AboutUs } from "../../constan
 const Footer = () => {
     return (
         <footer>
-            <div className='grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 gap-5 text-center lg:text-left justify-items-center items-start py-5 px-3 '>
+            <div className='grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 gap-5 text-center lg:text-left justify-items-center items-start py-5'>
 
                 <div className="space-y-3 flex flex-col justify-center items-center text-center">
                     <h5 className='text-lg font-bold font-syne text-black'>Address</h5>
@@ -28,7 +28,7 @@ const Footer = () => {
 
                 <div className='space-y-5'>
                     <h5 className='text-lg font-bold font-syne text-black text-center'>Services</h5>
-                    <div className="flex justify-between items-start gap-8">
+                    <div className="flex justify-center flex-col md:flex-row md:justify-between items-start gap-2 md:gap-8">
                         <div>
                             <ul className='cursor-pointer flex flex-col gap-y-2'>
                                 {

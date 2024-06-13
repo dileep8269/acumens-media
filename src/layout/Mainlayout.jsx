@@ -12,7 +12,7 @@ const Mainlayout = () => {
       <Outlet></Outlet>
 
       <div className="w-full bg-gray-100 mb-[46px] sm:mb-0">
-        <div className="container mx-auto">
+        <div className="">
           <Footer />
         </div>
         <div className="footer footer-center p-4 text-base-content border-t-2 border-black">

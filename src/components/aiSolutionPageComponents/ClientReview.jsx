@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const ClientReview = ({ review }) => {
     return (
-        <div className='flex flex-col md:flex-row gap-6 justify-center items-center container mx-auto'>
+        <div className='flex flex-col md:flex-row gap-6 justify-center items-center bg-[#f7f7fa] rounded-[40px]'>
             <div className='w-full md:w-1/2 space-y-20 py-20 px-20'>
                 <span className="text-7xl text-blue-Purple"><RiDoubleQuotesR /></span>
                 <p className="text-xl font-kanit font-normal leading-6 tracking-normal italic">{review}</p>

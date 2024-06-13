@@ -8,8 +8,8 @@ import { Link } from "react-router-dom";
 
 const ServiceCard = ({ services }) => {
     return (
-        <div className='md:gap-5  p-5 gap-3 flex lg:flex-row
-        flex-col justify-center items-center'>
+        <div className='md:gap-5  gap-3 flex lg:flex-row
+        flex-col justify-center lg:justify-between items-center'>
 
             {
                 socialMediaServices.map((service) => (
