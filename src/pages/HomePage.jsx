@@ -19,6 +19,7 @@ import { whatWeDo, aboutAcumensic, partnerImages, brandImages, marketingList, aw
 import { FaCheckCircle } from "react-icons/fa";
 import { useContext } from "react"
 import { MyContext } from "../context api/MyProvider"
+import { Link } from "react-router-dom"
 // import { Link } from "react-router-dom"
 
 
@@ -154,13 +155,13 @@ const HomePage = () => {
       </div>
       <div className="fixed left-0 bottom-16 w-full sm:hidden pl-4">
         <span className="inline-block w-14 h-14">
-            <img src="WhatsApp-Icon.png" alt="WhatsApp-Icon" className="w-full h-full object-fill bg-transparent" />
+       <Link to="https://api.whatsapp.com/send?phone=18163210322&text=Hello,%20Welcome%20to%20Acumens%20Media%20Inc."><img src="WhatsApp-Icon.png" alt="WhatsApp-Icon" className="w-full h-full object-fill bg-transparent" /></Link>
         </span>
 
       </div >
 
       <div className="fixed left-0 bottom-0 w-full text-white text-center flex justify-center items-center gap-x-1 sm:hidden">
-        <span className="inline-block w-1/2 px-1 py-4 xs:p-4 text-lg font-normal font-kanit bg-black rounded-[40px]" onClick={toggleModal}>
+        <span className="inline-block w-1/2 px-1 py-4 xs:p-4 text-lg font-normal font-kanit bg-black rounded-[40px]">
           Speak To Us
         </span>
         <span className="inline-block w-1/2 px-1 py-4 xs:p-4 text-lg font-normal font-kanit bg-black rounded-[40px]">
