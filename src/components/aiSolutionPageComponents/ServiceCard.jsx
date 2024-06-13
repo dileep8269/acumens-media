@@ -11,7 +11,7 @@ const ServiceCard = ({ services }) => {
         <div className='md:gap-5  p-5 gap-3 flex lg:flex-row
         flex-col justify-center items-center'>
 
-{
+            {
                 socialMediaServices.map((service) => (
 
                     <div key={service.id} className="card select-none">
@@ -37,10 +37,10 @@ const ServiceCard = ({ services }) => {
                         </div>
                         <div className="back-card p-6 space-y-6">
 
-                            <p className='h-[35%] text-lg text-left font-bold font-syne text-black'>
+                            <p className='h-[35%] text-[17px] text-left font-bold font-syne text-black'>
                                 {service.content}
                             </p>
-                            <ul className='flex flex-col gap-4 justify-center items-start h-[45%] list-none text-base font-normal text-black'>
+                            <ul className='flex flex-col gap-4 justify-center items-start h-[45%] list-none text-[15px] font-normal text-black font-syne'>
                                 {
                                     service.list.map((service, index) => (
 
@@ -49,7 +49,7 @@ const ServiceCard = ({ services }) => {
                                     ))
                                 }
                             </ul>
-                            <div className='h-[20%] text-left'>
+                            <div className='h-[20%]'>
                                 <div className="relative inline-block rounded-full transition duration-300 ease-in-out">
                                     <span className="relative overflow-hidden before:content-[''] before:absolute bottom-0.5  before:-bottom-1 before:left-0 before:w-0 before:h-0.5 before:hover:bg-blue-Purple before:transition-width before:duration-500 before:ease-in-out hover:before:w-full">
                                         <Link to="" className="font-bold uppercase text-sm font-syne">Get Details</Link>
