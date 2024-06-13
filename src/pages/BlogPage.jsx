@@ -4,7 +4,7 @@ import Contact from "../components/aiSolutionPageComponents/Contact"
 
 const BlogPage = () => {
     return (
-        <div className="py-12">
+        <div className="py-12" style={{ backgroundImage: 'linear-gradient(to bottom, #E9E5FF 5%, #ffffff 20%)' }}>
             <div className="w-full px-8">
                 <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto rounded-[40px] bg-purple-200 p-8 mt-14">
                     <Hero />
