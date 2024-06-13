@@ -256,7 +256,7 @@ const CustomForm = ({ page, message }) => {
                                 </label>
 
 
-                                <button onClick={handleSendOtp} className={`btn rounded-full w-fit px-4 py-2 bg-black text-white transition-colors duration-700 hover:bg-blue-Purple  cursor-pointer text-[12px] font-bold font-syne uppercase shrink-0 flex justify-center items-center gap-1 ${phnNo ?
+                                <button onClick={handleSendOtp} className={`btn rounded-full w-fit px-1 py-1 md:px-4 md:py-1 bg-black text-white transition-colors duration-700 hover:bg-blue-Purple  cursor-pointer text-[12px] font-bold font-syne uppercase shrink-0 flex justify-center items-center gap-1 ${phnNo ?
                                     "cursor-pointer" : "cursor-not-allowed"}`} type='button' disabled={!phnNo} >
                                     <span className='hidden md:block'>Verify</span>
                                     <span className="text-2xl">

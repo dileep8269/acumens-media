@@ -1,18 +1,18 @@
 import { FaCircleCheck } from "react-icons/fa6"
 import Button from "../homePageComponents/Button"
 
-const HeroL = ({borderColor,buttonBg,listColor}) => {
+const HeroL = ({ borderColor, buttonBg, listColor, bgColor }) => {
   return (
-    <div className=''>
+    <div>
 
       <div className="flex justify-center items-start">
         <div className="w-full md:w-[38%]">
           <img src='GettyImages-1437209359.webp' alt="sdsds" className='w-full h-[500px] object-cover rounded-[40px] ' />
         </div>
         <div className="flex  justify-center items-center gap-2 flex-col w-full md:w-[20%] space-y-2">
-          <div className={`w-4 border h-[215px] ${borderColor}`}></div>
+          <div className={`w-2 ${bgColor} border h-[215px] ${borderColor}`}></div>
           <h1 className="text-3xl font-syne font-bold leading-6 tracking-normal"> v/s </h1>
-          <div className={`w-4 border h-[215px] ${borderColor}`}></div>
+          <div className={`w-2 ${bgColor} border h-[215px] ${borderColor}`}></div>
         </div>
         <div className="w-full md:w-[38%]">
           <img src='GettyImages-1437209359.webp' alt="sdsds" className='w-full h-[500px] object-cover rounded-[40px]' />
@@ -42,9 +42,9 @@ const HeroL = ({borderColor,buttonBg,listColor}) => {
         </div>
 
         <div className="flex  justify-center items-center gap-2 flex-col w-full md:w-[20%] space-y-2">
-          <div className={`w-4 border h-[180px] ${borderColor}`}></div>
+          <div className={`w-2 ${bgColor} border h-[150px] ${borderColor}`}></div>
           <h1 className="text-3xl font-syne font-bold leading-6 tracking-normal"> v/s </h1>
-          <div className={`w-4 border h-[180px] ${borderColor}`}></div>
+          <div className={`w-2 ${bgColor} border h-[150px] ${borderColor}`}></div>
         </div>
 
         <div className="w-full md:w-[38%] flex flex-col justify-end items-end space-y-4 p-4">
@@ -69,6 +69,7 @@ const HeroL = ({borderColor,buttonBg,listColor}) => {
       </div>
 
     </div>
+
   )
 }
 

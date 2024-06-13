@@ -19,6 +19,7 @@ import { whatWeDo, aboutAcumensic, partnerImages, brandImages, marketingList, aw
 import { FaCheckCircle } from "react-icons/fa";
 import { useContext } from "react"
 import { MyContext } from "../context api/MyProvider"
+import { Link } from "react-router-dom"
 // import { Link } from "react-router-dom"
 
 
@@ -73,7 +74,7 @@ const HomePage = () => {
         <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto">
           <AcumensReview />
         </div>
-        <div className="flex justify-center items-center gap-24 flex-wrap py-2 px-8 lg:px-0">
+        <div className="flex flex-col justify-center items-center gap-16 lg:gap-10 xl:gap-16 2xl:gap-24 lg:flex-row py-2 px-8 lg:px-0">
           {
             brandImages.map((image, index) => (
 
@@ -156,7 +157,7 @@ const HomePage = () => {
             </div>
             <div className="w-full md:w-[50%] flex flex-col justify-center md:justify-start items-center">
               <CustomForm fields={inputFields} message="Get you free audit" />
-        
+
             </div>
 
           </div>
@@ -175,7 +176,9 @@ const HomePage = () => {
           Speak To Us
         </span>
         <span className="inline-block w-1/2 px-1 py-4 xs:p-4 text-lg font-normal font-kanit bg-black rounded-[40px]">
-          884915291
+          <Link to={"tel:8884915291"} >
+            8009694409
+          </Link>
         </span>
       </div>
 
