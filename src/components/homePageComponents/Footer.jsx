@@ -28,7 +28,7 @@ const Footer = () => {
 
                 <div className='space-y-5'>
                     <h5 className='text-lg font-bold font-syne text-black text-center'>Services</h5>
-                    <div className="flex justify-center flex-col md:flex-row md:justify-between items-start gap-2 md:gap-8">
+                    <div className="flex justify-center flex-col lg:flex-row lg:justify-between items-start gap-2 lg:gap-8">
                         <div>
                             <ul className='cursor-pointer flex flex-col gap-y-2'>
                                 {
