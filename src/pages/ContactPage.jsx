@@ -2,8 +2,22 @@ import { Link } from "react-router-dom";
 import CustomForm from "../components/homePageComponents/CustomForm";
 import { inputFields } from "../constants/constant";
 import Contact from "../components/aiSolutionPageComponents/Contact";
-
+import { useRef, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 const ContactPage = () => {
+  const formRef = useRef(null);
+  const location = useLocation();
+
+  useEffect(() => {
+      if (location.hash === '#contactForm' && formRef.current) {
+          formRef.current.scrollIntoView({ behavior: 'smooth' });
+      }
+  }, [location]);
+  useEffect(() => {
+    if (location.hash === '#contactForm' && formRef.current) {
+        formRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+}, [location]);
   return (
     <div className="pt-12 bg-gradient-to-b from-light-purple to-gray-100 ">
     <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto">
@@ -51,7 +65,7 @@ const ContactPage = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center items-start w-full md:w-1/2">
+        <div className="flex justify-center items-start w-full md:w-1/2" ref={formRef} id="contactForm">
           <CustomForm page='contact' fields={inputFields} message="Contact Us" />
         </div>
       </div>
