@@ -14,14 +14,14 @@ const aiSolDetail = [
 
 const AboutDetailsCard = () => {
     return (
-        <div className="container mx-auto">
-        <div className="flex flex-row flex-wrap gap-9 px-6 justify-center mb-10 items-start">
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 
         {
             aiSolDetail?.map((service, index) => (
 
-                <div key={index} className='flex flex-col w-[250px] h-[370px] justify-items-start border border-transparent bg-white hover:shadow-xl p-5 space-y-4 rounded-2xl'>
-                    <span className="w-14 h-14 rounded-full flex justify-center items-center text-3xl bg-gray-100 text-purple-900">{service?.icon}</span>
+                <div key={index} className='flex flex-col justify-items-start border border-transparent bg-white hover:shadow-xl p-5 space-y-4 rounded-[40px]'>
+                    <span className="w-14 h-14 rounded-full flex justify-center items-center text-3xl bg-gray-100 text-blue-Purple">{service?.icon}</span>
                     <h6 className="font-bold text-base font-syne text-black">{service?.title}</h6>
                     <p className="text-base font-light font-kanit leading-6 tracking-normal">{service?.desc}</p>
                 </div>
@@ -31,7 +31,7 @@ const AboutDetailsCard = () => {
 
     </div>
 
-        </div>
+    
     )
 }
 

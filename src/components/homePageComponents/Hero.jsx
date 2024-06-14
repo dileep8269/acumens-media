@@ -7,13 +7,12 @@ import { TypeAnimation } from "./TypeAnimation";
 const Hero = () => {
 
     return (
-        <div className="flex flex-col md:flex-row items-center justify-between min-h-max p-8 pt-24 md:pt-20 gap-10 text-white">
-            <div className="text-left md:w-3/5 space-y-10 lg:space-y-16">
+        <div className="flex flex-col md:flex-row items-center justify-between min-h-max px-8 lg:px-0 py-10 pt-24 md:pt-20 gap-10 text-white">
+            <div className="text-left md:w-3/5 space-y-10 lg:space-y-10">
                 <div className="lg:h-[125px] md:h-[150px] h-[270px]">
                     <TypeAnimation />
 
                 </div>
-                {/* <h1 className="text-4xl lg:text-5xl font-bold mb-4 font-syne">“Unleash” the power of AI for Intelligent Search Engine Optimization</h1> */}
                 <p className="text-base font-kanit font-light mb-6 lg:w-[80%] tracking-normal leading-6"> <span className="inline-block mb-5">Ready for a paradigm shift in your business&rsquo;s online marketing & promotions?</span> <br /> <span >At Acumens, we&rsquo;re redefining the landscape with AI-driven strategies that are propelling businesses to new heights. Contact us today to Elevate your Business with AI-POWERED Youtube, Social Media & Search Engine Marketing.</span></p>
                 <Button><Link to="/audit.htm">Get Started</Link></Button>
             </div>

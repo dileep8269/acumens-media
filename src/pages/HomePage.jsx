@@ -1,4 +1,3 @@
-
 import Hero from "../components/homePageComponents/Hero"
 import ImageSlider from "../components/homePageComponents/ImageSlider"
 import AboutUs from "../components/homePageComponents/AboutUs"
@@ -33,16 +32,19 @@ const HomePage = () => {
 
   return (
     <div>
-
-      <div className="w-full bg-blue-Purple">
-        <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto ">
-          <Hero />
+      <div className="bg-[#f7f7fa]">
+        <div className="w-full bg-blue-Purple rounded-b-[40px]">
+          <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto ">
+            <Hero />
+          </div>
         </div>
       </div>
 
-      <ImageSlider images={partnerImages} />
+      <div className="bg-[#f7f7fa] rounded-b-[40px]">
+        <ImageSlider images={partnerImages} />
+      </div>
 
-      <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto px-8 lg:px-0">
+      <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto px-8 pt-10 lg:px-0">
         <AboutUs about={whatWeDo} />
       </div>
 
@@ -55,17 +57,17 @@ const HomePage = () => {
       </div>
 
       <div className="w-full py-10 bg-gradient-to-b from-light-purple to-gray-100">
-        <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto text-center space-y-8 px-10 mb-20">
+        <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto text-center space-y-8 px-8 lg:px-0 mb-20">
           <h6 className="text-base font-bold font-syne text-black"> OUR CLIENTS ARE SOME OF THE WORLD&apos;S... </h6>
           <h1 className="text-4xl lg:text-5xl font-bold font-syne lg:px-[20%] text-black">Fastest growing companies & Brands.</h1>
           <Button className={"mx-auto"}>View All</Button>
-          <div className="flex flex-row lg:justify-start justify-center items-center flex-wrap 3xl:gap-40 2xl:gap-14 xl:gap-5 lg:gap-28 gap-10">
+          <div className="grid grid-col-1 lg:grid-cols-3 place-content-center gap-10">
             <BrandCard />
           </div>
         </div>
-        <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto space-y-8">
+        <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto space-y-8 px-8 lg:px-0">
           <p className="text-base font-bold text-center font-syne text-black"> WHY ACUMENS </p>
-          <h1 className="text-4xl lg:text-5xl font-bold text-center font-syne lg:px-[20%] text-black">Managing your business has never been easier.</h1>
+          <h1 className="text-4xl lg:text-5xl font-bold text-center font-syne text-black">Managing your business has never been easier.</h1>
           <DetailingCard />
         </div>
       </div>
@@ -73,18 +75,18 @@ const HomePage = () => {
       <div className="w-full bg-gray-200 py-10">
         <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto">
           <AcumensReview />
-        </div>
-        <div className="flex flex-col justify-center items-center gap-16 lg:gap-10 xl:gap-16 2xl:gap-24 lg:flex-row py-2 px-8 lg:px-0">
-          {
-            brandImages.map((image, index) => (
+          <div className="flex flex-col justify-between items-center gap-16 lg:flex-row py-8 px-8 lg:px-0">
+            {
+              brandImages.map((image, index) => (
 
-              <div key={index}>
+                <div key={index}>
 
-                <img src={image} alt={image} />
+                  <img src={image} alt={image} />
 
-              </div>
-            ))
-          }
+                </div>
+              ))
+            }
+          </div>
         </div>
       </div>
 
@@ -155,7 +157,7 @@ const HomePage = () => {
               </div>
 
             </div>
-            <div className="w-full md:w-[50%] flex flex-col justify-center md:justify-start items-center">
+            <div className="w-full md:w-[50%] flex flex-col justify-center md:justify-start items-center md:items-end">
               <CustomForm fields={inputFields} message="Get you free audit" />
 
             </div>
@@ -164,14 +166,14 @@ const HomePage = () => {
         </div>
 
       </div>
-      <div className="fixed left-0 bottom-16 w-full sm:hidden pl-4 z-50">
+      {/* <div className="fixed left-0 bottom-16 w-full sm:hidden pl-4 z-50">
         <span className="inline-block w-14 h-14">
           <img src="WhatsApp-Icon.png" alt="WhatsApp-Icon" className="w-full h-full object-fill bg-transparent" />
         </span>
 
-      </div >
+      </div > */}
 
-      <div className="fixed left-0 bottom-0 w-full text-white text-center flex justify-center items-center gap-x-1 sm:hidden z-50">
+      {/* <div className="fixed left-0 bottom-0 w-full text-white text-center flex justify-center items-center gap-x-1 sm:hidden z-50">
         <span className="inline-block w-1/2 px-1 py-4 xs:p-4 text-lg font-normal font-kanit bg-black rounded-[40px]" onClick={toggleModal}>
           Speak To Us
         </span>
@@ -180,7 +182,7 @@ const HomePage = () => {
             8009694409
           </Link>
         </span>
-      </div>
+      </div> */}
 
 
     </div>

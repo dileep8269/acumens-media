@@ -33,9 +33,9 @@ const Header = () => {
     if (typeof window !== 'undefined') {
       if (window.scrollY > lastScrollY) {   // if scroll down hide the navbar
         setShow(false);
-      }else if(window.scrollY === 0){
+      } else if (window.scrollY === 0) {
         setShow(true);
-      }else {                              // if scroll up show the navbar
+      } else {                              // if scroll up show the navbar
         setShow(true);
       }
       setLastScrollY(window.scrollY);
@@ -113,12 +113,14 @@ const Header = () => {
               </p>
               <p className="relative inline-block text-gray-700 rounded-full transition duration-300 ease-in-out text-[14px] font-Kanit font-bold leading-5 uppercase tracking-tighter">
                 <span className="relative overflow-hidden before:content-[''] before:absolute bottom-0.5 before:-bottom-1 before:left-0 before:w-0 before:h-0.5 before:hover:bg-blue-Purple before:transition-width before:duration-500 before:ease-in-out hover:before:w-full">
+
                   8884915291
+
                 </span>
               </p>
             </Link>
 
-            <Link to={'/contact.htm'} className="cursor-pointer px-4 py-1 bg-transparent text-sm font-medium text-gray-700 ">
+            <Link to={"tel:8884915291"} className="cursor-pointer px-4 py-1 bg-transparent text-sm font-medium text-gray-700 ">
               <p className="text-[12px] font-syne font-bold tracking-tighter leading-5 uppercase">
                 Sales
               </p>
@@ -132,7 +134,7 @@ const Header = () => {
             <div>
               <DropdownButton isHandBar={true} dropdown={LetsTalk} classname="w-40">
                 <FaBars className="w-20 h-6" />
-                
+
               </DropdownButton>
             </div>
 

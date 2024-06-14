@@ -16,21 +16,21 @@ const acumensincDatail = [
 const DetailingCard = () => {
 
     return (
-        <div className="container mx-auto">
-            <div className="flex flex-row flex-wrap 2xl:gap-10 xl:gap-x-20 justify-center items-start">
-                {
-                    acumensincDatail.map((item, index) => (
-                        <div key={index} className='flex flex-col w-[300px] h-auto justify-items-start p-5 space-y-4 rounded-2xl'>
-                            <span className="w-14 h-14 rounded-full flex justify-center items-center text-3xl bg-gray-100 text-blue-Purple">{item.icon}</span>
-                            <p className="font-bold text-base font-syne text-black">{item.title}</p>
-                            <p className="text-base font-light font-kanit leading-6 tracking-normal">{item.desc}</p>
-                        </div>
 
-                    ))
-                }
-            </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {
+                acumensincDatail.map((item, index) => (
+                    <div key={index} className='flex flex-col justify-items-start p-5 space-y-4 bg-white rounded-[40px]'>
+                        <span className="w-14 h-14 rounded-full flex justify-center items-center text-3xl bg-gray-100 text-blue-Purple">{item.icon}</span>
+                        <p className="font-bold text-base font-syne text-black">{item.title}</p>
+                        <p className="text-base font-light font-kanit leading-6 tracking-normal">{item.desc}</p>
+                    </div>
 
+                ))
+            }
         </div>
+
+
     )
 }
 

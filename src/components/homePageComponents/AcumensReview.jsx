@@ -11,10 +11,10 @@ import { Navigation } from 'swiper/modules';
 
 const AcumensReview = () => {
     return (
-        <div className='flex flex-col lg:flex-row justify-center items-center gap-x-4'>
-            <div className='w-full lg:w-[50%] h-full p-3 space-y-10 lg:border-r lg:border-black'>
-                <h1 className="text-center text-4xl lg:text-5xl align-middle font-bold font-syne text-black">Driving digital <br></br> revenue for our <br></br> 1000+ satisfied <br></br> customers</h1>
-                <div className="px-[5%] lg:px-[15%]">
+        <div className='flex flex-col lg:flex-row justify-center lg:justify-start items-center gap-x-4'>
+            <div className='w-full lg:w-[40%] h-full p-3 space-y-10 lg:border-r lg:border-black px-8 lg:px-0'>
+                <h1 className="text-center lg:text-left text-4xl lg:text-5xl align-middle font-bold font-syne text-black">Driving digital <br></br> revenue for our <br></br> 1000+ satisfied <br></br> customers</h1>
+                <div className="w-full lg:w-[80%]">
                     <div className='w-full flex flex-row justify-between items-center space-x-6 bg-white rounded-full pr-5 outline-none'>
                         <span className=" rounded-full text-3xl p-4 outline-none bg-gray-200"><MdRocket /></span>
                         <span className="text-3xl font-bold font-syne text-black">24%</span>
@@ -22,7 +22,7 @@ const AcumensReview = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-full lg:w-[50%] h-full p-5'>
+            <div className='w-full lg:w-[60%] h-full p-5'>
             <Swiper
             slidesPerView={1}
             loop={true}

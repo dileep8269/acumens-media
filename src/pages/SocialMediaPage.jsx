@@ -96,7 +96,7 @@ const SocialMediaPage = () => {
 
 
             <div className="w-full py-10 bg-white px-8 lg:px-0">
-                <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto space-y-6 bg-[#f7f7fa] py-10 rounded-[40px]">
+                <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto space-y-6 bg-gray-200 py-10 rounded-[40px]">
                     <div className="flex justify-center items-center">
                         <img src={banner.photo} alt={banner.photo} className="object-contain h-15 w-28" />
                     </div>

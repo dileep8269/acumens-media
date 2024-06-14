@@ -2,8 +2,16 @@ import { Link, Outlet } from "react-router-dom"
 import Header from "../components/homePageComponents/Header"
 import Footer from "../components/homePageComponents/Footer"
 import HomePageModal from "../components/homePageComponents/HomePageModal"
+import { MyContext } from "../context api/MyProvider"
+import { useContext } from "react"
 
 const Mainlayout = () => {
+
+  const { setIsModalOpen } = useContext(MyContext);
+
+  const toggleModal = () => {
+    setIsModalOpen((prevValue) => !prevValue);
+  }
 
   return (
     <>
@@ -41,6 +49,23 @@ const Mainlayout = () => {
             </div>
           </aside>
         </div>
+      </div>
+
+      <div className="fixed left-0 bottom-16 w-full sm:hidden pl-4 z-50">
+        <span className="inline-block w-14 h-14">
+          <img src="WhatsApp-Icon.png" alt="WhatsApp-Icon" className="w-full h-full object-fill bg-transparent" />
+        </span>
+      </div >
+
+      <div className="fixed left-0 bottom-0 w-full text-white text-center flex justify-center items-center gap-x-1 sm:hidden z-50">
+        <span className="inline-block w-1/2 px-1 py-4 xs:p-4 text-lg font-normal font-kanit bg-black rounded-[40px]" onClick={toggleModal}>
+          Speak To Us
+        </span>
+        <span className="inline-block w-1/2 px-1 py-4 xs:p-4 text-lg font-normal font-kanit bg-black rounded-[40px]">
+          <Link to={"tel:8884915291"} >
+            8009694409
+          </Link>
+        </span>
       </div>
 
       <HomePageModal />

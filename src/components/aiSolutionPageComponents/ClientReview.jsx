@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const ClientReview = ({ review }) => {
     return (
-        <div className='flex flex-col md:flex-row gap-6 justify-center items-center bg-[#f7f7fa] rounded-[40px]'>
+        <div className='flex flex-col md:flex-row gap-6 justify-center items-center bg-gray-200 rounded-[40px]'>
             <div className='w-full md:w-1/2 space-y-20 py-20 px-20'>
                 <span className="text-7xl text-blue-Purple"><RiDoubleQuotesR /></span>
                 <p className="text-xl font-kanit font-normal leading-6 tracking-normal italic">{review}</p>
@@ -13,9 +13,9 @@ const ClientReview = ({ review }) => {
                     <p className="font-kanit font-light">Zarra Home</p>
                 </div>
             </div>
-            <div className="w-full md:w-1/2 rounded-t-[40px] h-[580px] relative">
-                <img src="./aiSolutionPictures/video-cover.webp" alt="sdsds" className='w-full h-full object-cover absolute rounded-t-[40px]' />
-                <div className="absolute h-24 w-full  bottom-0 left-0 rounded-tl-[46px] flex flex-row justify-between items-center px-8 bg-white">
+            <div className="w-full md:w-1/2 rounded-[40px] h-[580px] relative">
+                <img src="./aiSolutionPictures/video-cover.webp" alt="sdsds" className='w-full h-full object-cover absolute rounded-[40px]' />
+                <div className="absolute h-24 w-full  bottom-0 left-0 rounded-tl-[46px] rounded-br-[40px] flex flex-row justify-between items-center px-8 bg-white">
                     <div className="flex flex-col justify-center items-center gap-y-2">
 
                         <div className="flex gap-x-2 justify-center items-center">
