@@ -44,7 +44,7 @@ const ServiceCard = ({ services }) => {
                                 {
                                     service.list.map((service, index) => (
 
-                                        <li key={index} className='flex flex-row gap-x-3 justify-start items-center'> <span className="text-blue-Purple text-xl"><FaCircleCheck /></span> <span>{service}</span></li>
+                                        <li key={index} className='flex flex-row gap-x-3 justify-start items-center'> <span className="text-blue-Purple text-xl"><FaCircleCheck /></span> <span className="text-[14px]">{service}</span></li>
 
                                     ))
                                 }

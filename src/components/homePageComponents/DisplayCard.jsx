@@ -39,7 +39,7 @@ const DisplayCard = () => {
                             <p className='h-[35%] text-[17px] text-left font-bold font-syne text-black'>
                                 {service.content}
                             </p>
-                            <ul className='flex flex-col gap-4 justify-center items-start h-[45%] list-none text-[15px] font-normal text-black font-syne'>
+                            <ul className='flex flex-col gap-4 justify-center items-start h-[45%] list-none text-[14px] font-normal text-black font-syne'>
                                 {
                                     service.list.map((service, index) => (
 

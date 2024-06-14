@@ -18,7 +18,7 @@ import { whatWeDo, aboutAcumensic, partnerImages, brandImages, marketingList, aw
 import { FaCheckCircle } from "react-icons/fa";
 import { useContext } from "react"
 import { MyContext } from "../context api/MyProvider"
-import { Link } from "react-router-dom"
+// import { Link } from "react-router-dom"
 // import { Link } from "react-router-dom"
 
 
@@ -26,6 +26,7 @@ const HomePage = () => {
 
   const { setIsModalOpen } = useContext(MyContext);
 
+  // eslint-disable-next-line no-unused-vars
   const toggleModal = () => {
     setIsModalOpen((prevValue) => !prevValue);
   }
@@ -40,15 +41,21 @@ const HomePage = () => {
         </div>
       </div>
 
+<<<<<<< HEAD
       <div className="bg-[#f7f7fa] rounded-b-[40px]">
         <ImageSlider images={partnerImages} />
       </div>
+=======
+  <div className="bg-[rgb(247,247,250)] mb-6 rounded-[40px]">
+  <ImageSlider images={partnerImages} />
+  </div>
+>>>>>>> 259e4f0df004aad4aac405c81d8c925cf99c5001
 
       <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto px-8 pt-10 lg:px-0">
         <AboutUs about={whatWeDo} />
       </div>
 
-      <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto py-10">
+      <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto py-10  ">
         <DisplayCard />
       </div>
 
@@ -56,8 +63,13 @@ const HomePage = () => {
         <AboutUs about={aboutAcumensic} />
       </div>
 
+<<<<<<< HEAD
       <div className="w-full py-10 bg-gradient-to-b from-light-purple to-gray-100">
         <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto text-center space-y-8 px-8 lg:px-0 mb-20">
+=======
+      <div className="w-full py-10 bg-gradient-to-b from-light-purple to-gray-100 rounded-t-[40px]">
+        <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto text-center space-y-8 px-10 mb-20">
+>>>>>>> 259e4f0df004aad4aac405c81d8c925cf99c5001
           <h6 className="text-base font-bold font-syne text-black"> OUR CLIENTS ARE SOME OF THE WORLD&apos;S... </h6>
           <h1 className="text-4xl lg:text-5xl font-bold font-syne lg:px-[20%] text-black">Fastest growing companies & Brands.</h1>
           <Button className={"mx-auto"}>View All</Button>
@@ -166,6 +178,7 @@ const HomePage = () => {
         </div>
 
       </div>
+<<<<<<< HEAD
       {/* <div className="fixed left-0 bottom-16 w-full sm:hidden pl-4 z-50">
         <span className="inline-block w-14 h-14">
           <img src="WhatsApp-Icon.png" alt="WhatsApp-Icon" className="w-full h-full object-fill bg-transparent" />
@@ -183,6 +196,9 @@ const HomePage = () => {
           </Link>
         </span>
       </div> */}
+=======
+     
+>>>>>>> 259e4f0df004aad4aac405c81d8c925cf99c5001
 
 
     </div>

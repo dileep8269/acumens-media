@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 /* Custom styles to hide the number input spinners */
@@ -52,4 +53,11 @@ input[type='number']::-webkit-inner-spin-button {
 .swiper {
     margin-left: auto;
     margin-right: auto;
+}
+
+.custom-rotation {
+    transform: rotate(35deg); /* Adjust the degree of rotation here */
+}
+.custom-rotation-star {
+    transform: rotate(20deg); /* Adjust the degree of rotation here */
 }
