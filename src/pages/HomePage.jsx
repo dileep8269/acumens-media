@@ -30,12 +30,19 @@ const HomePage = () => {
       </div>
 
       <div className="bg-[#f7f7fa] rounded-b-[40px]">
-        <div className="flex justify-center items-center lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto">
-          <div className="w-[15%] p-2 font-syne font-bold text-lg tracking-tight uppercase leading-6 text-black">
+        <div className="flex flex-col md:flex-row justify-center items-center lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto gap-6 py-5 px-8 lg:px-0 lg:py-0 lg:gap-0">
+          <div className="w-full md:w-[15%] p-2 font-syne font-bold text-lg tracking-tight uppercase leading-6 text-black">
             A PARTNER, NOT <br /> A VENDOR
           </div>
-          <div className="w-[85%]">
+          <div className="hidden w-[85%] md:block">
             <ImageSlider images={partnerImages} />
+          </div>
+          <div className="flex flex-wrap justify-center items-center gap-12 pb-10 md:hidden">
+            {
+              partnerImages?.map((image,index) => (
+                <img key={index} src={image} alt={image} />
+              ))
+            }
           </div>
         </div>
       </div>
