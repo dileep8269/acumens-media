@@ -10,7 +10,7 @@ import { aiSolutionHero } from "../constants/aiConstant";
 const AiSolutionsPage = () => {
   return (
     <div className=" pt-12">
-      <div className="bg-gradient-to-b from-[#eeebff] to-white">
+      <div className="bg-gradient-to-b from-[#eeebff] to-[#f8fafa]">
 
         <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto">
           <Hero hero={aiSolutionHero} />
@@ -28,13 +28,18 @@ const AiSolutionsPage = () => {
 
       </div>
 
-      <div className="hidden md:flex justify-center py-10 lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto">
-        <img className="w-full" src="../AiSolutions/border-center.webp" />
+      <div className="bg-gradient-to-b from-[#f8fafa] to-[#fff]">
+
+        <div className="hidden md:flex justify-center py-10 lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto">
+          <img className="w-full" src="../AiSolutions/border-center.webp" />
+        </div>
+
+        <div className="py-10 lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto">
+          <StrategyCard />
+        </div>
+
       </div>
 
-      <div className="py-10 lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto">
-        <StrategyCard />
-      </div>
 
       <div className=" lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto px-8 lg:px-0">
         <ResultsCard />
@@ -49,7 +54,8 @@ const AiSolutionsPage = () => {
       </div>
 
       <div className="py-10 px-8 lg:px-0">
-        <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mb-10 mx-auto space-y-6 bg-gray-100 py-10 rounded-[40px]">
+        <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mb-10 mx-auto space-y-6 bg-gray-100 py-10 rounded-[40px] relative">
+          <img className='absolute w-12 lg:w-16 right-1/4 -top-8 lg:-top-12 custom-rotation' src="/rocket.webp" alt="" />
           <div className="flex justify-center items-center">
             <img
               src="../AiSolutions/google-logo.webp"

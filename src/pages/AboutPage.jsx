@@ -9,20 +9,17 @@ import ClientReview from "../components/aiSolutionPageComponents/ClientReview";
 
 const AboutPage = () => {
   return (
-    <div className="">
+    <div>
       <div className="bg-gradient-to-b from-[#edeaff] to-bg-gray-100">
         <div className="mx-auto lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] pt-28">
           <HeroAbout />
-
           <div className="hidden md:flex justify-center py-10">
             <img className="w-full" src="../AiSolutions/border-center.webp" />
           </div>
-
         </div>
-
       </div>
 
-      <div className="mx-auto lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] space-y-16 px-8 lg:px-0 py-10">
+      <div className="mx-auto lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] space-y-16 px-8 lg:px-0 py-10 lg:pb-20">
         <p className=" font-syne font-medium text-xl">
           Acumens was established 12 years ago with the basic belief that
           advertising has the ability to significantly increase our
@@ -62,7 +59,7 @@ const AboutPage = () => {
         </div>
       </div>
 
-      <div className="bg-gradient-to-b from-[#ebe8ff] to-bg-gray-100">
+      <div className="bg-gradient-to-b from-[#ebe8ff] to-bg-gray-100 rounded-t-[40px]">
 
         <div className="mx-auto lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] space-y-16 px-8 lg:px-0 py-10">
 

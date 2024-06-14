@@ -95,7 +95,8 @@ const ConsultingPage = () => {
 
 
             <div className="w-full py-10 bg-white px-8 lg:px-0">
-                <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto space-y-6 bg-[#f7f7fa] py-10 rounded-[40px]">
+                <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto space-y-6 bg-[#f7f7fa] py-10 rounded-[40px] relative">
+                    <img className='absolute w-12 lg:w-16 right-1/4 -top-8 lg:-top-12 custom-rotation' src="/rocket.webp" alt="rocket img" />
                     <div className="flex justify-center items-center">
                         <img src={banner.photo} alt={banner.photo} className="object-contain h-15 w-28" />
                     </div>

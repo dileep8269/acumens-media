@@ -154,15 +154,14 @@ const CustomForm = ({ page, message }) => {
 
     return (
         <div className="bg-white p-8 lg:p-12 rounded-[40px] shadow-lg shadow-black w-auto xl:w-[600px] text-base font-kanit font-light leading-6 tracking-normal text-black relative mt-10">
-        <img 
-        className='absolute lg:w-[80px] w-[60px] h-[100px] lg:h-[155px] lg:right-9 md:right-6 md:-top-[50px] -top-[60px] right-0
-        custom-rotation' src="/rocket.webp" alt="" />
-        <svg xmlns="http://www.w3.org/2000/svg" width="54" height="53" viewBox="0 0 54 53" className='absolute -top-7 lg:right-40 md:right-32 right-28 custom-rotation-star'>
-								<g fill="" fillRule="nonzero">
-									<path d="M27.07.77c-5.93 19.07-3.73 19.51-26.51 26 22.78 6.49 20.58 6.93 26.5 26 5.9-19.07 3.72-19.52 26.5-26-22.78-6.48-20.6-6.93-26.5-26ZM45.24 14.54c1.17-3.79.74-3.88 5.27-5.17C45.98 8.08 46.4 8 45.24 4.2c-1.18 3.8-.74 3.88-5.27 5.17 4.53 1.3 4.1 1.38 5.27 5.17ZM10.87 40.14c-1.5 1.86-1.28 2.01-4.1 1.71 2.26 1.75 1.99 1.7 1.81 4.09 1.5-1.86 1.27-2.01 4.1-1.71-2.26-1.75-2-1.7-1.81-4.09Z">
-									</path>
-								</g>
-							</svg>
+            <img className='absolute lg:w-[80px] w-[60px] h-[100px] lg:h-[155px] lg:right-9 md:right-6 md:-top-[50px] -top-[60px] right-0
+                    custom-rotation' src="/rocket.webp" alt="" />
+            <svg xmlns="http://www.w3.org/2000/svg" width="54" height="53" viewBox="0 0 54 53" className='absolute -top-7 lg:right-40 md:right-32 right-28 custom-rotation-star'>
+                <g fill="" fillRule="nonzero">
+                    <path d="M27.07.77c-5.93 19.07-3.73 19.51-26.51 26 22.78 6.49 20.58 6.93 26.5 26 5.9-19.07 3.72-19.52 26.5-26-22.78-6.48-20.6-6.93-26.5-26ZM45.24 14.54c1.17-3.79.74-3.88 5.27-5.17C45.98 8.08 46.4 8 45.24 4.2c-1.18 3.8-.74 3.88-5.27 5.17 4.53 1.3 4.1 1.38 5.27 5.17ZM10.87 40.14c-1.5 1.86-1.28 2.01-4.1 1.71 2.26 1.75 1.99 1.7 1.81 4.09 1.5-1.86 1.27-2.01 4.1-1.71-2.26-1.75-2-1.7-1.81-4.09Z">
+                    </path>
+                </g>
+            </svg>
             <h2 className="xl:text-3xl lg:text-xl  text-lg mb-8 font-syne font-bold">{message}</h2>
             <form onSubmit={handleSubmit(onSubmit)}>
 
@@ -341,8 +340,8 @@ const CustomForm = ({ page, message }) => {
 
                 <button
                     className={`btn rounded-full w-fit px-5 py-2 transition-colors duration-700  text-[12px] font-bold font-syne uppercase shrink-0 flex justify-center items-center gap-1 bg-black text-white hover:bg-blue-Purple ${isOtpVerify
-                            ? 'bg-black text-white hover:bg-blue-Purple'
-                            : 'bg-black text-white hover:bg-blue-Purple cursor-not-allowed tooltip tooltip-bottom'
+                        ? 'bg-black text-white hover:bg-blue-Purple'
+                        : 'bg-black text-white hover:bg-blue-Purple cursor-not-allowed tooltip tooltip-bottom'
                         }`}
                     type="submit"
                     // disabled={!isOtpVerify}

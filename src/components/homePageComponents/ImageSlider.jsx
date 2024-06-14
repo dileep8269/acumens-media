@@ -4,7 +4,7 @@ import './ImageSlider.css';
 const ImageSlider = ({images}) => {
   return (
     <div className="overflow-hidden whitespace-nowrap relative">
-         <div className="animate-scroll xs:gap-x-10 md:gap-x-20 lg:gap-x-32 xl:gap-x-40 2xl:gap-x-48"> 
+         <div className="animate-scroll lg:gap-x-36"> 
         {images?.map((image, index) => (
           <div key={index} className='relative w-auto h-auto text-black bg-transparent overflow-hidden mr-10 md:mr-0'>
 

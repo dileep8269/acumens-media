@@ -16,20 +16,8 @@ import { whatWeDo, aboutAcumensic, partnerImages, brandImages, marketingList, aw
 
 // importing react icons
 import { FaCheckCircle } from "react-icons/fa";
-import { useContext } from "react"
-import { MyContext } from "../context api/MyProvider"
-// import { Link } from "react-router-dom"
-// import { Link } from "react-router-dom"
-
 
 const HomePage = () => {
-
-  const { setIsModalOpen } = useContext(MyContext);
-
-  // eslint-disable-next-line no-unused-vars
-  const toggleModal = () => {
-    setIsModalOpen((prevValue) => !prevValue);
-  }
 
   return (
     <div>
@@ -42,7 +30,14 @@ const HomePage = () => {
       </div>
 
       <div className="bg-[#f7f7fa] rounded-b-[40px]">
-        <ImageSlider images={partnerImages} />
+        <div className="flex justify-center items-center lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto">
+          <div className="w-[15%] p-2 font-syne font-bold text-lg tracking-tight uppercase leading-6 text-black">
+            A PARTNER, NOT <br /> A VENDOR
+          </div>
+          <div className="w-[85%]">
+            <ImageSlider images={partnerImages} />
+          </div>
+        </div>
       </div>
 
       <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto px-8 pt-10 lg:px-0">
@@ -57,64 +52,81 @@ const HomePage = () => {
         <AboutUs about={aboutAcumensic} />
       </div>
 
-      <div className="w-full py-10 bg-gradient-to-b from-light-purple to-gray-100 rounded-t-[40px]">
-        <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto text-center space-y-8 px-10 mb-20">
+      <div className="w-full py-10 bg-gradient-to-b from-light-purple to-[#fff] rounded-t-[40px] space-y-20">
+        <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto text-center space-y-10 px-8 lg:px-0">
           <h6 className="text-base font-bold font-syne text-black"> OUR CLIENTS ARE SOME OF THE WORLD&apos;S... </h6>
-          <h1 className="text-4xl lg:text-5xl font-bold font-syne lg:px-[20%] text-black">Fastest growing companies & Brands.</h1>
+          <h1 className="text-4xl lg:text-5xl font-bold font-syne text-black">Fastest growing companies & Brands.</h1>
           <Button className={"mx-auto"}>View All</Button>
           <div className="grid grid-col-1 lg:grid-cols-3 place-content-center gap-10">
             <BrandCard />
           </div>
         </div>
-        <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto space-y-8 px-8 lg:px-0">
+        <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto space-y-10 px-8 lg:px-0">
           <p className="text-base font-bold text-center font-syne text-black"> WHY ACUMENS </p>
           <h1 className="text-4xl lg:text-5xl font-bold text-center font-syne text-black">Managing your business has never been easier.</h1>
           <DetailingCard />
         </div>
       </div>
 
-      <div className="w-full bg-gray-200 py-10">
-        <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto">
-          <AcumensReview />
-          <div className="flex flex-col justify-between items-center gap-16 lg:flex-row py-8 px-8 lg:px-0">
-            {
-              brandImages.map((image, index) => (
+      {/* Adding Background Color for Acumens Review Section and wrapping the Ai section and blog section inside it */}
 
-                <div key={index}>
+      <div className="bg-gray-200 rounded-t-[40px]">
 
-                  <img src={image} alt={image} />
+        {/* Review Section */}
 
-                </div>
-              ))
-            }
+        <div className="w-full bg-gray-200 py-10 rounded-t-[40px]">
+          <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto">
+            <AcumensReview />
+            <div className="flex flex-col justify-between items-center gap-16 lg:flex-row py-8 px-8 lg:px-0">
+              {
+                brandImages.map((image, index) => (
+
+                  <div key={index}>
+
+                    <img src={image} alt={image} />
+
+                  </div>
+                ))
+              }
+            </div>
           </div>
         </div>
-      </div>
 
+        {/* Adding Background Color for Aisection and wrapping the blog section inside it */}
 
-      <div className="w-full min-h-[920px] md:min-h-[930px] lg:min-h-[650px] py-10 bg-light-purple">
-        <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto px-8 lg:px-0 ">
-          <AiSection />
+        <div className="bg-light-purple rounded-t-[40px]">
 
-        </div>
-      </div>
+          {/* Ai Section  */}
 
-      <div className="w-full py-10 bg-white">
-        <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto px-8 lg:px-0">
-          <div className="flex flex-col md:flex-row justify-center items-center gap-x-8">
-            <div className="w-full md:w-[30%] ">
-
-              <div className="w-full space-y-7 lg:space-y-24 text-left ">
-                <h4 className="text-base font-bold font-syne text-black">BLOG</h4>
-                <h1 className="text-4xl lg:text-5xl font-bold font-syne text-black">Digital marketing & industry insights</h1>
-                <Button className=" md:mx-0">View More</Button>
-              </div>
+          <div className="w-full min-h-[920px] md:min-h-[930px] lg:min-h-[650px] py-10 bg-light-purple rounded-t-[40px]">
+            <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto px-8 lg:px-0 ">
+              <AiSection />
 
             </div>
+          </div>
 
-            <div className="w-full h-[580px] 3xl:h-[620px] md:w-[70%] py-10 lg:py-0">
+          {/* Blog Section */}
 
-              <BlogCard />
+          <div className="w-full py-10 bg-white rounded-t-[40px]">
+            <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto px-8 lg:px-0">
+              <div className="flex flex-col md:flex-row justify-center items-center gap-x-8">
+                <div className="w-full md:w-[30%] ">
+
+                  <div className="w-full space-y-7 lg:space-y-24 text-left ">
+                    <h4 className="text-base font-bold font-syne text-black">BLOG</h4>
+                    <h1 className="text-4xl lg:text-5xl font-bold font-syne text-black">Digital marketing & industry insights</h1>
+                    <Button className=" md:mx-0">View More</Button>
+                  </div>
+
+                </div>
+
+                <div className="w-full h-[580px] 3xl:h-[620px] md:w-[70%] py-10 lg:py-0">
+
+                  <BlogCard />
+
+                </div>
+
+              </div>
 
             </div>
 
@@ -167,24 +179,6 @@ const HomePage = () => {
         </div>
 
       </div>
-      {/* <div className="fixed left-0 bottom-16 w-full sm:hidden pl-4 z-50">
-        <span className="inline-block w-14 h-14">
-          <img src="WhatsApp-Icon.png" alt="WhatsApp-Icon" className="w-full h-full object-fill bg-transparent" />
-        </span>
-
-      </div > */}
-
-      {/* <div className="fixed left-0 bottom-0 w-full text-white text-center flex justify-center items-center gap-x-1 sm:hidden z-50">
-        <span className="inline-block w-1/2 px-1 py-4 xs:p-4 text-lg font-normal font-kanit bg-black rounded-[40px]" onClick={toggleModal}>
-          Speak To Us
-        </span>
-        <span className="inline-block w-1/2 px-1 py-4 xs:p-4 text-lg font-normal font-kanit bg-black rounded-[40px]">
-          <Link to={"tel:8884915291"} >
-            8009694409
-          </Link>
-        </span>
-      </div> */}
-
 
     </div>
   )
