@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -30,14 +30,16 @@ input[type='number']::-webkit-inner-spin-button {
     align-items: center;
 }
 
-.swiper-button-prev{
+.swiper-button-prev {
     color: #5f4cdd !important;
 }
-.swiper-button-next{
+
+.swiper-button-next {
     color: #5f4cdd !important;
 }
-.swiper-pagination-bullet{
-    --swiper-theme-color : #5f4cdd !important;
+
+.swiper-pagination-bullet {
+    --swiper-theme-color: #5f4cdd !important;
 }
 
 /* .swiper-slide div {
@@ -52,3 +54,9 @@ input[type='number']::-webkit-inner-spin-button {
     margin-right: auto;
 }
 
+.custom-rotation {
+    transform: rotate(35deg); /* Adjust the degree of rotation here */
+}
+.custom-rotation-star {
+    transform: rotate(20deg); /* Adjust the degree of rotation here */
+}

@@ -111,7 +111,7 @@ const Header = () => {
               <p className="text-[12px] font-syne font-bold tracking-tighter leading-5 uppercase">
                 Support
               </p>
-              <p className="relative inline-block text-gray-700 rounded-full transition duration-300 ease-in-out text-[14px] font-Kanit font-normal leading-5 uppercase tracking-tighter">
+              <p className="relative inline-block text-gray-700 rounded-full transition duration-300 ease-in-out text-[14px] font-Kanit font-bold leading-5 uppercase tracking-tighter">
                 <span className="relative overflow-hidden before:content-[''] before:absolute bottom-0.5 before:-bottom-1 before:left-0 before:w-0 before:h-0.5 before:hover:bg-blue-Purple before:transition-width before:duration-500 before:ease-in-out hover:before:w-full">
                   8884915291
                 </span>
@@ -122,7 +122,7 @@ const Header = () => {
               <p className="text-[12px] font-syne font-bold tracking-tighter leading-5 uppercase">
                 Sales
               </p>
-              <p className="relative inline-block text-gray-700 rounded-full transition duration-300 ease-in-out text-[14px] font-Kanit font-normal leading-5 uppercase tracking-tighter">
+              <p className="relative inline-block text-gray-700 rounded-full transition duration-300 ease-in-out text-[14px] font-Kanit font-bold leading-5 uppercase tracking-tighter">
                 <span className="relative overflow-hidden before:content-[''] before:absolute bottom-0.5 before:-bottom-1 before:left-0 before:w-0 before:h-0.5 before:hover:bg-blue-Purple before:transition-width before:duration-500 before:ease-in-out hover:before:w-full">
                   8009694409
                 </span>

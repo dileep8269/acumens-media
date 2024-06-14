@@ -75,8 +75,8 @@ export const whatWeDo = {
 }
 
 export const companyFeedback = [
-    { id: 1, opinion: "\"I am amazed to see how Acumens Automated our company's marketing, branding and promotions. They took a major load off our shoulders. What they did in weeks is what we've been trying to do for over 3 years now. \"If any company knows AI Technology... its Acumens\" ", companyCEO: "Jon A Ring", company: "CEO,IKEA" },
-    { id: 2, opinion: "\"Working with Acumen's Expert Marketing professionals was a game-changer for our company, they offered their expert insight required to improve our marketing strategies in the digital domain & beyound. At the outset of the project, We introduced an unexpected twist: a decision to revitalize our brand identity and unviel a more dynamic & impactful digital presence\"", companyCEO: "Ed Methowan", company: "Owner,ArtiLabs" },
+    { id: 1, opinion: "\"Working with Acumen's Expert Marketing professionals was a game-changer for our company, they offered their expert insight required to improve our marketing strategies in the digital domain & beyound. At the outset of the project, We introduced an unexpected twist: a decision to revitalize our brand identity and unviel a more dynamic & impactful digital presence\"", companyCEO: "Ed Methowan", company: "Owner,ArtiLabs" },
+    { id: 2, opinion: "\"I am amazed to see how Acumens Automated our company's marketing, branding and promotions. They took a major load off our shoulders. What they did in weeks is what we've been trying to do for over 3 years now. \"If any company knows AI Technology... its Acumens\" ", companyCEO: "Jon A Ring", company: "CEO,IKEA" },
     { id: 3, opinion: "\"Acumens does more than what it says and is Best at what they do and not just that. The entire staff at Acumens from sales to support has been outstanding. They are quick with their replies and incredibly helpful. before we worked acumens we had spent thousands of dollars on marketing and have been struggling with marketing agencies but our search ends here.\" ", companyCEO: "Kim Nolance", company: "Co-Founder, Xeno AI" }
 
 ]

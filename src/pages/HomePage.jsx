@@ -24,9 +24,10 @@ import { Link } from "react-router-dom"
 
 
 const HomePage = () => {
-  
+
   const { setIsModalOpen } = useContext(MyContext);
 
+  // eslint-disable-next-line no-unused-vars
   const toggleModal = () => {
     setIsModalOpen((prevValue) => !prevValue);
   }
@@ -39,22 +40,24 @@ const HomePage = () => {
           <Hero />
         </div>
       </div>
-      
-      <ImageSlider images={partnerImages} />
-     
-      <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto">
+
+  <div className="bg-[rgb(247,247,250)] mb-6 rounded-[40px]">
+  <ImageSlider images={partnerImages} />
+  </div>
+
+      <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto px-8 lg:px-0">
         <AboutUs about={whatWeDo} />
       </div>
 
-      <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto py-10">
+      <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto py-10  ">
         <DisplayCard />
       </div>
 
-      <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto">
+      <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto px-8 lg:px-0">
         <AboutUs about={aboutAcumensic} />
       </div>
 
-      <div className="w-full py-10 bg-gradient-to-b from-light-purple to-gray-100">
+      <div className="w-full py-10 bg-gradient-to-b from-light-purple to-gray-100 rounded-t-[40px]">
         <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto text-center space-y-8 px-10 mb-20">
           <h6 className="text-base font-bold font-syne text-black"> OUR CLIENTS ARE SOME OF THE WORLD&apos;S... </h6>
           <h1 className="text-4xl lg:text-5xl font-bold font-syne lg:px-[20%] text-black">Fastest growing companies & Brands.</h1>
@@ -74,7 +77,18 @@ const HomePage = () => {
         <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto">
           <AcumensReview />
         </div>
-        <ImageSlider images={brandImages} />
+        <div className="flex flex-col justify-center items-center gap-16 lg:gap-10 xl:gap-16 2xl:gap-24 lg:flex-row py-2 px-8 lg:px-0">
+          {
+            brandImages.map((image, index) => (
+
+              <div key={index}>
+
+                <img src={image} alt={image} />
+
+              </div>
+            ))
+          }
+        </div>
       </div>
 
 
@@ -98,7 +112,7 @@ const HomePage = () => {
 
             </div>
 
-            <div className="w-full lg:h-[550px] 3xl:h-[620px] md:w-[70%] py-10 lg:py-0">
+            <div className="w-full h-[580px] 3xl:h-[620px] md:w-[70%] py-10 lg:py-0">
 
               <BlogCard />
 
@@ -153,23 +167,27 @@ const HomePage = () => {
         </div>
 
       </div>
-      <div className="fixed left-0 bottom-16 w-full sm:hidden pl-4">
+      <div className="fixed left-0 bottom-16 w-full sm:hidden pl-4 z-50">
         <span className="inline-block w-14 h-14">
-       <Link to="https://api.whatsapp.com/send?phone=18163210322&text=Hello,%20Welcome%20to%20Acumens%20Media%20Inc."><img src="WhatsApp-Icon.png" alt="WhatsApp-Icon" className="w-full h-full object-fill bg-transparent" /></Link>
+        <Link to="https://api.whatsapp.com/send?phone=18163210322&text=Hello,%20Welcome%20to%20Acumens%20Media%20Inc.">
+            <img src="WhatsApp-Icon.png" alt="WhatsApp-Icon" className="w-full h-full object-fill bg-transparent" />
+        </Link>
         </span>
 
       </div >
 
       <div className="fixed left-0 bottom-0 w-full text-white text-center flex justify-center items-center gap-x-1 sm:hidden">
-        <span className="inline-block w-1/2 px-1 py-4 xs:p-4 text-lg font-normal font-kanit bg-black rounded-[40px]">
-          Speak To Us
+        <span className="inline-block w-1/2 px-1 py-4 xs:p-4 text-lg font-normal font-kanit bg-black rounded-[40px]" >
+         <Link to='/contact.htm'>Speak To Us</Link>
         </span>
         <span className="inline-block w-1/2 px-1 py-4 xs:p-4 text-lg font-normal font-kanit bg-black rounded-[40px]">
-          884915291
+          <Link to={"tel:8884915291"} >
+            8009694409
+          </Link>
         </span>
       </div>
 
-    
+
     </div>
   )
 }

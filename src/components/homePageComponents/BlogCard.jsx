@@ -43,7 +43,7 @@ const BlogCard = () => {
       >
         {blogDetails.map((blog) => (
           <SwiperSlide key={blog.id}>
-            <div className=" overflow-hidden shadow-lg h-[450px] xl:h-[480px] 3xl:h-[560px] bg-white rounded-[40px]">
+            <div className=" overflow-hidden shadow-lg h-[440px] lg:h-[450px] xl:h-[480px] 3xl:h-[560px] bg-white rounded-[40px]">
               <img
                 src={blog.img}
                 alt="Card image"

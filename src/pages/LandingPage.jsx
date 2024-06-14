@@ -1,76 +1,135 @@
-import BannerL from "../components/LandingPageComponents/BannerL"
-import HeroL from "../components/LandingPageComponents/HeroL"
-import Review from "../components/LandingPageComponents/Review"
-import { landingPageReview } from "../constants/landingPageConstant"
+import BannerL from "../components/LandingPageComponents/BannerL";
+import HeroL from "../components/LandingPageComponents/HeroL";
+import HeroS from "../components/LandingPageComponents/HeroS";
+import Review from "../components/LandingPageComponents/Review";
+import { landingPageReview } from "../constants/landingPageConstant";
 
 const LandingPage = () => {
   return (
-    <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto py-10 space-y-6">
+    <div className="py-10">
 
-      <div className="mt-16">
-      <HeroL borderColor={"border-black"} buttonBg={"bg-blue-Purple"} listColor={"text-blue-Purple"} />
-      <BannerL color={"text-black"} />
-      <div className="flex justify-between items-center gap-6 flex-wrap py-10">
-        {
-          landingPageReview.map((review, index) => (
-
-            <Review key={index} review={review} borderColor={"border-black"} />
-
-          ))
-        }
+      <div className="mt-6 p-10">
+        <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto">
+        <div className="hidden md:block">  
+        <HeroL
+            borderColor={"border-black"}
+            buttonBg={"bg-blue-Purple"}
+            listColor={"text-blue-Purple"}
+            bgColor={"bg-black"}
+          /></div>
+          <div className="block md:hidden">
+          <HeroS
+            borderColor={"border-black"}
+            buttonBg={"bg-blue-Purple"}
+            listColor={"text-blue-Purple"}
+            bgColor={"bg-black"}
+          /></div>
+          <BannerL color={"text-black"} />
+          <div className="flex justify-center items-center lg:justify-between gap-6 flex-wrap py-10">
+            {landingPageReview.map((review, index) => (
+              <Review
+                key={index}
+                review={review}
+                borderColor={"border-black"}
+              />
+            ))}
+          </div>
+        </div>
       </div>
-
-      </div>
-
-      <div className="bg-gray-100 p-10 rounded-[40px]">
-        <HeroL borderColor={"border-black"} buttonBg={"bg-blue-Purple"} listColor={"text-blue-Purple"}/>
-        <BannerL color={"text-black"} />
-        <div className="flex justify-between items-center gap-6 flex-wrap py-10">
-          {
-            landingPageReview.map((review, index) => (
-
-              <Review key={index} review={review} borderColor={"border-black"} />
-
-            ))
-          }
+      <div className="bg-gray-100 p-10">
+        <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto">
+        <div className="hidden md:block">  
+        <HeroL
+            borderColor={"border-black"}
+            buttonBg={"bg-blue-Purple"}
+            listColor={"text-blue-Purple"}
+            bgColor={"bg-black"}
+          /></div>
+          <div className="block md:hidden">
+          <HeroS
+            borderColor={"border-black"}
+            buttonBg={"bg-blue-Purple"}
+            listColor={"text-blue-Purple"}
+            bgColor={"bg-black"}
+          /></div>
+          <BannerL color={"text-black"} />
+          <div className="flex justify-center items-center lg:justify-between gap-6 flex-wrap py-10">
+            {landingPageReview.map((review, index) => (
+              <Review
+                key={index}
+                review={review}
+                borderColor={"border-black"}
+              />
+            ))}
+          </div>
         </div>
       </div>
 
-      <div className="bg-black p-10 rounded-[40px] text-white ">
-        <HeroL borderColor={"border-white"} buttonBg={"bg-blue-Purple"} listColor={"text-blue-Purple"} />
+      <div className="bg-black p-10 text-white ">
+        <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto">
+        <div className="hidden md:block">
+          <HeroL
+            borderColor={"border-white"}
+            buttonBg={"bg-blue-Purple"}
+            listColor={"text-blue-Purple"}
+            bgColor={"bg-white"}
 
-        <BannerL color={"text-white"} />
+          /></div>
+          <div className="block md:hidden">
+          <HeroS
+            borderColor={"border-white"}
+            buttonBg={"bg-blue-Purple"}
+            listColor={"text-blue-Purple"}
+            bgColor={"bg-white"}
 
+          /></div>
 
-        <div className="flex justify-between items-center gap-6 flex-wrap py-10">
-          {
-            landingPageReview.map((review, index) => (
+          <BannerL color={"text-white"} />
 
-              <Review key={index} review={review} borderColor={"border-white"} />
-
-            ))
-          }
+          <div className="flex justify-center items-center lg:justify-between gap-6 flex-wrap py-10">
+            {landingPageReview.map((review, index) => (
+              <Review
+                key={index}
+                review={review}
+                borderColor={"border-white"}
+              />
+            ))}
+          </div>
         </div>
       </div>
 
-      <div className="bg-blue-Purple p-10 rounded-[40px] text-white ">
-        <HeroL borderColor={"border-white"} buttonBg={"bg-dark"} listColor={"text-black"} />
+      <div className="bg-blue-Purple p-10 text-white ">
+        <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto">
+        <div className="hidden md:block"> 
+        <HeroL
+            borderColor={"border-white"}
+            buttonBg={"bg-dark"}
+            listColor={"text-black"}
+            bgColor={"bg-white"}
+          /></div> 
+          <div className="block md:hidden">
+          <HeroS
+            borderColor={"border-white"}
+            buttonBg={"bg-dark"}
+            listColor={"text-black"}
+            bgColor={"bg-white"}
+          /></div>
 
-        <BannerL color={"text-white"} />
+          <BannerL color={"text-white"} />
 
-
-        <div className="flex justify-between items-center gap-6 flex-wrap py-10">
-          {
-            landingPageReview.map((review, index) => (
-
-              <Review key={index} review={review} borderColor={"border-white"}/>
-
-            ))
-          }
+          <div className="flex justify-center items-center lg:justify-between gap-6 flex-wrap py-10">
+            {landingPageReview.map((review, index) => (
+              <Review
+                key={index}
+                review={review}
+                borderColor={"border-white"}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default LandingPage
+export default LandingPage;
