@@ -1,10 +1,10 @@
-import { termsConditions } from "../constant/termsConditions";
+import { termsConditions } from "../constants/termsConditions";
 
 const TermsCondition = () => {
     return (
-        <div className="pt-12">
+        <div className="pt-12" style={{ backgroundImage: 'linear-gradient(to bottom, #E9E5FF 5%, #ffffff 20%)' }}>
       
-      <div className="bg-gray-200 p-10">
+      <div className=" pt-36 px-32 py-24">
       <h6 className="text-black text-2xl py-4"> TERMS & CONDITIONS</h6>
         <h4 className="font-sans font-medium text-5xl text-black py-4">
           Terms & Conditions

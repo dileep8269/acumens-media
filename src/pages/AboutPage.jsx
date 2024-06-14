@@ -9,7 +9,7 @@ import ClientReview from "../components/aiSolutionPageComponents/ClientReview";
 
 const AboutPage = () => {
   return (
-    <div className="bg-gradient-to-b from-light-purple to-gray-50">
+    <div className="" style={{ backgroundImage: 'linear-gradient(to bottom, #E9E5FF 2%, #ffffff 20%)' }}>
       <div className="mx-auto lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] p-5">
         <div className="">
           <HeroAbout />
@@ -82,7 +82,7 @@ const AboutPage = () => {
           />
           <img
             src="./new-badge20211006-5432-t7lh3l-q7mfkwpcwp738n5l7zqmgjj0lbqpg0die58sgqfyn4.webp"
-            className=""
+            className="bg-black"
           />
           <img
             src="./new-badge20211005-28345-8m8kvp-q7mfkyl1ad9nvv2ux0jvlj1xs3hfvekz2ejrfad6ao.webp"
@@ -101,11 +101,13 @@ const AboutPage = () => {
         <h1 className="block text-center text-4xl font-syne font-bold my-16">
           What our happy customers are saying
         </h1>
+        <div className="" style={{ background: '#F7F7FA', borderRadius: '50px', border: '0px solid rgba(0, 0, 0, 0.1)' }}>
         <ClientReview review="''The entire staff at Acumens have been phenomenal. They are quick with their replies and incredibly helpful.''" />
-
+        </div>
         <div className=" mt-10">
           <Contact message="See how we can help your business grow with digital marketing" />
         </div>
+        
       </div>
     </div>
   );
