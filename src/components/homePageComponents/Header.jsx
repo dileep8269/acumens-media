@@ -120,7 +120,7 @@ const Header = () => {
               </p>
             </Link>
 
-            <Link to={"tel:8884915291"} className="cursor-pointer px-4 py-1 bg-transparent text-sm font-medium text-gray-700 ">
+            <Link to={"tel:+18009694409"} className="cursor-pointer px-4 py-1 bg-transparent text-sm font-medium text-gray-700 ">
               <p className="text-[12px] font-syne font-bold tracking-tighter leading-5 uppercase">
                 Sales
               </p>

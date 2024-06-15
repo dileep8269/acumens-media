@@ -35,19 +35,19 @@ const ContactPage = () => {
             digital marketing team can contribute to your success.
           </p>
           <div className="flex flex-col md:flex-row md:justify-between justify-start items-start gap-4">
-            <div className=" p-3 space-y-6">
+            <div className="py-2 space-y-6">
               <p className="text-base font-bold font-syne text-black">
                 Sales:
                 <br />
-                <Link to="#">800-969-4409</Link>
+                <Link to="tel:+18009694409">800-969-4409</Link>
               </p>
               <p className="text-base font-bold font-syne text-black">
                 Support:
                 <br />
-                <Link to="#">888-491-5291</Link>
+                <Link to="tel:+18009694409">888-491-5291</Link>
               </p>
             </div>
-            <div className=" p-3 space-y-6">
+            <div className="py-2 space-y-6">
               <p className="text-base font-bold font-syne text-black">
                 Sales:
                 <br />

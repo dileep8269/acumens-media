@@ -7,7 +7,7 @@ const BlogCard = () => {
             {
                 blogCardDetails?.map((cardDetail,index) => (
 
-                    <div key={index} className="lg:w-[400px] lg:h-[480px] overflow-hidden shadow-lg bg-white bg-opacity-50 backdrop-blur-md rounded-[40px] ">
+                    <div key={index} className="2xl:w-[400px] 2xl:h-[480px] overflow-hidden shadow-lg bg-white bg-opacity-50 backdrop-blur-md rounded-[40px] ">
                         <img className="w-full h-[270px]" src={cardDetail?.img} alt="Sample Image" />
                         <div className="px-6 py-6">
                             <h6 className=" text-base mb-2">{cardDetail.date}</h6>

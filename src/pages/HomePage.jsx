@@ -10,6 +10,7 @@ import AcumensReview from "../components/homePageComponents/AcumensReview"
 import DisplayCard from "../components/homePageComponents/DisplayCard"
 import CustomForm from "../components/homePageComponents/CustomForm"
 import Button from "../components/homePageComponents/Button"
+import TrackRecord from "../components/homePageComponents/TrackRecord"
 
 // importing constants from constant folder
 import { whatWeDo, aboutAcumensic, partnerImages, brandImages, marketingList, awardedImages, inputFields } from "../constants/constant"
@@ -57,6 +58,10 @@ const HomePage = () => {
 
       <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto px-8 lg:px-0">
         <AboutUs about={aboutAcumensic} />
+      </div>
+
+      <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto px-8 lg:px-0">
+        <TrackRecord />
       </div>
 
       <div className="w-full py-10 bg-gradient-to-b from-light-purple to-[#fff] rounded-t-[40px] space-y-20">

@@ -9,7 +9,7 @@ const Hero = () => {
     return (
         <div className="flex flex-col md:flex-row items-center justify-between min-h-max px-8 lg:px-0 py-10 pt-24 md:pt-20 gap-10 text-white">
             <div className="text-left md:w-3/5 space-y-10 lg:space-y-10">
-                <div className="lg:h-[125px] md:h-[150px] h-[270px]">
+                <div className="lg:h-[125px] h-[150px]">
                     <TypeAnimation />
 
                 </div>

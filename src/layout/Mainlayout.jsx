@@ -59,12 +59,12 @@ const Mainlayout = () => {
         </span>
       </div>
 
-      <div className="fixed left-0 bottom-0 w-full text-white text-center flex justify-center items-center gap-x-1 sm:hidden z-50">
+      <div className="fixed left-0 bottom-0 w-full text-white text-center flex justify-center items-center gap-x-1 sm:hidden z-50 bg-gray-100">
         <span className="inline-block w-1/2 px-1 py-4 xs:p-4 text-lg font-normal font-kanit bg-black rounded-[40px]" onClick={toggleModal}>
           Speak To Us
         </span>
         <span className="inline-block w-1/2 px-1 py-4 xs:p-4 text-lg font-normal font-kanit bg-black rounded-[40px]">
-          <Link to={"tel:8884915291"} >
+          <Link to={"tel:+18009694409"} >
             8009694409
           </Link>
         </span>
