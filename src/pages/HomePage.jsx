@@ -17,6 +17,7 @@ import { whatWeDo, aboutAcumensic, partnerImages, brandImages, marketingList, aw
 
 // importing react icons
 import { FaCheckCircle } from "react-icons/fa";
+import Portfolio from "../components/homePageComponents/Portfolio"
 
 const HomePage = () => {
 
@@ -148,8 +149,8 @@ const HomePage = () => {
 
       </div>
 
-      <div className="w-full px-8 lg:px-0 py-20 bg-blue-Purple text-white rounded-t-[40px]">
-        <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto">
+      <div className="w-full px-8 lg:px-0 py-10 bg-blue-Purple text-white rounded-t-[40px]">
+        <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto space-y-16">
 
           <div className="flex flex-col md:flex-row gap-8">
             <div className="w-full md:w-[50%] flex flex-col justify-center items-center gap-y-5">
@@ -188,6 +189,11 @@ const HomePage = () => {
             </div>
 
           </div>
+
+          <div>
+            <Portfolio images={partnerImages} />
+          </div>
+
         </div>
 
       </div>
