@@ -21,7 +21,7 @@ const Footer = () => {
                     </p>
                     <div className="relative inline-block rounded-full transition duration-300 ease-in-out">
                         <span className="relative overflow-hidden before:content-[''] before:absolute bottom-0.5  before:-bottom-1 before:left-0 before:w-0 before:h-0.5 before:hover:bg-blue-Purple before:transition-width before:duration-500 before:ease-in-out hover:before:w-full">
-                            <Link to="" className="font-bold uppercase text-sm font-syne">view on map</Link>
+                            <Link to="https://www.google.com/maps/place/440+N+Barranca+Ave,+Covina,+CA+91723,+USA/@34.0901483,-117.8812267,17z/data=!3m1!4b1!4m6!3m5!1s0x80c32859273c7a1b:0x11c9d90ae80b6ca!8m2!3d34.0901483!4d-117.8812267!16s%2Fg%2F11sshfp7sj?entry=ttu" className="font-bold uppercase text-sm font-syne">view on map</Link>
                         </span>
                     </div>
                 </div>
