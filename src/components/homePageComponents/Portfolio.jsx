@@ -11,29 +11,29 @@ const Portfolio = ({images}) => {
                 {/* 1st column */}
                 <div className="col-span-1 md:col-span-2 lg:col-span-1 space-y-6 p-4 md:p-10 border-b md:border-0 lg:border-r border-slate-300">
                     <img className="w-12 h-12 rounded-full object-center" src="one.webp" alt="one.webp" />
-                    <h6 className="font-kanit font-normal text-lg text-black">Talk to a growth expert</h6>
+                    <h6 className="font-kanit font-normal text-lg lg:text-2xl text-black">Talk to a growth expert</h6>
                     <div className="flex flex-row justify-between items-start gap-2 w-full md:w-[70%] lg:w-full">
                         <div className="py-2 space-y-6 text-black">
-                            <p className="text-[12px] lg:text-sm font-light font-kanit ">
+                            <p className="text-[12px] text-sm lg:text-base font-normal font-kanit ">
                                 Sales:
                                 <br />
                                 <Link to="tel:+18009694409">800-969-4409</Link>
                             </p>
-                            <p className="text-[12px] lg:text-sm font-light font-kanit ">
+                            <p className="text-[12px] text-sm lg:text-base font-normal font-kanit ">
                                 Support:
                                 <br />
                                 <Link to="tel:+18009694409">888-491-5291</Link>
                             </p>
                         </div>
                         <div className="py-2 space-y-6 text-black">
-                            <p className="text-[12px] lg:text-sm font-light font-kanit ">
+                            <p className="text-[12px] text-sm lg:text-base font-normal font-kanit ">
                                 Sales:
                                 <br />
                                 <Link to="mailto:sales@acumensinc.com">
                                     sales@acumensinc.com
                                 </Link>
                             </p>
-                            <p className="text-[12px] lg:text-sm font-light font-kanit ">
+                            <p className="text-[12px] text-sm lg:text-base font-normal font-kanit ">
                                 Support:
                                 <br />
                                 <Link to="mailto:support@acumensinc.com">
@@ -47,12 +47,12 @@ const Portfolio = ({images}) => {
                 {/* 2nd column */}
                 <div className="col-span-1 md:col-span-1 lg:col-span-1 p-4 md:p-10 border-b md:border-0 lg:border-r border-slate-300">
 
-                    <div className="space-y-3 flex flex-col justify-center items-center text-center">
-                        <h5 className='text-lg font-bold font-syne text-black'>Address</h5>
+                    <div className="space-y-3 flex flex-col justify-center items-center text-center md:pt-16">
+                        <h5 className='text-lg lg:text-2xl font-bold font-syne text-black'>Address</h5>
                         <div className="w-16 h-16 rounded-full bg-gray-300 flex justify-center items-center">
                             <span className="text-2xl text-blue-Purple"><SiGooglemaps /></span>
                         </div>
-                        <p className=" w-48 text-base font-normal font-syne  text-black">440 N Barranca Ave.,
+                        <p className=" w-48 text-base lg:text-xl font-normal font-syne  text-black">440 N Barranca Ave.,
                             Covina,
                             CA 91723
                         </p>

@@ -8,7 +8,7 @@ import { footerServiceLinks1, footerServiceLinks2, AboutUs } from "../../constan
 const Footer = () => {
     return (
         <footer>
-            <div className='grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-5 text-center lg:text-left justify-items-center items-start py-5 rounded-t-[40px]'>
+            <div className='grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-5 text-center lg:text-left justify-items-center items-start py-5'>
 
                 {/* <div className="space-y-3 flex flex-col justify-center items-center text-center">
                     <h5 className='text-lg font-bold font-syne text-black'>Address</h5>
