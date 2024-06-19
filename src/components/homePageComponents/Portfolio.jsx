@@ -94,7 +94,7 @@ const Portfolio = ({images}) => {
             </div>
 
             {/* logo Displaying Body */}
-            <div className="flex flex-wrap justify-between items-center gap-8 lg:gap-10 px-4 lg:px-10 py-10 bg-[#f7f7fa] rounded-b-[40px]">
+            <div className="flex flex-wrap justify-between items-center gap-16 md:gap-8 lg:gap-10 px-4 lg:px-10 py-10 bg-[#f7f7fa] rounded-b-[40px]">
                 {images?.map((image, index) => (
                     <img key={index} src={image} alt={image} />
                 ))}

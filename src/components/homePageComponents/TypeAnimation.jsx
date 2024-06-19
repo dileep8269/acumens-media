@@ -16,8 +16,7 @@ export const TypeAnimation = () => {
     return (
         <div className='App'>
             <h1 className="text-2xl lg:text-4xl font-bold mb-4 font-syne">
-                 <span className="text-2xl lg:text-4xl font-bold mb-4 font-syne"></span>“Unleash” the power of AI for 
-                <br />
+                <span className="text-2xl lg:text-4xl font-bold mb-4 font-syne">“Unleash” the power of AI for </span>
                 <span className="text-2xl lg:text-4xl font-bold mb-4 font-syne">
                     {/* Style will be inherited from the parent element */}
                     <Typewriter
@@ -28,7 +27,7 @@ export const TypeAnimation = () => {
                         typeSpeed={70}
                         deleteSpeed={50}
                         delaySpeed={1000}
-                    
+
                     />
                 </span>
             </h1>

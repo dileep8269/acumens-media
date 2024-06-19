@@ -16,11 +16,12 @@ const Hero = () => {
                 <p className="text-base font-kanit font-light mb-6 lg:w-[80%] tracking-normal leading-6"> <span className="inline-block mb-5">Ready for a paradigm shift in your business&rsquo;s online marketing & promotions?</span> <br /> <span >At Acumens, we&rsquo;re redefining the landscape with AI-driven strategies that are propelling businesses to new heights. Contact us today to Elevate your Business with AI-POWERED Youtube, Social Media & Search Engine Marketing.</span></p>
                 <Button><Link to="/audit.htm">Get Started</Link></Button>
             </div>
-            <div className={`md:w-2/5 mt-8 md:mt-0 flex justify-start `}>
+            <div className={`md:w-2/5 mt-8 md:mt-0 flex justify-center `}>
 
-                <div className='w-full max-w-md flex flex-row gap-2 md:gap-4 flex-wrap justify-center'>
-                    <Carousel />
+                <div className="shadow-2xl shadow-black rounded-[40px]">
+                     <Carousel />
                 </div>
+              
             </div>
         </div>
     );

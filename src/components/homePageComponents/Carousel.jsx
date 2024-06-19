@@ -19,13 +19,13 @@ const Carousel = () => {
 
   return (
     <div className="relative w-72 h-96 overflow-hidden rounded-[40px]">
-      <div className="absolute w-full h-full">
+      <div className="absolute w-full h-full rounded-[40px]">
         {images.map((image, index) => (
           <img
             key={index}
             src={image}
             alt={`Carousel ${index}`}
-            className={`absolute w-full h-auto object-cover transition-opacity duration-1000 ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'}`}
+            className={`absolute shadow-2xl shadow-black w-full h-auto object-cover transition-opacity rounded-[40px] duration-1000 ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'}`}
           />
         ))}
       </div>
