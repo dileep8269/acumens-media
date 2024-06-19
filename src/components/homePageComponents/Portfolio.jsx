@@ -105,7 +105,7 @@ const Portfolio = ({images}) => {
                 </div>
                 <div className="flex justify-start items-center text-black">
                   <img
-                    className="object-contain h-8 px-2"
+                    className="object-contain h-8 mr-3"
                     src="trustpilot.png"
                     alt="F7.webp"
                   />
