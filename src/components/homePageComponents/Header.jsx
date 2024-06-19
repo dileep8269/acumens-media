@@ -97,7 +97,7 @@ const Header = () => {
                 </DropdownButton>
               </li>
               <li className="cursor-pointer">
-                <DropdownButton dropdown={FollowUs} classname="w-72">
+                <DropdownButton dropdown={FollowUs} classname="w-72 ">
                   Follow Us
                 </DropdownButton>
               </li>

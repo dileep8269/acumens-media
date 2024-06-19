@@ -62,8 +62,10 @@ function DropdownButton({ children, dropdown, classname = "",isHandBar=false }) 
                                             setIsOpen(false);
                                             toggleMenu();
                                         }} >
-                                        {dropdownMenu.icon}
+                                        
+                                        <img src={dropdownMenu.icon} alt={dropdownMenu.icon} className={dropdownMenu.class}/>
                                     </Link>
+                                    
                                 )
                             })}
                         </div>

@@ -82,11 +82,13 @@ export const companyFeedback = [
 ]
 
 export const partnerImages = [
-    'meta-partner.webp',
-    'google-cloud.webp',
-    'google-partner.webp',
-    'shopify.webp',
-    'tiktok.webp'
+    
+    'googlecloud.png',
+    'meta.png',
+    'GooglePremierPartner.png',
+    'shopifyy.png',
+    'tiktokk.png'
+    
 ];
 
 export const brandImages = [
@@ -290,26 +292,34 @@ export const WhoWeAreDropdown = [
 ]
 export const FollowUs = [
     {
-        icon : React.createElement(FaLinkedin),
-        router: "/"
+        icon: 'linkedin.png',
+        router: "https://www.linkedin.com",
+        class:'w-14 h-6 grayscale-[10] hover:grayscale-[0]'
     },
     {
-        icon : React.createElement(FaFacebook),
-        router: "/"
+        icon: 'facebook.png',
+        router: "https://www.facebook.com",
+        class:'w-14 h-6 grayscale-[10] hover:grayscale-[0]'
     },
     {
-        icon : React.createElement(FaTwitter),
-        router: "/"
+        icon: 'twitter.png',
+        router: "https://www.twitter.com",
+        class:'w-14 h-6 grayscale-[10] hover:grayscale-[0]'
     },
     {
-        icon : React.createElement(FaInstagram),
-        router: "/"
+        icon: 'instagram.png',
+        router: "https://www.instagram.com",
+        class:'w-14 h-6  grayscale-[10] hover:grayscale-[0]'
     },
     {
-        icon : React.createElement(FaYoutube),
-        router: "/"
+        icon: 'youtube.png',
+        router: "https://www.youtube.com",
+        class:'w-14 h-8 grayscale-[10] hover:grayscale-[0]'
     }
-]
+];
+
+
+
 
 export const LetsTalk = [
     {
