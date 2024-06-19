@@ -19,7 +19,7 @@ const Contact = ({ message }) => {
                 </div>
             </div>
             <div className='py-10'>
-                <img src="../AiSolutions/border-center.webp" />
+                <img src="../AiSolutions/border-center.webp" className='w-full' />
             </div>
             <div className='flex flex-col lg:flex-row justify-between items-center gap-6 pt-10 '>
                 <div className='h-auto w-full lg:w-[60%] space-y-6 mb-10 lg:mb-0'>

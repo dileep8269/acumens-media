@@ -1,9 +1,11 @@
 import { blogDetails } from "../../constants/constant";
 import { Swiper, SwiperSlide } from "swiper/react";
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+
 //import required modules
 import { Pagination, Navigation } from "swiper/modules";
 import { useEffect, useState } from "react";
@@ -43,7 +45,7 @@ const BlogCard = () => {
       >
         {blogDetails.map((blog) => (
           <SwiperSlide key={blog.id}>
-            <div className=" overflow-hidden shadow-lg h-[440px] lg:h-[450px] xl:h-[480px] 3xl:h-[560px] bg-white rounded-[40px]">
+            <div className=" overflow-hidden shadow-lg shadow-gray-400 h-[440px] lg:h-[450px] xl:h-[480px] 3xl:h-[560px] bg-white rounded-[40px]">
               <img
                 src={blog.img}
                 alt="Card image"

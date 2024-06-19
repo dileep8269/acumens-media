@@ -34,7 +34,7 @@ const ContentWritingPage = () => {
                 <img src="../AiSolutions/border-center.webp" className="w-full" />
             </div> */}
 
-            <div className="bg-gradient-to-b from-[#f0edff] to-[#fff]">
+            <div className="bg-gradient-to-b from-[#f0edff] to-[#fff] rounded-t-[40px]">
 
                 <div className="w-full py-10">
                     <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto space-y-6">

@@ -58,7 +58,7 @@ const AuditPage = () => {
             </div>
           </div>
         </div>
-        <div className="w-full px-8 py-10">
+        <div className="w-full px-8">
           <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto">
             <Contact message="See how we can help your business grow with digital marketing" />
           </div>

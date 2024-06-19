@@ -152,7 +152,7 @@ const Footer = () => {
                   >
                     <img
                       src="twitter.png"
-                      className="h-12 w-12 grayscale-[10] hover:grayscale-[0]"
+                      className="h-8 w-8 grayscale-[10] hover:grayscale-[0]"
                       alt="Twitter"
                     />
                   </a>

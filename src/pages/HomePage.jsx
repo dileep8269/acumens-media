@@ -18,8 +18,43 @@ import { whatWeDo, aboutAcumensic, partnerImages, brandImages, marketingList, aw
 // importing react icons
 import { FaCheckCircle } from "react-icons/fa";
 import Portfolio from "../components/homePageComponents/Portfolio"
+import { useLocation } from "react-router-dom"
+import { useEffect } from "react"
 
 const HomePage = () => {
+
+  // const { hash } = useLocation();
+
+  // console.log("hash obtained at 28 : ", hash);
+
+  // useEffect(() => {
+  //   if (hash) {
+  //     const element = document.getElementById(hash.substring(1));
+  //     if (element) {
+  //       element.scrollIntoView({ behavior: 'smooth' });
+  //     }
+  //   }
+  // }, [hash]);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    let timeOut;
+    if (location.hash) {
+      const element = document.getElementById(location.hash.substring(1));
+      if (element) {
+        // Timeout to ensure the component has fully rendered before scrolling
+        timeOut = setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 0);
+      }
+    }
+
+    return () => {
+      clearInterval(timeOut);
+    }
+
+  }, [location]);
 
   return (
     <div>
@@ -65,7 +100,7 @@ const HomePage = () => {
         <TrackRecord />
       </div>
 
-      <div className="w-full py-10 bg-gradient-to-b from-light-purple to-[#fff] rounded-t-[40px] space-y-20">
+      <div className="w-full py-10 bg-gradient-to-b from-light-purple to-[#f8fafa] rounded-t-[40px] space-y-20">
         <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto text-center space-y-10 px-8 lg:px-0">
           <h6 className="text-base font-bold font-syne text-black"> OUR CLIENTS ARE SOME OF THE WORLD&apos;S... </h6>
           <h1 className="text-4xl lg:text-5xl font-bold font-syne text-black">Fastest growing companies & Brands.</h1>
@@ -149,7 +184,7 @@ const HomePage = () => {
 
       </div>
 
-      <div className="w-full px-8 lg:px-0 py-10 bg-blue-Purple text-white rounded-t-[40px]">
+      <div className="w-full px-8 lg:px-0 py-10 bg-blue-Purple text-white rounded-t-[40px] outline-0">
         <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto space-y-16">
 
           <div className="flex flex-col md:flex-row gap-8">
@@ -183,7 +218,7 @@ const HomePage = () => {
               </div>
 
             </div>
-            <div className="w-full md:w-[50%] flex flex-col justify-center md:justify-start items-center md:items-end">
+            <div id="homePageForm" className="w-full md:w-[50%] flex flex-col justify-center md:justify-start items-center md:items-end">
               <CustomForm fields={inputFields} message="Get you free audit" />
 
             </div>
