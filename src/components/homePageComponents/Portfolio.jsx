@@ -13,31 +13,31 @@ const Portfolio = ({images}) => {
               src="one.webp"
               alt="one.webp"
             />
-            <h6 className="font-kanit font-normal text-lg text-black">
+            <h6 className="font-kanit font-normal text-2xl text-black">
               Talk to a growth expert
             </h6>
             <div className="flex flex-row justify-between items-start gap-2 w-full md:w-[70%] lg:w-full">
               <div className="py-2 space-y-6 text-black">
-                <p className="text-[12px] lg:text-sm font-light font-kanit ">
+                <p className="text-sm lg:text-lg font-normal font-kanit ">
                   Sales:
                   <br />
                   <Link to="tel:+18009694409">800-969-4409</Link>
                 </p>
-                <p className="text-[12px] lg:text-sm font-light font-kanit ">
+                <p className="text-sm lg:text-lg font-normal font-kanit ">
                   Support:
                   <br />
                   <Link to="tel:+18009694409">888-491-5291</Link>
                 </p>
               </div>
               <div className="py-2 space-y-6 text-black">
-                <p className="text-[12px] lg:text-sm font-light font-kanit ">
+                <p className="text-sm lg:text-lg font-normal font-kanit ">
                   Sales:
                   <br />
                   <Link to="mailto:sales@acumensinc.com">
                     sales@acumensinc.com
                   </Link>
                 </p>
-                <p className="text-[12px] lg:text-sm font-light font-kanit ">
+                <p className="text-sm lg:text-lg font-normal font-kanit ">
                   Support:
                   <br />
                   <Link to="mailto:support@acumensinc.com">
@@ -50,8 +50,8 @@ const Portfolio = ({images}) => {
 
           {/* 2nd column */}
           <div className="col-span-1 md:col-span-1 lg:col-span-1 p-4 md:p-10 border-b md:border-0 lg:border-r border-slate-300">
-            <div className="space-y-3 flex flex-col justify-center items-center text-center">
-              <h5 className="text-lg font-bold font-syne text-black">
+            <div className="space-y-3 flex flex-col justify-center items-center text-center pt-0 lg:pt-20">
+              <h5 className="text-2xl font-bold font-syne text-black">
                 Address
               </h5>
               <div className="w-16 h-16 rounded-full bg-gray-200 flex justify-center items-center">
@@ -63,7 +63,7 @@ const Portfolio = ({images}) => {
                   alt="map.png"
                 />
               </div>
-              <p className=" w-48 text-base font-normal font-syne  text-black">
+              <p className=" w-48 text-base md:text-xl font-normal font-syne  text-black">
                 440 N Barranca Ave., Covina, CA 91723
               </p>
               <div className="relative inline-block rounded-full transition duration-300 ease-in-out">
@@ -124,7 +124,7 @@ const Portfolio = ({images}) => {
         {/* logo Displaying Body */}
         <div className="flex flex-wrap justify-between items-center gap-8 lg:gap-10 px-4 lg:px-10 py-10 bg-[#f7f7fa] rounded-b-[40px]">
           {images?.map((image, index) => (
-            <img key={index} src={image} alt={image} />
+            <img key={index} src={image} alt={image} className="w-28 h-28 md:w-24 md:h-24 lg:w-28 lg:h-28 object-contain" />
           ))}
         </div>
       </div>

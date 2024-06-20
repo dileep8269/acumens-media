@@ -294,27 +294,27 @@ export const FollowUs = [
     {
         icon: 'linkedin.png',
         router: "https://www.linkedin.com",
-        class:'w-14 h-6 grayscale-[10] hover:grayscale-[0]'
+        class:'w-10 h-5 grayscale-[10] hover:grayscale-[0]'
     },
     {
         icon: 'facebook.png',
         router: "https://www.facebook.com",
-        class:'w-14 h-6 grayscale-[10] hover:grayscale-[0]'
+        class:'w-10 h-5 grayscale-[10] hover:grayscale-[0]'
     },
     {
         icon: 'twitter.png',
         router: "https://www.twitter.com",
-        class:'w-14 h-6 grayscale-[10] hover:grayscale-[0]'
+        class:'w-10 h-5 grayscale-[10] hover:grayscale-[0]'
     },
     {
         icon: 'instagram.png',
         router: "https://www.instagram.com",
-        class:'w-14 h-6  grayscale-[10] hover:grayscale-[0]'
+        class:'w-10 h-5  grayscale-[10] hover:grayscale-[0]'
     },
     {
         icon: 'youtube.png',
         router: "https://www.youtube.com",
-        class:'w-14 h-8 grayscale-[10] hover:grayscale-[0]'
+        class:'w-10 h-5 grayscale-[10] hover:grayscale-[0]'
     }
 ];
 
