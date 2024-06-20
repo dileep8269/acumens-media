@@ -10,9 +10,9 @@ const HeroL = ({ borderColor, buttonBg, listColor, bgColor }) => {
           <img src='GettyImages-1437209359.webp' alt="sdsds" className='w-full h-[500px] object-cover rounded-[40px] ' />
         </div>
         <div className="flex  justify-center items-center gap-2 flex-col w-full md:w-[20%] space-y-2">
-          <div className={`w-2 ${bgColor} border h-[450px] ${borderColor}`}></div>
+          <div className={`w-0.5 ${bgColor} border h-[450px] ${borderColor}`}></div>
           {/* <div className={`w-2 ${bgColor} border h-[215px] ${borderColor}`}></div> */}
-          <h1 className="text-3xl font-syne font-bold leading-6 tracking-normal"> v/s </h1>
+          <h1 className="text-2xl  font-syne font-extrabold leading-6 tracking-normal"> v/s </h1>
         </div>
         <div className="w-full md:w-[38%]">
           <img src='GettyImages-1437209359.webp' alt="sdsds" className='w-full h-[500px] object-cover rounded-[40px]' />
@@ -42,7 +42,7 @@ const HeroL = ({ borderColor, buttonBg, listColor, bgColor }) => {
         </div>
 
         <div className="flex  justify-center items-center gap-2 flex-col w-full md:w-[20%] space-y-2">
-          <div className={`w-2 ${bgColor} border h-[350px] ${borderColor}`}></div>
+          <div className={`w-0.5 ${bgColor} border h-[350px] ${borderColor}`}></div>
           {/* <h1 className="text-3xl font-syne font-bold leading-6 tracking-normal"> v/s </h1> */}
           {/* <div className={`w-2 ${bgColor} border h-[150px] ${borderColor}`}></div> */}
         </div>
