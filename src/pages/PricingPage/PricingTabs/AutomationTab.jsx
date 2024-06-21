@@ -2,43 +2,23 @@ import { useState } from 'react';
 import PricingTableComparison from '../../../components/pricingPageComponents/PricingTableComparison';
 import SocialMediaPricePlan from '../../../components/pricingPageComponents/SocialMediaPricePlan';
 import PricingTabs from '../../../components/pricingPageComponents/PricingTabs';
-import { socialMediaBasicPlan, socialMediaGrowthPlan, socialMediaDynamicPlan, socialMediaUltimatePlan } from '../../../constants/pricingPageConstant';
+import { socialMediaBasicPlan, socialMediaGrowthPlan, socialMediaDynamicPlan, socialMediaUltimatePlan, socialMediaPlanFaqs, pricing } from '../../../constants/pricingPageConstant';
+import AiSolutionFaqs from '../../../components/aiSolutionPageComponents/AiSolutionFaqs';
+import Contact from '../../../components/aiSolutionPageComponents/Contact';
 
 const AutomationTab = () => {
     const [plan, setPlan] = useState('monthly'); // Default plan
 
-    // Pricing based on the selected plan
-    const pricing = {
-        monthly: {
-            UltimatePro: 379.99,
-            pro: 349.99,
-            business: 329.99,
-            special: 299.99
-        },
-        sixMonths: {
-            UltimatePro: 265.99,
-            pro: 244.99,
-            business: 230.99,
-            special: 209.99
-        },
-        twelveMonths: {
-            UltimatePro: 220.39,
-            pro: 202.99,
-            business: 191.93,
-            special: 173.99
-        }
-    };
-
     return (
         <>
-            <div className="mt-10">
-                <section className="text-gray-600 body-font overflow-hidden">
-                    <div className="container px-5 mx-auto">
-                        <div className="flex flex-col text-center w-full mb-10">
-                            <h1 className="md:text-4xl text-xl font-semibold title-font mb-2 text-gray-900">Social Media Automation/SEO/SEM Packages</h1>
+            <div>
+                <section className="py-5">
+                    <div className="mx-auto space-y-4">
+                        <div className="flex flex-col justify-center items-center px-8 lg:px-0">
+                            <h1 className="md:text-4xl text-3xl font-semibold font-syne text-gray-900 text-center">Social Media Automation/SEO/SEM Packages</h1>
                             <PricingTabs plan={plan} setPlan={setPlan} />
                         </div>
-                        <div className="flex md:justify-between md:items-start gap-10 overflow-x-auto 3xl:overflow-hidden py-10 3xl:px-4 bg-yellow-500">
+                        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-12 lg:gap-2 py-10 md:py-5 px-8">
 
                             <SocialMediaPricePlan price={pricing[plan]?.UltimatePro} plan={socialMediaBasicPlan} />
                             <SocialMediaPricePlan price={pricing[plan]?.pro} plan={socialMediaGrowthPlan} />
@@ -50,7 +30,27 @@ const AutomationTab = () => {
                 </section>
             </div>
 
-            <PricingTableComparison />
+            <div className='lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto px-8 lg:px-0 py-5'>
+                <PricingTableComparison />
+            </div>
+
+
+            <div className="w-full py-10">
+                <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto space-y-6">
+                    <h6 className='text-center uppercase text-lg font-semibold font-syne text-black px-8'>{socialMediaPlanFaqs.title}</h6>
+                    <div className='flex flex-col justify-center items-center space-y-6 px-8'>
+                        <h1 className='text-center text-3xl lg:text-5xl font-bold font-syne lg:w-[80%] text-black'>{socialMediaPlanFaqs.heading}</h1>
+                        <p className='text-center text-base font-kanit font-light tracking-normal leading-6 text-black mb-5 lg:w-[63%]'>{socialMediaPlanFaqs.subTitle}</p>
+                    </div>
+                    <div className="pt-10">
+                        <AiSolutionFaqs faqs={socialMediaPlanFaqs} />
+                    </div>
+                </div>
+            </div>
+
+            <div className='lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto pt-10'>
+                <Contact message={"Want to know how else can we help your business?"} />
+            </div>
 
         </>
     );
