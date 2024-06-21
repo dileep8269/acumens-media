@@ -8,6 +8,7 @@ import AiProofCard from "../components/aiSolutionPageComponents/AiProofCard"
 import AiSolutionFaqs from "../components/aiSolutionPageComponents/AiSolutionFaqs"
 import Contact from "../components/aiSolutionPageComponents/Contact"
 import Button from "../components/homePageComponents/Button"
+import { Link } from "react-router-dom"
 
 // importing aiSolutions constants 
 import { socialMediaMarktingList, socialMediaBlogs, aboutSocialMediaServices, socialMediaServices, socialMediaProofs, socialMediaFaqs, socialMediaHero, banner, clientReview, contactMessage } from "../constants/googleBusinessConstant"
@@ -102,7 +103,7 @@ const GoogleBusinessPage = () => {
                     </div>
                     <div className='flex flex-col justify-center items-center space-y-6 px-8'>
                         <h1 className='text-center text-3xl lg:text-5xl font-bold font-syne lg:w-[80%] text-black'>{banner.heading}</h1>
-                        <Button>{banner.buttonContext}</Button>
+                        <Button><Link to="/audit.htm">{banner.buttonContext}</Link></Button>
                     </div>
                 </div>
 

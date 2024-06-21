@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import { Link } from "react-router-dom"
 import Button from "../homePageComponents/Button"
 
 const Hero = ({ hero }) => {
@@ -9,7 +10,7 @@ const Hero = ({ hero }) => {
         <h1 className='text-left text-3xl lg:text-5xl font-bold font-syne  text-black'>{hero?.heading}</h1>
         <p className='text-left text-lg font-kanit font-normal tracking-normal leading-6 text-black mb-5 '>{hero?.context1}</p>
         {hero?.context2 && <p className='text-left text-lg font-kanit font-normal tracking-normal leading-6 text-black mb-5 '>{hero?.context2}</p>}
-        <Button>{hero?.buttonText}</Button>
+        <Button><Link to={hero?.router}>{hero?.buttonText}</Link></Button>
       </div>
       <div className='w-full md:w-1/2 flex lg:justify-end justify-center items-center'>
         <img src={hero?.photo} alt="sdsds" className='w-[400px] h-[400px] object-cover rounded-[40px] transition-transform duration-1000 hover:scale-95' />

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import Hero from "../components/homePageComponents/Hero"
 import ImageSlider from "../components/homePageComponents/ImageSlider"
 import AboutUs from "../components/homePageComponents/AboutUs"
@@ -67,7 +68,7 @@ const HomePage = () => {
       </div>
 
       <div className="bg-[#f7f7fa] rounded-b-[40px]">
-        <div className="flex flex-col md:flex-row justify-center items-center lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto gap-6 py-5 px-8 lg:px-0 lg:py-0 lg:gap-0">
+        <div className="flex flex-col md:flex-row justify-center items-center lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto gap-6 py-2 px-8 lg:px-0 lg:py-0 lg:gap-0">
           <div className="w-full md:w-[15%] p-2 font-syne font-bold text-lg tracking-tight uppercase leading-6 text-black">
             A PARTNER, NOT <br /> A VENDOR
           </div>
@@ -163,7 +164,7 @@ const HomePage = () => {
                   <div className="w-full space-y-7 lg:space-y-24 text-left ">
                     <h4 className="text-base font-bold font-syne text-black">BLOG</h4>
                     <h1 className="text-4xl lg:text-5xl font-bold font-syne text-black">Digital marketing & industry insights</h1>
-                    <Button className=" md:mx-0">View More</Button>
+                    <Button className=" md:mx-0"><Link to="/blog.htm">View More</Link></Button>
                   </div>
 
                 </div>
@@ -211,7 +212,7 @@ const HomePage = () => {
                   {
                     awardedImages.map((image, index) => (
 
-                      <li key={index}><img src={image} alt="" className="h-auto w-28 object-cover" /></li>
+                      <li key={index}><img src={image} alt={image} className="h-auto w-28 object-cover" /></li>
                     ))
                   }
                 </ul>

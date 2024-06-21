@@ -54,7 +54,7 @@ const Mainlayout = () => {
       <div className="fixed left-0 bottom-12 w-full sm:hidden pl-4 z-50">
         <span className="inline-block w-14 h-14">
           <Link to="https://api.whatsapp.com/send?phone=18163210322&text=Hello,%20Welcome%20to%20Acumens%20Media%20Inc.">
-            <img src="WhatsApp-Icon.png" alt="WhatsApp-Icon" className="w-full h-full object-fill bg-transparent" />
+            <img src="WhatsApp-Icon.webp" alt="WhatsApp-Icon" className="w-full h-full object-fill bg-transparent" />
           </Link>
         </span>
       </div>

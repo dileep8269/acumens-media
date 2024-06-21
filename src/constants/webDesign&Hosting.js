@@ -2,6 +2,7 @@ import React from "react"
 import { SiGooglemarketingplatform } from "react-icons/si";
 import { FaLightbulb } from "react-icons/fa";
 import { PiMicrophoneStageFill } from "react-icons/pi";
+import router from "../router/Router";
 
 
 export const socialMediaHero = {
@@ -9,7 +10,8 @@ export const socialMediaHero = {
     heading : "Web Designing & Web Hosting Services",
     context1: "Welcome to the future of web design, where innovation meets aesthetics seamlessly. Our AI-integrated web design services redefine the way you engage with your audience, ensuring a digital presence that captivates and converts.",
     buttonText : "Get An Audit",
-    photo : "pexels-monstera-6282022-1024x948.webp"
+    photo : "pexels-monstera-6282022-1024x948.webp",
+    router:"/audit.htm"
 }
 
 export const socialMediaMarktingList = {
@@ -49,9 +51,9 @@ export const aboutSocialMediaServices = {
     title : "CREATING SUCCESS",
     heading : "What Sets Our Web Design Services Apart?",
     card : [
-        {icon : React.createElement(PiMicrophoneStageFill), heading : "Innovative AI Integration", context : "Our web design services stand out with the seamless integration of innovative AI technology. We go beyond traditional designs, incorporating artificial intelligence to create dynamic, adaptive, and personalized websites that evolve with user interactions."},
-        {icon : React.createElement(FaLightbulb), heading : "Future-Forward Solutions", context : "Stay ahead of the curve with our future-forward approach. We don't just design for today; we design for tomorrow. Embrace the future of web design with AI integration, ensuring your digital presence remains relevant and cutting-edge."},
-        {icon : React.createElement(SiGooglemarketingplatform), heading : "User-Centric Approach", context : "We prioritize the user experience. Our designs are not just visually appealing; they are tailored to enhance user interaction. Smart functionalities like chatbots and predictive search features ensure a user-centric approach, making your website intuitive and engaging."},
+        {icon : React.createElement(PiMicrophoneStageFill), heading : "Innovative AI Integration", context : "Our web design services stand out with the seamless integration of innovative AI technology. We go beyond traditional designs, incorporating artificial intelligence to create dynamic, adaptive, and personalized websites that evolve with user interactions.",router:"/app-development.htm"},
+        {icon : React.createElement(FaLightbulb), heading : "Future-Forward Solutions", context : "Stay ahead of the curve with our future-forward approach. We don't just design for today; we design for tomorrow. Embrace the future of web design with AI integration, ensuring your digital presence remains relevant and cutting-edge.",router:"/Seo.htm"},
+        {icon : React.createElement(SiGooglemarketingplatform), heading : "User-Centric Approach", context : "We prioritize the user experience. Our designs are not just visually appealing; they are tailored to enhance user interaction. Smart functionalities like chatbots and predictive search features ensure a user-centric approach, making your website intuitive and engaging.",router:"/Email-Marketing.htm"},
     ]
 }
 

@@ -23,7 +23,7 @@ const MeetTheTeam = () => {
           </div>
           <div>
             <span className="w-12 h-12 rounded-full flex justify-center items-center text-[22px] bg-gray-200 text-blue-Purple cursor-pointer hover:text-blue-700 transition-all duration-500">
-             <Link to="/" ><FaLinkedin /></Link> 
+             <Link to="https://www.linkedin.com" target="_blank"><FaLinkedin /></Link> 
             </span>
           </div>
 

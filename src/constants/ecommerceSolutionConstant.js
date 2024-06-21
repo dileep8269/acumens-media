@@ -2,6 +2,7 @@ import React from "react"
 import { SiGooglemarketingplatform } from "react-icons/si";
 import { FaLightbulb } from "react-icons/fa";
 import { PiMicrophoneStageFill } from "react-icons/pi";
+import router from "../router/Router";
 
 
 export const socialMediaHero = {
@@ -9,7 +10,8 @@ export const socialMediaHero = {
     heading : "AI-Driven E-commerce Solutions",
     context1: "Seeking a visionary AI-powered E-commerce store? Our team specializes in creating unique, AI-enhanced online platforms tailored to achieve your business goals effectively.",
     buttonText : "Get An Audit",
-    photo : "pexels-darina-belonogova-8788815-1024x948.webp"
+    photo : "pexels-darina-belonogova-8788815-1024x948.webp",
+    router:"/audit.htm"
 }
 
 export const socialMediaMarktingList = {
@@ -49,9 +51,9 @@ export const aboutSocialMediaServices = {
     title : "CREATING SUCCESS",
     heading : "What Sets Us Apart in AI-Enhanced E-commerce Solutions?",
     card : [
-        {icon : React.createElement(PiMicrophoneStageFill), heading : "Easy & Smooth Transition", context : "Our AI-powered onboarding ensures a smooth transition into the world of E-commerce. Say goodbye to complexities and hello to success."},
-        {icon : React.createElement(FaLightbulb), heading : "Strategic AI Implementation", context : "We strategically implement AI to maximize ROI. Our tailored strategies ensure that AI is applied in a way that aligns with your business goals, enhancing the effectiveness of your E-commerce operations and driving growth."},
-        {icon : React.createElement(SiGooglemarketingplatform), heading : "Customized AI Integration", context : "Our solutions are tailored to your business needs, ensuring that AI integration aligns with your specific objectives and requirements, resulting in a unique and effective E-commerce solution."},
+        {icon : React.createElement(PiMicrophoneStageFill), heading : "Easy & Smooth Transition", context : "Our AI-powered onboarding ensures a smooth transition into the world of E-commerce. Say goodbye to complexities and hello to success.",router:"/E-commerce.htm"},
+        {icon : React.createElement(FaLightbulb), heading : "Strategic AI Implementation", context : "We strategically implement AI to maximize ROI. Our tailored strategies ensure that AI is applied in a way that aligns with your business goals, enhancing the effectiveness of your E-commerce operations and driving growth.",router:"/Web-Design-Hosting.htm"},
+        {icon : React.createElement(SiGooglemarketingplatform), heading : "Customized AI Integration", context : "Our solutions are tailored to your business needs, ensuring that AI integration aligns with your specific objectives and requirements, resulting in a unique and effective E-commerce solution.",router:"/app-development.htm"},
     ]
 }
 

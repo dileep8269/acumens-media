@@ -106,48 +106,48 @@ const Footer = () => {
           <h5 className="text-2xl font-bold font-syne text-black">
             Follow Us
           </h5>
-          <ul className="flex flex-row justify-start items-center gap-5">
-            <li className="text-xl cursor-pointer hover:scale-150 transition-all duration-700 hover:text-blue-Purple">
+          <ul className="w-full h-full flex flex-row justify-start items-center gap-4">
+            <li className="text-xl h-8 w-8 cursor-pointer hover:scale-150 transition-all duration-700 hover:text-blue-Purple">
               <Link to="https://www.linkedin.com" target="_blank">
                 <img
-                  src="linkedin.png"
-                  className="h-8 w-8 grayscale-[10] hover:grayscale-[0]"
+                  src="linkedin.webp"
+                  className="h-full w-full object-contain grayscale-[10] hover:grayscale-[0]"
                   alt="LinkedIn"
                 />
               </Link>
             </li>
-            <li className="text-xl cursor-pointer hover:scale-150 transition-all duration-700 hover:text-blue-Purple">
-              <Link to="https://www.facebook.com" target="_blank">
+            <li className="text-xl h-8 w-8 cursor-pointer hover:scale-150 transition-all duration-700 hover:text-blue-Purple">
+              <Link to="https://www.facebook.com/acumensincdotcom/" target="_blank">
                 <img
-                  src="facebook.png"
-                  className="h-7 w-7 grayscale-[10] hover:grayscale-[0]"
+                  src="facebook.webp"
+                  className="w-full h-full object-contain grayscale-[10] hover:grayscale-[0]"
                   alt="Facebook"
                 />
               </Link>
             </li>
-            <li className="text-xl cursor-pointer hover:scale-150 transition-all duration-700 hover:text-blue-Purple">
-              <Link to="https://www.instagram.com" target="_blank">
+            <li className="text-xl h-8 w-8 cursor-pointer hover:scale-150 transition-all duration-700 hover:text-blue-Purple">
+              <Link to="https://www.instagram.com/acumensmediainc/" target="_blank">
                 <img
-                  src="instagram.png"
-                  className="h-7 w-7 grayscale-[10] hover:grayscale-[0]"
+                  src="instagram.webp"
+                  className="w-full h-full object-contain grayscale-[10] hover:grayscale-[0]"
                   alt="Instagram"
                 />
               </Link>
             </li>
-            <li className="text-xl cursor-pointer hover:scale-150 transition-all duration-700 hover:text-blue-Purple">
+            <li className="text-xl h-8 w-8 cursor-pointer hover:scale-150 transition-all duration-700 hover:text-blue-Purple">
               <Link to="https://www.twitter.com" target="_blank">
                 <img
-                  src="twitter.png"
-                  className="h-8 w-8 grayscale-[10] hover:grayscale-[0]"
+                  src="twitternew.webp"
+                  className="w-full h-full object-contain grayscale-[10] hover:grayscale-[0]"
                   alt="Twitter"
                 />
               </Link>
             </li>
-            <li className="text-xl cursor-pointer hover:scale-150 transition-all duration-700 hover:text-blue-Purple">
-              <Link to="https://www.youtube.com" target="_blank">
+            <li className="h-11 w-11 -translate-x-2 text-xl cursor-pointer hover:scale-150 transition-all duration-700 hover:text-blue-Purple">
+              <Link to="https://www.youtube.com/@acumensmediainc" target="_blank">
                 <img
-                  src="youtube.png"
-                  className="h-8 w-8 grayscale-[10] hover:grayscale-[0]"
+                  src="youtubenew.webp"
+                  className="w-full h-full object-contain grayscale-[10] hover:grayscale-[0]"
                   alt="YouTube"
                 />
               </Link>

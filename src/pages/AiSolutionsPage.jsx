@@ -6,6 +6,7 @@ import ResultsCard from "../components/aiSolutionPageComponents/ResultsCard";
 import StrategyCard from "../components/aiSolutionPageComponents/StrategyCard";
 import Button from "../components/homePageComponents/Button";
 import { aiSolutionHero } from "../constants/aiConstant";
+import { Link } from "react-router-dom";
 
 const AiSolutionsPage = () => {
   return (
@@ -67,7 +68,7 @@ const AiSolutionsPage = () => {
             <h1 className="text-center text-3xl lg:text-5xl font-bold font-syne lg:w-[63%] text-black">
               Get started with a Free consultation
             </h1>
-            <Button to="/audit.htm">GET A PROPOSAL</Button>
+            <Button><Link to="/audit.htm">GET A PROPOSAL</Link></Button>
           </div>
         </div>
       </div>

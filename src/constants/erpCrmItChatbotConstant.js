@@ -2,6 +2,7 @@ import React from "react"
 import { SiGooglemarketingplatform } from "react-icons/si";
 import { FaLightbulb } from "react-icons/fa";
 import { PiMicrophoneStageFill } from "react-icons/pi";
+import router from "../router/Router";
 
 
 export const socialMediaHero = {
@@ -9,7 +10,8 @@ export const socialMediaHero = {
     heading : "Elevate Your Operations with Cutting-Edge Integration",
     context1: "Are you ready to witness the convergence of cutting-edge ERP, CRM, IT, and Chatbot systems, amplified by the prowess of AI integration? Revolutionize your business's efficiency and growth potential through the seamless fusion of ERP, CRM, IT, and Chatbot technologies empowered by AI integration.",
     buttonText : "Get An Audit",
-    photo : "pexels-oladimeji-ajegbile-3314294-1024x948.webp"
+    photo : "pexels-oladimeji-ajegbile-3314294-1024x948.webp",
+    router:"/audit.htm"
 }
 
 export const socialMediaMarktingList = {
@@ -49,9 +51,9 @@ export const aboutSocialMediaServices = {
     title : "CREATING SUCCESS",
     heading : "What makes our ERP/CRM/IT/Chatbots services so effective?",
     card : [
-        {icon : React.createElement(PiMicrophoneStageFill), heading : "Tangible Results", context : "Experience a tangible boost in productivity as your workforce dedicates more time to customer acquisition, retention, and value-adding activities that directly impact revenue growth."},
-        {icon : React.createElement(FaLightbulb), heading : "Continuous Improvement", context : "Our solutions evolve with your business, ensuring ongoing optimization of processes to maintain peak productivity and allow sustained focus on revenue-generating endeavors"},
-        {icon : React.createElement(SiGooglemarketingplatform), heading : "Reallocation of Efforts", context : "Our systems enable the reallocation of manpower from mundane, repetitive tasks to strategic, revenue-centric endeavors. This shift maximizes the workforce's potential to contribute directly to the bottom line."},
+        {icon : React.createElement(PiMicrophoneStageFill), heading : "Tangible Results", context : "Experience a tangible boost in productivity as your workforce dedicates more time to customer acquisition, retention, and value-adding activities that directly impact revenue growth.",router:"/app-development.htm"},
+        {icon : React.createElement(FaLightbulb), heading : "Continuous Improvement", context : "Our solutions evolve with your business, ensuring ongoing optimization of processes to maintain peak productivity and allow sustained focus on revenue-generating endeavors",router:"/Seo.htm"},
+        {icon : React.createElement(SiGooglemarketingplatform), heading : "Reallocation of Efforts", context : "Our systems enable the reallocation of manpower from mundane, repetitive tasks to strategic, revenue-centric endeavors. This shift maximizes the workforce's potential to contribute directly to the bottom line.",router:"/Email-Marketing.htm"},
     ]
 }
 

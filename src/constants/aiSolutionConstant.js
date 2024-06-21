@@ -2,6 +2,7 @@ import React from "react"
 import { SiGooglemarketingplatform } from "react-icons/si";
 import { FaLightbulb } from "react-icons/fa";
 import { PiMicrophoneStageFill } from "react-icons/pi";
+import router from "../router/Router";
 
 
 export const socialMediaHero = {
@@ -10,7 +11,8 @@ export const socialMediaHero = {
     context1: "Struggling to find Social Media Marketing experts who really understand your business & can actually drive long term results?",
     context2: "Our AI-Technology combined with the team of world-class social media experts would ensure that your business thrives!",
     buttonText : "Automate Now",
-    photo : "./aiSolutionPictures/pexels-cottonbro-studio-8088443.webp"
+    photo : "./aiSolutionPictures/pexels-cottonbro-studio-8088443.webp",
+    router:"/audit.htm"
 }
 
 export const socialMediaMarktingList = {
@@ -23,7 +25,8 @@ export const socialMediaMarktingList = {
         "Promotions and Engagement",
         "Adapting and Optimizing",
         "Analytics and Measurement",
-    ]
+    ],
+    router:"/audit.htm"
 }
 
 export const socialMediaBlogs = {
@@ -52,9 +55,9 @@ export const aboutSocialMediaServices = {
     title : "AT ACUMENS, WE'RE CREATING SUCCESS USING AI-TECHNOLOGY AT FULL THROTTLE",
     heading : "What makes our Social Media Automation services so effective?",
     card : [
-        {icon : React.createElement(SiGooglemarketingplatform), heading : "Incorporating AI into Social Media Marketing & Social Media Optimization.", context : "Incorporating AI into Social Media Marketing (SMM) and Social Media Optimization (SMO) transforms the landscape of digital marketing. AI-driven strategies provide a deeper understanding of audience behaviors and preferences, enabling more personalized and impactful engagements. By automating routine tasks, AI frees marketers to focus on creative and strategic aspects, while sophisticated algorithms optimize ad campaigns for maximum reach and efficacy. This integration of AI ensures that businesses remain at the forefront of an increasingly competitive and rapidly changing digital world." },
-        {icon : React.createElement(FaLightbulb), heading : "Ai-Technology Injected with Experienced Social Media Management Team.", context : "Mastering social media management in today's fast-paced digital era demands not only a profound grasp of various platforms & audience psychology but also a keen eye for data analysis and agility to navigate the ever-shifting online landscape. Our team of Social Media Managers, enriched with years of hands-on experience complemented by cutting-edge AI technology, brings this expertise to the table. Their track record of performance & success is backed up by our extensive list of satisfied clients, showcasing a perfect synergy between human insight & Ai-Innovation in delivering exceptional social media strategies and results." },
-        {icon : React.createElement(PiMicrophoneStageFill), heading : "Ai-Funneled Match Intent of Audience & Engagement.", context : "Channelizing the power of AI to funnel & match the intent behind audience interactions is a pivotal strategy in social media marketing. This approach involves deep analysis of the core reasons behind user's searches and engagements, allowing for the curation of content that not only resonates with their needs but also holds intrinsic value for them. By precisely aligning with user intent, this AI-infused methodology significantly boosts engagement rates, conversion potential & the overarching success of social media initiatives." },
+        {icon : React.createElement(SiGooglemarketingplatform), heading : "Incorporating AI into Social Media Marketing & Social Media Optimization.", context : "Incorporating AI into Social Media Marketing (SMM) and Social Media Optimization (SMO) transforms the landscape of digital marketing. AI-driven strategies provide a deeper understanding of audience behaviors and preferences, enabling more personalized and impactful engagements. By automating routine tasks, AI frees marketers to focus on creative and strategic aspects, while sophisticated algorithms optimize ad campaigns for maximum reach and efficacy. This integration of AI ensures that businesses remain at the forefront of an increasingly competitive and rapidly changing digital world.",router:"/Social-media-automation.htm" },
+        {icon : React.createElement(FaLightbulb), heading : "Ai-Technology Injected with Experienced Social Media Management Team.", context : "Mastering social media management in today's fast-paced digital era demands not only a profound grasp of various platforms & audience psychology but also a keen eye for data analysis and agility to navigate the ever-shifting online landscape. Our team of Social Media Managers, enriched with years of hands-on experience complemented by cutting-edge AI technology, brings this expertise to the table. Their track record of performance & success is backed up by our extensive list of satisfied clients, showcasing a perfect synergy between human insight & Ai-Innovation in delivering exceptional social media strategies and results.",router:"/Seo.htm" },
+        {icon : React.createElement(PiMicrophoneStageFill), heading : "Ai-Funneled Match Intent of Audience & Engagement.", context : "Channelizing the power of AI to funnel & match the intent behind audience interactions is a pivotal strategy in social media marketing. This approach involves deep analysis of the core reasons behind user's searches and engagements, allowing for the curation of content that not only resonates with their needs but also holds intrinsic value for them. By precisely aligning with user intent, this AI-infused methodology significantly boosts engagement rates, conversion potential & the overarching success of social media initiatives.",router:"/Google-suite.htm" },
     ]
 }
 

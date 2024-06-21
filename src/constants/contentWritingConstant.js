@@ -2,6 +2,7 @@ import React from "react"
 import { SiGooglemarketingplatform } from "react-icons/si";
 import { FaLightbulb } from "react-icons/fa";
 import { PiMicrophoneStageFill } from "react-icons/pi";
+import router from "../router/Router";
 
 
 export const socialMediaHero = {
@@ -9,7 +10,8 @@ export const socialMediaHero = {
     heading : "AI-Enhanced Content Writing.",
     context1: "Navigating the Challenge of Finding Content Creators Who Truly Grasp Your Vision and Can Deliver Sustainable Results? Our Team of AI-Integrated Writers is Eager to Elevate Your Content Strategy",
     buttonText : "Get An Audit",
-    photo : "./aiSolutionPictures/pexels-cottonbro-studio-7350921-1024x948.webp"
+    photo : "./aiSolutionPictures/pexels-cottonbro-studio-7350921-1024x948.webp",
+    router:"/audit.htm"
 }
 
 export const socialMediaMarktingList = {
@@ -49,9 +51,9 @@ export const aboutSocialMediaServices = {
     title : "CREATING SUCCESS",
     heading : "What Sets Our AI-Infused Content Management Services Apart in Effectiveness",
     card : [
-        {icon : React.createElement(PiMicrophoneStageFill), heading : "Aligning Content with User Intent", context : "Selecting the right keywords is just the beginning. We excel in understanding how to synchronize the intent behind your target keywords with engaging content, compelling CTAs, and landing pages. This strategic alignment transforms clicks into tangible returns on investment."},
-        {icon : React.createElement(FaLightbulb), heading : "AI-Integrated Content Management Expertise", context : "Results speak louder than promises. Our content managers boast extensive experience in steering successful campaigns across diverse industries. The track record of satisfied clients attests to our proficiency in delivering impactful content strategies."},
-        {icon : React.createElement(SiGooglemarketingplatform), heading : "AI-Powered Creative Synergy", context : "Elevate your content strategy with our AI-powered creativity. As a certified partner, we not only possess expertise in various AI-driven content solutions but also gain exclusive access to direct support and resources offered by AI providers. Your content campaigns directly benefit from this privileged insider knowledge."},
+        {icon : React.createElement(PiMicrophoneStageFill), heading : "Aligning Content with User Intent", context : "Selecting the right keywords is just the beginning. We excel in understanding how to synchronize the intent behind your target keywords with engaging content, compelling CTAs, and landing pages. This strategic alignment transforms clicks into tangible returns on investment.",router:"/app-development.htm"},
+        {icon : React.createElement(FaLightbulb), heading : "AI-Integrated Content Management Expertise", context : "Results speak louder than promises. Our content managers boast extensive experience in steering successful campaigns across diverse industries. The track record of satisfied clients attests to our proficiency in delivering impactful content strategies.",router:"/Seo.htm"},
+        {icon : React.createElement(SiGooglemarketingplatform), heading : "AI-Powered Creative Synergy", context : "Elevate your content strategy with our AI-powered creativity. As a certified partner, we not only possess expertise in various AI-driven content solutions but also gain exclusive access to direct support and resources offered by AI providers. Your content campaigns directly benefit from this privileged insider knowledge.",router:"/Email-Marketing.htm"},
     ]
 }
 

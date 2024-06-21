@@ -1,4 +1,5 @@
 import Button from "./Button"
+import { Link } from "react-router-dom"
 
 const AiSection = () => {
     return (
@@ -10,7 +11,7 @@ const AiSection = () => {
                         <h4 className='text-base font-bold uppercase font-syne text-black '>ASCendance OF AI</h4>
                         <h1 className='text-4xl lg:text-5xl font-bold font-syne text-black'>Precision in Digital Evolution: AI Unveiled</h1>
                         <p className='text-base font-light font-kanit tracking-normal leading-6'>Discover the Future of Digital Excellence with Our AI-Powered Solutions. At Acumens Media, we leverage cutting-edge artificial intelligence technologies to drive innovation and transform your digital presence. Our advanced AI tools are meticulously crafted to propel your business into the future, ensuring unparalleled success in the dynamic digital landscape.</p>
-                        <Button>Collaborate with Acumens</Button>
+                        <Button><Link to="/contact.htm">Collaborate with Acumens</Link></Button>
 
                     </div>
 
