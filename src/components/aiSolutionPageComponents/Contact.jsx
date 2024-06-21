@@ -28,7 +28,6 @@ const Contact = ({ message }) => {
                     <ul className='flex justify-center lg:justify-start items-center gap-6 flex-wrap'>
                         {
                             partnerImages.map((image, index) => (
-
                                 <li className='w-28 h-28' key={index}>
                                     <img className='w-full h-full object-contain' src={image} alt={image} />
                                 </li>

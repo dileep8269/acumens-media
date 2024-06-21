@@ -76,7 +76,7 @@ const HomePage = () => {
             <ImageSlider images={partnerImages} />
           </div>
           <div className="flex flex-wrap justify-center items-center gap-12 pb-10 md:hidden">
-            {
+          {
               partnerImages?.map((image,index) => (
                 <img key={index} src={image} alt={image} className="w-28 h-28 md:w-24 md:h-24 lg:w-28 lg:h-28 object-contain" />
               ))

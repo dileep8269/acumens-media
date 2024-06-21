@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { SiGooglemaps } from "react-icons/si"
+// import { SiGooglemaps } from "react-icons/si"
 import { FaStar } from "react-icons/fa";
 
 const Portfolio = ({ images }) => {
@@ -119,14 +119,16 @@ const Portfolio = ({ images }) => {
             </div>
           </div>
         </div>
-      </div>
 
-      {/* logo Displaying Body */}
-      <div className="flex flex-wrap justify-between items-center gap-8 lg:gap-10 px-4 lg:px-10 bg-[#f7f7fa] rounded-b-[40px]">
-        {images?.map((image, index) => (
-          <img key={index} src={image} alt={image} className="w-28 h-28 md:w-24 md:h-24 lg:w-28 lg:h-28 object-contain" />
-        ))}
       </div>
+        {/* logo Displaying Body */}
+        <div className="flex flex-wrap justify-between items-center gap-8 lg:gap-10 px-4 lg:px-10 py-10 bg-[#f7f7fa] rounded-b-[40px] ">
+          {images?.map((image, index) => (
+            <img key={index} src={image} alt={image} className="md:w-[100px] w-[80px]" />
+          ))}
+        </div>
+
+   
     </div>
   );
 }

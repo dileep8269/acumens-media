@@ -1,5 +1,3 @@
-import React from 'react'
-
 const PricingTabs = ({plan, setPlan}) => {
     return (
         <div className="flex mx-auto border-2 border-indigo-500 rounded-full overflow-hidden mt-6">
