@@ -9,7 +9,8 @@ export const socialMediaHero = {
     heading : "Consulting, Outsourcing & CCaaS",
     context1: "Are you facing challenges in managing outsourcing processes or seeking expert consultation for your business issues? Acumens Media is here to guide you through these complexities. Our team of seasoned professionals excels in identifying the most efficient outsourcing solutions, helping you reduce costs and eliminate the hassle of managing these processes internally",
     buttonText : "Get An Audit",
-    photo : "./aiSolutionPictures/pexels-cottonbro-studio-7350921-1024x948.webp"
+    photo : "./aiSolutionPictures/pexels-cottonbro-studio-7350921-1024x948.webp",
+    router:"/audit.htm"
 }
 
 export const socialMediaMarktingList = {
@@ -49,9 +50,9 @@ export const aboutSocialMediaServices = {
     title : "CREATING SUCCESS",
     heading : "Why Outsourcing and Consulting can help your business grow.",
     card : [
-        {icon : React.createElement(PiMicrophoneStageFill), heading : "Flexibility", context : "Outsourcing offers flexibility to meet changing business needs and market demands."},
-        {icon : React.createElement(FaLightbulb), heading : "Quality Improvement", context : "Consultants and specialized outsourcing firms often deliver higher quality output due to their expertise and focus."},
-        {icon : React.createElement(SiGooglemarketingplatform), heading : "Risk Management", context : "Outsourcing and consulting can help businesses manage and mitigate risks, especially in areas outside their expertise."},
+        {icon : React.createElement(PiMicrophoneStageFill), heading : "Flexibility", context : "Outsourcing offers flexibility to meet changing business needs and market demands.",router:"/app-development.htm"},
+        {icon : React.createElement(FaLightbulb), heading : "Quality Improvement", context : "Consultants and specialized outsourcing firms often deliver higher quality output due to their expertise and focus.",router:"/CCaaS-Outsourcing-Consulting.htm"},
+        {icon : React.createElement(SiGooglemarketingplatform), heading : "Risk Management", context : "Outsourcing and consulting can help businesses manage and mitigate risks, especially in areas outside their expertise.",router:"/Email-Marketing.htm"},
     ]
 }
 

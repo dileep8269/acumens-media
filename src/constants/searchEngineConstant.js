@@ -2,6 +2,7 @@ import React from "react"
 import { SiGooglemarketingplatform } from "react-icons/si";
 import { FaLightbulb } from "react-icons/fa";
 import { PiMicrophoneStageFill } from "react-icons/pi";
+import router from "../router/Router";
 
 
 export const socialMediaHero = {
@@ -10,7 +11,9 @@ export const socialMediaHero = {
     context1: "Imagine a world where your SEO & SEM strategies are not just data-driven but intelligence-driven.",
     context2: "Join the era of AI-Powered SEO & SEM, where our experienced marketing team injects the cutting-edge AI technology to revolutionize your online presence & ease of business handling with our automated solutions, freeing you to focus on what you do best - growing your business.",
     buttonText : "Own The Power Now!",
-    photo : "./aiSolutionPictures/pexels-cottonbro-studio-8088443.webp"
+    photo : "./aiSolutionPictures/pexels-cottonbro-studio-8088443.webp",
+    router:"/audit.htm"
+    
 }
 
 export const socialMediaMarktingList = {
@@ -51,9 +54,9 @@ export const aboutSocialMediaServices = {
     title : "AT ACUMENS WE CREATE SUCCESS",
     heading : "What Sets Our AI-Powered SEO/SEM Management Services Apart in Results?",
     card : [
-        {icon : React.createElement(PiMicrophoneStageFill), heading : "AI-Infused SEO/SEM Strategic Planning", context : "Step into the future of SEO/SEM with AI-Infused Strategic Planning! Imagine a world where AI not only understands your audience but anticipates their next move. Our AI-driven approach revolutionizes how you plan and execute your digital marketing strategies, ensuring you're always one step ahead. Ready to unlock the full potential of your SEO/SEM campaigns with the precision of AI? Let's embark on this transformative journey together and watch your results soar!", hashtags : "#AIpoweredSEOSEM" },
-        {icon : React.createElement(FaLightbulb), heading : "AI-Powered Holistic Campaign Integration", context : "Join hands with ACUMENS and Dive into the future of SEO/SEM with our AI-Powered Holistic Campaign Integration! Picture a world where every aspect of your search engine marketing is seamlessly interconnected, powered by AI. From deep data analysis to crafting perfectly timed & targeted campaigns, our AI-driven approach ensures that every piece of your marketing puzzle fits together flawlessly. Embrace the power of AI to elevate your campaigns, reach your audience more effectively, and achieve unparalleled results.", hashtags : "#AISmartMarketing" },
-        {icon : React.createElement(SiGooglemarketingplatform), heading : "AI-Boosted Agile Response to Algorithm Changes", context : "Stay ahead in the SEO/SEM game with our AI-Boosted Agile Response to Algorithm Changes. An ever-evolving digital strategy that adapts as quickly as search engines update their algorithms. With AI at the helm, our approach swiftly responds to these changes, ensuring your content remains at the forefront. Experience the thrill of being on top, with AI's predictive analysis keeping you one step ahead of the competition. Ready to ride the wave of algorithm updates with agility and intelligence? Let's harness the power of AI together!", hashtags : "#AIAdaptiveSEO" },
+        {icon : React.createElement(PiMicrophoneStageFill), heading : "AI-Infused SEO/SEM Strategic Planning", context : "Step into the future of SEO/SEM with AI-Infused Strategic Planning! Imagine a world where AI not only understands your audience but anticipates their next move. Our AI-driven approach revolutionizes how you plan and execute your digital marketing strategies, ensuring you're always one step ahead. Ready to unlock the full potential of your SEO/SEM campaigns with the precision of AI? Let's embark on this transformative journey together and watch your results soar!", hashtags : "#AIpoweredSEOSEM",router:"/Seo.htm" },
+        {icon : React.createElement(FaLightbulb), heading : "AI-Powered Holistic Campaign Integration", context : "Join hands with ACUMENS and Dive into the future of SEO/SEM with our AI-Powered Holistic Campaign Integration! Picture a world where every aspect of your search engine marketing is seamlessly interconnected, powered by AI. From deep data analysis to crafting perfectly timed & targeted campaigns, our AI-driven approach ensures that every piece of your marketing puzzle fits together flawlessly. Embrace the power of AI to elevate your campaigns, reach your audience more effectively, and achieve unparalleled results.", hashtags : "#AISmartMarketing",router:"/Google-suite.htm" },
+        {icon : React.createElement(SiGooglemarketingplatform), heading : "AI-Boosted Agile Response to Algorithm Changes", context : "Stay ahead in the SEO/SEM game with our AI-Boosted Agile Response to Algorithm Changes. An ever-evolving digital strategy that adapts as quickly as search engines update their algorithms. With AI at the helm, our approach swiftly responds to these changes, ensuring your content remains at the forefront. Experience the thrill of being on top, with AI's predictive analysis keeping you one step ahead of the competition. Ready to ride the wave of algorithm updates with agility and intelligence? Let's harness the power of AI together!", hashtags : "#AIAdaptiveSEO",router:"/Email-Marketing.htm" },
     ]
 }
 

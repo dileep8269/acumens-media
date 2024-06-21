@@ -52,7 +52,7 @@ const ServiceCard = ({ services }) => {
                             <div className='h-[20%]'>
                                 <div className="relative inline-block rounded-full transition duration-300 ease-in-out">
                                     <span className="relative overflow-hidden before:content-[''] before:absolute bottom-0.5  before:-bottom-1 before:left-0 before:w-0 before:h-0.5 before:hover:bg-blue-Purple before:transition-width before:duration-500 before:ease-in-out hover:before:w-full">
-                                        <Link to="" className="font-bold uppercase text-sm font-syne">Get Details</Link>
+                                        <Link to={service.router} className="font-bold uppercase text-sm font-syne">Get Details</Link>
                                     </span>
                                 </div>
                             </div>

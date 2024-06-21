@@ -2,6 +2,7 @@ import React from "react"
 import { SiGooglemarketingplatform } from "react-icons/si";
 import { FaLightbulb } from "react-icons/fa";
 import { PiMicrophoneStageFill } from "react-icons/pi";
+import router from "../router/Router";
 
 
 export const socialMediaHero = {
@@ -9,7 +10,8 @@ export const socialMediaHero = {
     heading : "AI-Enhanced App Development Solutions",
     context1: "Embarking on a journey to redefine application development, our AI-infused services represent a groundbreaking approach to innovation and client success. At Acumens, we harness the power of artificial intelligence to augment our team of skilled developers, ensuring the delivery of cutting-edge applications that seamlessly blend creativity and functionality.",
     buttonText : "Get An Audit",
-    photo : "GettyImages-1370442804-1.webp"
+    photo : "GettyImages-1370442804-1.webp",
+    router:"/audit.htm"
 }
 
 export const socialMediaMarktingList = {
@@ -49,9 +51,9 @@ export const aboutSocialMediaServices = {
     title : "CREATING SUCCESS",
     heading : "What attributes contribute to the effectiveness of our paid Application Development services?",
     card : [
-        {icon : React.createElement(PiMicrophoneStageFill), heading : "Quality Assurance", context : "We have dedicated quality assurance (QA) teams that rigorously test applications to identify and fix bugs, ensuring that the final product is reliable and meets the specified requirements."},
-        {icon : React.createElement(FaLightbulb), heading : "Security Measures", context : "We have professional development services prioritize the security of your data and the application itself. They implement best practices for secure coding and may conduct security audits to identify and address potential vulnerabilities."},
-        {icon : React.createElement(SiGooglemarketingplatform), heading : "Focus on User Experience", context : "Paid services often prioritize user experience (UX) and user interface (UI) design. This results in applications that are intuitive, visually appealing, and user-friendly."},
+        {icon : React.createElement(PiMicrophoneStageFill), heading : "Quality Assurance", context : "We have dedicated quality assurance (QA) teams that rigorously test applications to identify and fix bugs, ensuring that the final product is reliable and meets the specified requirements.",router:"/app-development.htm"},
+        {icon : React.createElement(FaLightbulb), heading : "Security Measures", context : "We have professional development services prioritize the security of your data and the application itself. They implement best practices for secure coding and may conduct security audits to identify and address potential vulnerabilities.",router:"/Seo.htm"},
+        {icon : React.createElement(SiGooglemarketingplatform), heading : "Focus on User Experience", context : "Paid services often prioritize user experience (UX) and user interface (UI) design. This results in applications that are intuitive, visually appealing, and user-friendly.",router:"/Email-Marketing.htm"},
     ]
 }
 

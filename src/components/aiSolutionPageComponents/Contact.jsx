@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import Button from '../homePageComponents/Button'
 import { partnerImages } from '../../constants/constant'
+import { Link } from 'react-router-dom'
 
 const Contact = ({ message }) => {
     return (
@@ -11,10 +12,10 @@ const Contact = ({ message }) => {
                 </div>
                 <div className='h-auto w-full lg:w-[40%] text-center lg:text-right'>
                     <p className=' text-base font-kanit font-light tracking-normal leading-6 text-black mb-5 '>Ready to speak with a marketing <br /> expert ? Call Us</p>
-                    <p className=' text-lg font-syne font-bold tracking-normal leading-6 text-black mb-5 '>SALES : 800-969-4409</p>
-                    <p className=' text-lg font-syne font-bold tracking-normal leading-6 text-black mb-5 '>SUPPORT : 888-491-5291</p>
+                    <Link to="tel:+18009694409"><p className=' text-lg font-syne font-bold tracking-normal leading-6 text-black mb-5 '>SALES : 800-969-4409</p></Link>
+                    <Link to="tel:+18884915291"><p className=' text-lg font-syne font-bold tracking-normal leading-6 text-black mb-5 '>SUPPORT : 888-491-5291</p></Link>
                     <div className='flex justify-center lg:justify-end items-center'>
-                        <Button className='flex'>Get An Audit</Button>
+                        <Button className='flex'><Link to="/audit.htm">Get An Audit</Link></Button>
                     </div>
                 </div>
             </div>
@@ -27,9 +28,8 @@ const Contact = ({ message }) => {
                     <ul className='flex justify-center lg:justify-start items-center gap-6 flex-wrap'>
                         {
                             partnerImages.map((image, index) => (
-
-                                <li key={index}>
-                                    <img src={image} alt={image} className='w-[120px] h-[50px] ' />
+                                <li className='w-28 h-28' key={index}>
+                                    <img className='w-full h-full object-contain' src={image} alt={image} />
                                 </li>
                             ))
 

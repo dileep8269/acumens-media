@@ -2,6 +2,7 @@ import React from "react"
 import { SiGooglemarketingplatform } from "react-icons/si";
 import { FaLightbulb } from "react-icons/fa";
 import { PiMicrophoneStageFill } from "react-icons/pi";
+import router from "../router/Router";
 
 
 export const socialMediaHero = {
@@ -10,7 +11,8 @@ export const socialMediaHero = {
     context1: "Welcome to the future of email marketing! Our cutting-edge platform seamlessly integrates Artificial Intelligence to revolutionize your email campaigns.",
     context2: "Say goodbye to generic messages and Join the world of personalized, targeted communication that engages your audience.",
     buttonText : "Join Now",
-    photo : "pexels-teona-swift-6912829-1024x948.webp"
+    photo : "pexels-teona-swift-6912829-1024x948.webp",
+    router:"/audit.htm"
 }
 
 export const socialMediaMarktingList = {
@@ -52,9 +54,9 @@ export const aboutSocialMediaServices = {
     title : "AT ACUMENS, WE'RE BOOSTING SUCCESS BY MAXIMIZING THE IMMENSE CAPABILITIES OF AI TECHNOLOGY.",
     heading : "What makes our AI-Integrated Email Marketing services so effective?",
     card : [
-        {icon : React.createElement(PiMicrophoneStageFill), heading : "Data-Driven Decision Making", context : "Harness the power of data to drive results. Our services rely on in-depth data analysis to make informed decisions. By continuously monitoring and interpreting campaign performance, we optimize strategies in real-time for maximum impact"},
-        {icon : React.createElement(FaLightbulb), heading : "Targeted Audience Reach", context : "It's not just about reaching audiences; it's about reaching the right ones. Our services focus on identifying and targeting specific audience segments, ensuring your ads resonate with those most likely to convert, leading to a higher return on investment."},
-        {icon : React.createElement(SiGooglemarketingplatform), heading : "Continuous Optimization", context : "We don't rest on our laurels. Constant refinement is part of our ethos. Through continuous monitoring and optimization, we fine-tune your campaigns, ensuring they consistently deliver optimal performance."},
+        {icon : React.createElement(PiMicrophoneStageFill), heading : "Data-Driven Decision Making", context : "Harness the power of data to drive results. Our services rely on in-depth data analysis to make informed decisions. By continuously monitoring and interpreting campaign performance, we optimize strategies in real-time for maximum impact",router:"/app-development.htm"},
+        {icon : React.createElement(FaLightbulb), heading : "Targeted Audience Reach", context : "It's not just about reaching audiences; it's about reaching the right ones. Our services focus on identifying and targeting specific audience segments, ensuring your ads resonate with those most likely to convert, leading to a higher return on investment.",router:"/Seo.htm"},
+        {icon : React.createElement(SiGooglemarketingplatform), heading : "Continuous Optimization", context : "We don't rest on our laurels. Constant refinement is part of our ethos. Through continuous monitoring and optimization, we fine-tune your campaigns, ensuring they consistently deliver optimal performance.",router:"/Web-Design-Hosting.htm"},
     ]
 }
 

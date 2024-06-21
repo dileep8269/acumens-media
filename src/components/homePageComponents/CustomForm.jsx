@@ -338,7 +338,7 @@ const CustomForm = ({ page, message }) => {
 
 
                 <button
-                    className={`btn rounded-full w-fit px-5 py-2 transition-colors duration-700  text-[12px] font-bold font-syne uppercase shrink-0 flex justify-center items-center gap-1 bg-black text-white hover:bg-blue-Purple ${isOtpVerify
+                    className={`btn rounded-full mt-6 w-fit px-5 py-2 transition-colors duration-700  text-[12px] font-bold font-syne uppercase shrink-0 flex justify-center items-center gap-1 bg-black text-white hover:bg-blue-Purple ${isOtpVerify
                         ? 'bg-black text-white hover:bg-blue-Purple'
                         : 'bg-black text-white hover:bg-blue-Purple cursor-not-allowed tooltip tooltip-bottom'
                         }`}

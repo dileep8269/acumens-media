@@ -71,7 +71,9 @@ const ContactPage = () => {
             <div className="space-y-3 flex flex-col justify-center items-center text-center pt-16">
               <h5 className='text-lg lg:text-2xl font-bold font-syne text-black'>Address</h5>
               <div className="w-16 h-16 rounded-full bg-gray-300 flex justify-center items-center">
-                <span className="text-2xl text-blue-Purple"><SiGooglemaps /></span>
+                <span className="text-2xl text-blue-Purple">
+                  <img src="map.webp" alt="map.webp" className="w-7 h-7 object-contain" />
+                </span>
               </div>
               <p className=" w-48 text-base lg:text-xl font-normal font-syne  text-black">440 N Barranca Ave.,
                 Covina,

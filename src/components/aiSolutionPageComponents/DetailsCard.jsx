@@ -14,61 +14,61 @@ const aiSolDetail = [
     icon: <MdGroups />,
     title: "AI-Infused Social Media Automation",
     desc: "Struggling to find Social Media Marketing experts who really understand your business & can actually drive long term results? Our AI-Technology combined with the",
-    link: "#",
+    link: "/Social-media-automation.htm",
   },
   {
     icon: <FaSearchengin />,
     title: "Search Engine Services (SEO/SEM)",
     desc: "Imagine a world where your SEO & SEM strategies are not just data-driven but intelligence-driven. Join the era of AI-Powered SEO & SEM, where our experienced Marketing team injects",
-    link: "#",
+    link: "/Seo.htm",
   },
   {
     icon: <FaGoogle />,
     title: "AI-Fueled Google Business Services",
     desc: "Expand your business visibility like never before with our AI-Fueled Google Service which covers Google's vast landscape like google Map, Google Business & AI-Created YouTube videos.",
-    link: "#",
+    link: "/Google-suite.htm",
   },
   {
     icon: <MdMail />,
     title: "AI-Powered Email Marketing",
     desc: "When it comes to reaching your target audience, you can’t get much closer than direct to their inboxes.",
-    link: "#",
+    link: "/Email-Marketing.htm",
   },
   {
     icon: <MdAddShoppingCart />,
     title: "AI-Driven E-Commerce Solutions",
     desc: "Offering online platforms for seamless transactions, expanding market reach, and enhancing customer experiences.",
-    link: "#",
+    link: "/E-commerce.htm",
   },
   {
     icon: <FaCode />,
     title: "AI-Integrated Web Design & Hosting",
     desc: "Elevate your brand with a visually stunning website, supported by reliable hosting for a seamless digital experience.",
-    link: "#",
+    link: "/Web-Design-Hosting.htm",
   },
   {
     icon: <FaMobileAlt />,
     title: "App Development",
     desc: "Unlock innovation, engage users, and elevate your brand with customized, intuitive, and scalable mobile applications.",
-    link: "#",
+    link: "/app-development.htm",
   },
   {
     icon: <RiRobot3Line />,
     title: "ERP / CRM / IT / ChatBots",
     desc: "Grow your brand with the help of our various web services infused with AI integration.",
-    link: "#",
+    link: "/Erp-Crm-It-Chatbots.htm",
   },
   {
     icon: <MdOutlineContentPaste />,
     title: "Content Writing",
     desc: "Enhancing brand communication and audience engagement. Elevate your digital presence with tailored content, optimized for impact and resonance in the online realm.",
-    link: "#",
+    link: "/Content-writing.htm",
   },
   {
     icon: <MdPeople />,
     title: "CCaaS / Outsourcing & Consulting",
     desc: "From cloud-based communication solutions to strategic consulting, unlock efficiency and innovation for sustained growth and success in the modern marketplace.",
-    link: "#",
+    link: "/CCaaS-Outsourcing-Consulting.htm",
   },
 ];
 
@@ -81,8 +81,8 @@ const DetailsCard = () => {
 
           <div key={index} className='flex flex-col justify-between items-start p-10 gap-y-10 rounded-[40px] bg-white'>
             <div className="space-y-4">
-              <span className="w-14 h-14 rounded-full flex justify-center items-center text-3xl bg-gray-100 text-blue-Purple">{service?.icon}</span>
-              <h6 className="font-bold text-base font-syne text-black">{service?.title}</h6>
+              <Link to={service?.link}><span className="w-14 h-14 rounded-full flex justify-center items-center text-3xl bg-gray-100 text-blue-Purple">{service?.icon}</span></Link>
+              <Link to={service?.link}><h6 className="mt-4 font-bold text-base font-syne text-black">{service?.title}</h6></Link>
               <p className="text-base font-light font-kanit leading-6 tracking-normal">{service?.desc}</p>
 
             </div>

@@ -9,7 +9,8 @@ export const socialMediaHero = {
     heading : "Expand reach with our Google Business Services.",
     context1: "Expand your business visibility like never before with our AI-Fueled Google Service. Let AI precision target and captivate your ideal audience, skyrocketing your Business reach on Google's vast & global landscape like google Map, Google Business & AI-Created YouTube videos.",
     buttonText : "Expand Now",
-    photo : "pexels-cottonbro-studio-5076516-1024x948.webp"
+    photo : "pexels-cottonbro-studio-5076516-1024x948.webp",
+    router:"/audit.htm"
 }
 
 export const socialMediaMarktingList = {
@@ -50,9 +51,9 @@ export const aboutSocialMediaServices = {
     title : "AT ACUMENS, WE'RE FUELING SUCCESS BY HARNESSING THE FULL POTENTIAL OF AI TECHNOLOGY.",
     heading : "What makes our AI-FUELED Google Business Services so effective?",
     card : [
-        {icon : React.createElement(PiMicrophoneStageFill), heading : "AI-Powered Business Profile Listing on Google:", context : "Our AI-Powered Business Profile Listing transforms how businesses connect with customers. Utilizing advanced AI, we optimize Business profile on Google for higher visibility and relevance, adapting in real-time to market trends. This technology empowers businesses to elevate their online presence, ensuring they stand out in a competitive digital landscape."},
-        {icon : React.createElement(FaLightbulb), heading : "AI-Enhanced Business Presence on Google Map:", context : "At Acumens using the AI-Technology we're Revolutionizing local search, AI-Enhanced Business Presence on Google Maps to dynamically optimize listings, ensuring businesses are prominently displayed and easily discoverable. This innovative approach enhances local SEO, driving increased visibility & customer engagement directly from the map."},
-        {icon : React.createElement(SiGooglemarketingplatform), heading : "AI-Created Videos and YouTube Channel Optimization:", context : "We at Acumens mark a new era in digital content creation by employing AI technology. Now we can produce captivating videos with enhanced quality and engagement, for your business while AI-driven analytics optimize visibility and audience reach, revolutionizing the way content is created and consumed on YouTube."},
+        {icon : React.createElement(PiMicrophoneStageFill), heading : "AI-Powered Business Profile Listing on Google:", context : "Our AI-Powered Business Profile Listing transforms how businesses connect with customers. Utilizing advanced AI, we optimize Business profile on Google for higher visibility and relevance, adapting in real-time to market trends. This technology empowers businesses to elevate their online presence, ensuring they stand out in a competitive digital landscape.",router:"/app-development.htm"},
+        {icon : React.createElement(FaLightbulb), heading : "AI-Enhanced Business Presence on Google Map:", context : "At Acumens using the AI-Technology we're Revolutionizing local search, AI-Enhanced Business Presence on Google Maps to dynamically optimize listings, ensuring businesses are prominently displayed and easily discoverable. This innovative approach enhances local SEO, driving increased visibility & customer engagement directly from the map.",router:"/Seo.htm"},
+        {icon : React.createElement(SiGooglemarketingplatform), heading : "AI-Created Videos and YouTube Channel Optimization:", context : "We at Acumens mark a new era in digital content creation by employing AI technology. Now we can produce captivating videos with enhanced quality and engagement, for your business while AI-driven analytics optimize visibility and audience reach, revolutionizing the way content is created and consumed on YouTube.",router:"/Email-Marketing.htm"},
     ]
 }
 

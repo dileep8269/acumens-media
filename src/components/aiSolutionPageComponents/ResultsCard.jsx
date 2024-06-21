@@ -1,4 +1,5 @@
 import { TiArrowUpThick } from "react-icons/ti";
+import { Link } from "react-router-dom";
 import Button from "../homePageComponents/Button";
 
 const ResultsCard = () => {
@@ -48,7 +49,7 @@ const ResultsCard = () => {
           <p className=" text-sm font-syne text-center font-bold">
             Leads generated so far… <br />
           </p>
-          <Button className=" self-center mt-4">Contact Us:</Button>
+          <Button className="self-center mt-4"><Link to="/contact.htm">Contact Us:</Link></Button>
         </div>
       </div>
     </div>

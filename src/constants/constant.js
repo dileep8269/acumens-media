@@ -22,7 +22,8 @@ export const socialMediaServices = [
             "AI-Informed Ad Strategies",
             "Tailored Campaign Creation",
             "Predictive Audience Analysis"
-        ]
+        ],
+        router:"/Social-media-automation.htm"
     },
     {
         id: 2, header: "AI-Enhanced SEO Dynamics.", content: "Our AI Technology refines SEO to put you at the forefront, ensuring maximum relevance & reach.AI-Enhanced SEO Dynamics.AI-Enhanced SEO Dynamics.", percentage: "99%", list: [
@@ -31,7 +32,8 @@ export const socialMediaServices = [
             "Data-driven marketing insights.",
             "Competitive analysis.",
             "Agile SEO adaptation."
-        ]
+        ],
+        router:"/Seo.htm"
     },
     {
         id: 3, header: "AI-Precision (Targeted) Paid Search Campaigns", content: "Unlock your website's full potential, Decrease Campaign costs & boost your revenue with Acumens's AI-Precision conversion rate optimization services.", percentage: "95%", list: [
@@ -40,7 +42,8 @@ export const socialMediaServices = [
             "Reduced abandoned shopping cart rates",
             "Maximize website-generated revenue",
             "Enhanced (CTR) Click Through Rate"
-        ]
+        ],
+        router:"/Seo.htm"
     },
     {
         id: 4, header: "AI-POWERED Email Engagement", content: "Ai-Powered Tailored email campaigns that resonate. Our strategic approach ensures your message not only lands but also captivates and converts.", percentage: "96%", list: [
@@ -49,7 +52,8 @@ export const socialMediaServices = [
             "Performance analytics.",
             "Subscriber growth tactics.",
             "Conversion optimization."
-        ]
+        ],
+        router:"/Email-Marketing.htm"
     },
 
 ]
@@ -83,11 +87,11 @@ export const companyFeedback = [
 
 export const partnerImages = [
     
-    'googlecloud.png',
-    'meta.png',
-    'GooglePremierPartner.png',
-    'shopifyy.png',
-    'tiktokk.png'
+    'googlecloud.webp',
+    'meta.webp',
+    'GooglePremierPartner.webp',
+    'shopifyy.webp',
+    'tiktokk.webp'
     
 ];
 
@@ -292,29 +296,30 @@ export const WhoWeAreDropdown = [
 ]
 export const FollowUs = [
     {
-        icon: 'linkedin.png',
+        icon: 'linkedin.webp',
         router: "https://www.linkedin.com",
-        class:'w-14 h-6 grayscale-[10] hover:grayscale-[0]'
+        class:'w-8 h-8 object-contain grayscale-[10] hover:grayscale-[0]'
     },
     {
-        icon: 'facebook.png',
+        icon: 'facebook.webp',
         router: "https://www.facebook.com",
-        class:'w-14 h-6 grayscale-[10] hover:grayscale-[0]'
+        class:'h-7 w-7 object-contain grayscale-[10] hover:grayscale-[0]'
     },
     {
-        icon: 'twitter.png',
+        icon: 'twitternew.webp',
         router: "https://www.twitter.com",
-        class:'w-14 h-6 grayscale-[10] hover:grayscale-[0]'
+        class:'h-8 w-8 object-contain grayscale-[50] hover:grayscale-[0]'
     },
     {
-        icon: 'instagram.png',
+        icon: 'instagram.webp',
         router: "https://www.instagram.com",
-        class:'w-14 h-6  grayscale-[10] hover:grayscale-[0]'
+        class:'h-7 w-7  object-contain grayscale-[10] hover:grayscale-[0]' 
+        // 
     },
     {
-        icon: 'youtube.png',
+        icon: 'youtubenew.webp',
         router: "https://www.youtube.com",
-        class:'w-14 h-8 grayscale-[10] hover:grayscale-[0]'
+        class:'w-12 h-12 object-contain grayscale-[10] hover:grayscale-[0]'
     }
 ];
 
