@@ -29,7 +29,7 @@ const Contact = ({ message }) => {
                             partnerImages.map((image, index) => (
 
                                 <li key={index}>
-                                    <img src={image} alt={image} />
+                                    <img src={image} alt={image} className='w-[120px] h-[50px] ' />
                                 </li>
                             ))
 

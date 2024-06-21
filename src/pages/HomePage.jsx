@@ -77,7 +77,7 @@ const HomePage = () => {
           <div className="flex flex-wrap justify-center items-center gap-12 pb-10 md:hidden">
             {
               partnerImages?.map((image,index) => (
-                <img key={index} src={image} alt={image} />
+                <img key={index} className="w-[120px] h-[50px]" src={image} alt={image} />
               ))
             }
           </div>
