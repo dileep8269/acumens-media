@@ -127,32 +127,32 @@ const PricingTableComparison = () => {
                 <table className="min-w-full">
                     <thead>
                         <tr className="h-28">
-                            <th className="py-2 px-4 rounded-s-xl font-syne font-semibold uppercase text-base border-r bg-black text-white lg:w-[40%]">Card</th>
+                            <th className="py-2 px-4 rounded-s-xl font-syne font-semibold uppercase text-base border-r bg-black text-white lg:w-[40%]"><span className="bg-blue-Purple mb-2 p-[5px] rounded-xl w-12 text-sm">Low Price</span><br />Basic</th>
                             <th className="py-2 px-4 font-semibold font-syne uppercase text-center border-r text-base bg-black text-white lg:w-[15%]"><span className="bg-blue-Purple mb-2 p-[5px] rounded-xl w-12 text-sm">Low Price</span><br />Basic</th>
-                            <th className="py-2 px-4 font-semibold font-syne uppercase text-base border-r bg-black text-white lg:w-[15%]">Growth</th>
+                            <th className="py-2 px-4 font-semibold font-syne uppercase text-base border-r bg-black text-white lg:w-[15%]"><span className="bg-blue-Purple mb-2 p-[5px] rounded-xl w-12 text-sm">Low Price</span><br />Basic</th>
                             <th className="py-2 px-4 font-semibold font-syne uppercase text-base border-r bg-black text-white lg:w-[15%]">Dynamic Plus</th>
                             <th className="py-2 px-4 rounded-e-xl font-syne font-semibold uppercase text-base bg-black text-white lg:w-[15%]"><span className="bg-blue-Purple p-[5px] rounded-xl w-12 text-sm">Best Value</span><br />Ultimate Pro</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td className="py-2 px-2 text-left font-syne border-r text-lg text-black">Pricing</td>
-                            <td className="p-4 font-kanit text-lg border-r text-left text-black">
+                            <td className="py-2 px-2 text-left font-kanit border-r text-lg text-black">Pricing</td>
+                            <td className="px-2 py-4 font-kanit text-lg border-r text-left text-black">
                                 Annually:$57.99/month
                                 6Month:$69.99/month
                                 Monthly:$99.99/month
                             </td>
-                            <td className="p-2 font-kanit text-lg border-r text-left text-black">
+                            <td className="px-2 py-4 font-kanit text-lg border-r text-left text-black">
                                 Annually: $115.99/month
                                 6Month: $139.99/month
                                 Monthly: $199.99/month
                             </td>
-                            <td className="p-2 font-kanit text-lg border-r text-left text-black">
+                            <td className="px-2 py-4 font-kanit text-lg border-r text-left text-black">
                                 Annually: $173.99/month
                                 6Month: $299.99/month
                                 Monthly: $209.99/month
                             </td>
-                            <td className="p-2 font-kanit text-lg border-r text-left text-black">
+                            <td className="px-2 py-4 font-kanit text-lg border-r text-left text-black">
                                 Annually: $173.99/month
                                 6Month: $299.99/month
                                 Monthly: $209.99/month
