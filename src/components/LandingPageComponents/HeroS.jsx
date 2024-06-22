@@ -45,13 +45,13 @@ const HeroS = ({ borderColor, buttonBg, listColor, bgColor }) => {
         </div>
         <div className="flex justify-center items-center gap-2 w-full pb-4">
           <div
-            className={`w-[40%] ${bgColor} border h-2  ${borderColor}`}
+            className={`w-[40%] ${bgColor} border h-[0.2rem]  ${borderColor}`}
           ></div>
           <h1 className="text-3xl font-syne font-bold leading-6 tracking-normal">
-            v/s
+            v<span className="text-xl">/</span>s
           </h1>
           <div
-            className={`w-[40%] ${bgColor} border h-2  ${borderColor}`}
+            className={`w-[40%] ${bgColor} border h-[0.2rem]  ${borderColor}`}
           ></div>
         </div>
         <div className="w-full ">

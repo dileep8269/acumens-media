@@ -12,20 +12,20 @@ const PricingPage = () => {
       <Tabs>
         <div className="flex justify-center gap-4 items-center mx-10
             md:mt-14 mt-10">
-          <TabList>
-            <Tab>
+          <TabList className={"flex justify-center items-center gap-10 outline-none"}>
+            <Tab className='border-0'>
               <button className="btn btn-ghost btn-sm text-[12px] py-2 px-2  bg-[rgb(0,0,0)] text-white uppercase rounded-full hover:bg-[rgb(103,84,233)]">Social Media Automation / SEO / SEM</button>
 
             </Tab>
-            <Tab>
+            <Tab className='border-0'>
               <button className="btn btn-ghost btn-sm text-[12px] py-2 px-2  bg-[rgb(0,0,0)] text-white uppercase rounded-full hover:bg-[rgb(103,84,233)]">Add On: SEM / SMM / SEO / Email Marketing</button>
 
             </Tab>
-            <Tab>
+            <Tab className='border-0'>
               <button className="btn btn-ghost btn-sm text-[12px] py-2 px-2  bg-[rgb(0,0,0)] text-white uppercase rounded-full hover:bg-[rgb(103,84,233)]">CRM / Hosting / Web Pages / Email Packages / SSL</button>
 
             </Tab>
-            <Tab>
+            <Tab className='border-0'>
               <button className="btn btn-ghost btn-sm text-[12px] py-2 px-2  bg-[rgb(0,0,0)] text-white uppercase rounded-full hover:bg-[rgb(103,84,233)]">Custom Plans/Tailored Services </button>
 
             </Tab>

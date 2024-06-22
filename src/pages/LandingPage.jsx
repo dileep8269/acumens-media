@@ -3,7 +3,7 @@ import HeroL from "../components/LandingPageComponents/HeroL";
 import HeroS from "../components/LandingPageComponents/HeroS";
 import Review from "../components/LandingPageComponents/Review";
 import { landingPageReview } from "../constants/landingPageConstant";
-;
+
 
 // rajkumar
 
@@ -22,9 +22,9 @@ import Portfolio from "../components/homePageComponents/Portfolio";
 
 const LandingPage = () => {
   return (
-    <div className="py-4">
-
-      <div className="mt-6 p-10">
+    <div className="pt-4">
+    <div className=" bg-gray-100">
+      <div className="mt-6 p-10 bg-white rounded-b-[40px]">
         <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto">
           <div className="hidden md:block">
             <HeroL
@@ -54,8 +54,8 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-
-      <div className="bg-gray-100 rounded-t-[40px] p-10">
+     <div className=" bg-blue-Purple">
+      <div className="bg-gray-100 rounded-b-[40px] p-10">
         <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto">
           <div className="hidden md:block">
             <HeroL
@@ -84,11 +84,12 @@ const LandingPage = () => {
             ))}
           </div> */}
         </div>
+      </div>
       </div>
 
       
-
-      <div className="bg-blue-Purple mb-10 rounded-t-[40px] p-10 text-white ">
+     <div className="bg-black">
+      <div className="bg-blue-Purple rounded-b-[40px] p-10 text-white ">
         <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto">
           <div className="hidden md:block">
             <HeroL
@@ -120,8 +121,9 @@ const LandingPage = () => {
           </div> */}
         </div>
       </div>
-
-      <div className="bg-black p-10 rounded-t-[40px] text-white ">
+      </div>
+     <div className=" bg-blue-Purple">
+      <div className="bg-black p-10 rounded-b-[40px] text-white ">
         <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto">
           <div className="hidden md:block">
             <HeroL
@@ -154,11 +156,12 @@ const LandingPage = () => {
             ))}
           </div>
         </div>
+      </div>
       </div>
       
       {/* form */}
 
-      <div className="w-full mt-10 px-8 lg:px-0 py-10 bg-blue-Purple text-white rounded-t-[40px] outline-0">
+      <div className="w-full lg:px-0 py-10 bg-blue-Purple text-white outline-0">
         <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto space-y-16">
 
           <div className="flex flex-col md:flex-row gap-8">
@@ -206,6 +209,7 @@ const LandingPage = () => {
         </div>
 
       </div>
+     </div>
 
     </div>
   );
