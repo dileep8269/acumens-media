@@ -7,12 +7,11 @@ import CustomTab from './PricingTabs/CustomTab';
 const PricingPage = () => {
 
   return (
-    <div className="min-h-screen md:pt-32 pt-10 ">
-      <h1 className="text-[rgb(0,0,0)]  font-bold text-center md:text-5xl text-xl">Select an option Below to check Pricing & Details</h1>
+    <div className="min-h-screen pt-24 ">
+      <h1 className="md:text-5xl text-3xl font-bold font-syne text-gray-900 text-center px-8 lg:px-0 mb-5">Select an option Below to check Pricing & Details</h1>
       <Tabs>
-        <div className="flex justify-center gap-4 items-center mx-10
-            md:mt-14 mt-10">
-          <TabList className={"flex justify-center items-center gap-10 outline-none"}>
+    
+          <TabList className={"flex flex-wrap justify-center items-center gap-5 outline-none"}>
             <Tab className='border-0'>
               <button className="btn btn-ghost btn-sm text-[12px] py-2 px-2  bg-[rgb(0,0,0)] text-white uppercase rounded-full hover:bg-[rgb(103,84,233)]">Social Media Automation / SEO / SEM</button>
 
@@ -31,8 +30,7 @@ const PricingPage = () => {
             </Tab>
 
           </TabList>
-
-        </div>
+    
         <TabPanel>
           <AutomationTab />
         </TabPanel>

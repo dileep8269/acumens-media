@@ -15,7 +15,7 @@ const AutomationTab = () => {
                 <section className="py-5">
                     <div className="mx-auto space-y-4">
                         <div className="flex flex-col justify-center items-center px-8 lg:px-0">
-                            <h1 className="md:text-4xl text-3xl font-semibold font-syne text-gray-900 text-center">Social Media Automation/SEO/SEM Packages</h1>
+                            <h1 className="md:text-4xl text-3xl font-bold font-syne text-gray-900 text-center">Social Media Automation/SEO/SEM Packages</h1>
                             <PricingTabs plan={plan} setPlan={setPlan} />
                         </div>
                         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-12 lg:gap-2 py-10 md:py-5 px-8">

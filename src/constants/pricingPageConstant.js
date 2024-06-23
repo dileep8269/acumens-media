@@ -33,48 +33,56 @@ export const socialMediaBasicPlan = {
             icon: React.createElement(FaCircleCheck),
             text: "4 AI-Generated Posts per day",
             color: "text-blue-Purple",
+            size : "text-xl"
 
         },
         {
             icon: React.createElement(FaCircleCheck),
             text: "3 Social Media Accounts",
             color: "text-blue-Purple",
+            size : "text-xl"
 
         },
         {
             icon: React.createElement(FaCircleCheck),
             text: "Professional Social Media Account / Page creation (included)",
             color: "text-blue-Purple",
+            size : "text-xl"
 
         },
         {
             icon: React.createElement(FaCircleCheck),
             text: "4 2 AI-Created YouTube video / Month*",
             color: "text-blue-Purple",
+            size : "text-xl"
 
         },
         {
             icon: React.createElement(FaCircleCheck),
             text: "Scheduled Posts (Managed by Us)",
             color: "text-blue-Purple",
+            size : "text-xl"
 
         },
         {
             icon: React.createElement(IoCloseCircleSharp),
             text: "No Website Design",
             color: "text-black",
+            size : "text-2xl"
 
         },
         {
             icon: React.createElement(IoCloseCircleSharp),
             text: "No AI-Enhanced Core SEO",
             color: "text-black",
+            size : "text-2xl"
 
         },
         {
             icon: React.createElement(IoCloseCircleSharp),
             text: "No Web Hosting",
             color: "text-black",
+            size : "text-2xl"
 
         }
     ],
@@ -82,6 +90,7 @@ export const socialMediaBasicPlan = {
     threeMonthPlan2: "3 Months Search Engine Ads campaign management (example google ads, Microsoft / Bing Ads)",
     color: "text-black",
     icon: React.createElement(IoCloseCircleSharp),
+    size : "text-2xl",
 
     buttonText: "SELECT BASIC"
 }
@@ -93,48 +102,56 @@ export const socialMediaGrowthPlan = {
             icon: React.createElement(FaCircleCheck),
             text: "8 AI-Generated Posts per day",
             color: "text-blue-Purple",
+            size : "text-xl"
 
         },
         {
             icon: React.createElement(FaCircleCheck),
             text: "3 Social Media Accounts",
             color: "text-blue-Purple",
+            size : "text-xl"
 
         },
         {
             icon: React.createElement(FaCircleCheck),
             text: "Professional Social Media Account / Page creation (included)",
             color: "text-blue-Purple",
+            size : "text-xl"
 
         },
         {
             icon: React.createElement(FaCircleCheck),
             text: "4 AI-Created YouTube video / Month*",
             color: "text-blue-Purple",
+            size : "text-xl"
 
         },
         {
             icon: React.createElement(FaCircleCheck),
             text: "Scheduled Posts (Managed by Us)",
             color: "text-blue-Purple",
+            size : "text-xl"
 
         },
         {
             icon: React.createElement(IoCloseCircleSharp),
             text: "No Website Design",
             color: "text-black",
+            size : "text-2xl"
 
         },
         {
             icon: React.createElement(IoCloseCircleSharp),
             text: "No AI-Enhanced Core SEO",
             color: "text-black",
+            size : "text-2xl"
 
         },
         {
             icon: React.createElement(IoCloseCircleSharp),
             text: "No Web Hosting",
             color: "text-black",
+            size : "text-2xl"
 
         }
     ],
@@ -142,6 +159,7 @@ export const socialMediaGrowthPlan = {
     threeMonthPlan1: "3 Months Social Media Ads campaign management (example facebook ads, Instagram Ads)",
     threeMonthPlan2: "3 Months Search Engine Ads campaign management (example google ads, Microsoft / Bing Ads)",
     color: "text-black",
+    size : "text-2xl",    
     icon: React.createElement(IoCloseCircleSharp),
 
     buttonText: "SELECT GROWTH"
@@ -153,48 +171,56 @@ export const socialMediaDynamicPlan = {
         {
             icon: React.createElement(FaCircleCheck),
             text: "14 AI-Generated Posts per day",
-            color: "text-blue-Purple"
+            color: "text-blue-Purple",
+            size : "text-xl"
         },
         {
             icon: React.createElement(FaCircleCheck),
             text: "4 Social Media Accounts",
             color: "text-blue-Purple",
+            size : "text-xl"
 
         },
         {
             icon: React.createElement(FaCircleCheck),
             text: "Professional Social Media Account / Page creation (included)",
             color: "text-blue-Purple",
+            size : "text-xl"
 
         },
         {
             icon: React.createElement(FaCircleCheck),
             text: "7 AI-Created YouTube video / Month*",
             color: "text-blue-Purple",
+            size : "text-xl"
 
         },
         {
             icon: React.createElement(FaCircleCheck),
             text: "Scheduled Posts (Managed by Us)",
             color: "text-blue-Purple",
+            size : "text-xl"
 
         },
         {
             icon: React.createElement(FaCircleCheck),
             text: "Website Design (Upto 7 Pages)*",
             color: "text-blue-Purple",
+            size : "text-xl"
 
         },
         {
             icon: React.createElement(FaCircleCheck),
             text: "3 Months of AI-Enhanced SEO",
             color: "text-blue-Purple",
+            size : "text-xl"
 
         },
         {
             icon: React.createElement(FaCircleCheck),
             text: "1 year of Web Hosting Included*",
             color: "text-blue-Purple",
+            size : "text-xl"
 
         }
     ],
@@ -202,6 +228,7 @@ export const socialMediaDynamicPlan = {
     threeMonthPlan1: "3 Months Social Media Ads campaign management (example facebook ads, Instagram Ads)",
     threeMonthPlan2: "3 Months Search Engine Ads campaign management (example google ads, Microsoft / Bing Ads)",
     color: "text-blue-Purple",
+    size : "text-xl",
     icon: React.createElement(FaCircleCheck),
 
     buttonText: "SELECT DYNAMIC PLUS"
@@ -215,48 +242,56 @@ export const socialMediaUltimatePlan = {
             icon: React.createElement(FaCircleCheck),
             text: "22 AI-Generated Posts per day",
             color: "text-blue-Purple",
+            size : "text-xl"
 
         },
         {
             icon: React.createElement(FaCircleCheck),
             text: "5 Social Media Accounts",
             color: "text-blue-Purple",
+            size : "text-xl"
 
         },
         {
             icon: React.createElement(FaCircleCheck),
             text: "Professional Social Media Account / Page creation (included)",
             color: "text-blue-Purple",
+            size : "text-xl"
 
         },
         {
             icon: React.createElement(FaCircleCheck),
             text: "10 AI-Created YouTube video / Month*",
             color: "text-blue-Purple",
+            size : "text-xl"
 
         },
         {
             icon: React.createElement(FaCircleCheck),
             text: "Scheduled Posts (Managed by Us)",
             color: "text-blue-Purple",
+            size : "text-xl"
 
         },
         {
             icon: React.createElement(FaCircleCheck),
             text: "Website Design (Upto 15 Pages)*",
             color: "text-blue-Purple",
+            size : "text-xl"
 
         },
         {
             icon: React.createElement(FaCircleCheck),
             text: "3 Months of AI-Enhanced SEO",
             color: "text-blue-Purple",
+            size : "text-xl"
 
         },
         {
             icon: React.createElement(FaCircleCheck),
             text: "1 year of Web Hosting Included*",
             color: "text-blue-Purple",
+            size : "text-xl"
 
         }
     ],
@@ -264,6 +299,7 @@ export const socialMediaUltimatePlan = {
     threeMonthPlan1: "3 Months Social Media Ads campaign management (example facebook ads, Instagram Ads)",
     threeMonthPlan2: "3 Months Search Engine Ads campaign management (example google ads, Microsoft / Bing Ads)",
     color: "text-blue-Purple",
+    size : "text-xl",
     icon: React.createElement(FaCircleCheck),
 
     buttonText: "SELECT Ultimate Pro"

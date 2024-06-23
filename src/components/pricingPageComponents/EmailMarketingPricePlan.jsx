@@ -34,7 +34,7 @@ const EmailMarketingPricePlan = ({ price, plan }) => {
                         }
                     </div>
 
-                    <div className=' mx-auto'>
+                    <div className='mx-auto'>
                         <Button className='uppercase mb-2'>{plan.buttonText}</Button>
 
                         <div className='text-center'>
