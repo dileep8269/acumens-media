@@ -36,36 +36,36 @@ const SSLTableComparison = () => {
                         <tr>
                             <td className="py-2 px-2 text-left font-kanit border-r text-lg text-black">Pricing</td>
                             <td className="px-4 py-4 font-kanit text-base border-r text-left text-black">
-                                Annually: $57.99/month
-                                6Month: $69.99/month
-                                Monthly: $99.99/month
+                                Annually: $24.99/year
+                                6Month: $34.99 /month
+                                Monthly: $44.99/month
                             </td>
                             <td className="px-4 py-4 font-kanit text-base border-r text-left text-black">
-                                Annually: $115.99/month
-                                6Month: $139.99/month
-                                Monthly: $199.99/month
-                            </td>
-                            <td className="px-4 py-4 font-kanit text-base border-r text-left text-black">
-                                Annually: $173.99/month
-                                6Month: $299.99/month
-                                Monthly: $209.99/month
-                            </td>
-                            <td className="px-4 py-4 font-kanit text-base border-r text-left text-black">
-                                Annually: $173.99/month
-                                6Month: $299.99/month
-                                Monthly: $209.99/month
-                            </td>
-                            <td className="px-4 py-4 font-kanit text-base border-r text-left text-black">
-                                Annually: $173.99/month
-                                6Month: $299.99/month
-                                Monthly: $209.99/month
+                                Annually: $3.49/year
+                                6Month: $3.99/month
+                                Monthly: $4.99/month
                             </td>
                             <td className="px-4 py-4 font-kanit text-base text-left text-black">
-                                Annually: $173.99/month
-                                6Month: $299.99/month
-                                Monthly: $209.99/month
-                                Monthly: $209.99/month
+                                Annually: $20.99/year
+                                6Month: $22.99/month
+                                Monthly: $24.99/month
                             </td>
+                            <td className="px-4 py-4 font-kanit text-base border-r text-left text-black">
+                                Annually: $0.006/year
+                                6Month: $0.0075/month
+                                Monthly: $0.01/month
+                            </td>
+                            <td className="px-4 py-4 font-kanit text-base border-r text-left text-black">
+                                Annually: $899.99/year
+                                6Month: $42.49/month
+                                Monthly: $49.99/month
+                            </td>
+                            <td className="px-4 py-4 font-kanit text-base border-r text-left text-black">
+                                Annually: $899.99/year
+                                6Month: $899.99/month
+                                Monthly: $89.99/month
+                            </td>
+                            
                         </tr>
                         {SMPriceComparison.map((item, index) => (
                             <tr key={index} className={`border-0 font-syne h-24 text-lg ${item.bgColor} ${item.textColor}`}>

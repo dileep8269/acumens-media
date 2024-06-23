@@ -955,24 +955,24 @@ export const SSLPricing = {
     monthly: {
         CRMPlans: 44.99,
         webHostingPlans: 4.99,
-        webDesignPlans: 199.99,
-        emailPackagePlans: 169.99,
-        basicSSLPlans: 49.99,
-        secureSSLPlans: 89.99,
+        webDesignPlans: 24.99,
+        emailPackagePlans: 0.006,
+        basicSSLPlans: 899.99,
+        secureSSLPlans: 899.99,
     },
     sixMonths: {
-        CRMPlans: 34.99,
+        CRMPlans: 34.99 ,
         webHostingPlans: 3.99,
-        webDesignPlans: 199.99,
-        emailPackagePlans: 169.99,
+        webDesignPlans: 22.99,
+        emailPackagePlans: 0.0075,
         basicSSLPlans: 42.49,
         secureSSLPlans: 899.99,
     },
     twelveMonths: {
         CRMPlans: 24.99,
         webHostingPlans: 3.49,
-        webDesignPlans: 199.99,
-        emailPackagePlans: 169.99,
+        webDesignPlans: 20.99,
+        emailPackagePlans: 0.006,
         basicSSLPlans: 899.99,
         secureSSLPlans: 899.99,
     }
@@ -1047,7 +1047,7 @@ export const CRMPlans = {
         {
             icon: React.createElement(FaCircleCheck),
             text: "Fully Customizable",
-            color: "ttext-blue-Purple",
+            color: "text-blue-Purple",
             size: "text-2xl"
 
         },
@@ -1060,7 +1060,7 @@ export const CRMPlans = {
         }
     ],
 
-    buttonText: "select sem"
+    buttonText: "select CRM"
 }
 
 export const webHostingPlans = {
@@ -1145,7 +1145,7 @@ export const webHostingPlans = {
         }
     ],
 
-    buttonText: "SELECT SMM"
+    buttonText: "SELECT Web Hosting"
 }
 
 export const webDesignPlans = {
@@ -1229,7 +1229,7 @@ export const webDesignPlans = {
         },
     ],
 
-    buttonText: "SELECT SEO"
+    buttonText: "SELECT Web Design"
 }
 
 export const emailPackagePlans = {
@@ -1314,7 +1314,7 @@ export const emailPackagePlans = {
         }
     ],
 
-    buttonText: "SELECT advanced seo"
+    buttonText: "SELECT Email Pack"
 }
 
 export const basicSSLPlans = {
@@ -1322,91 +1322,84 @@ export const basicSSLPlans = {
     plans: [
         {
             icon: React.createElement(FaCircleCheck),
-            text: "Basic Site Audit",
+            text: "social media accounts",
             color: "text-blue-Purple",
             size: "text-xl"
 
         },
         {
             icon: React.createElement(FaCircleCheck),
-            text: "Upto 6 Targeted Keywords",
+            text: " social media accounts",
             color: "text-blue-Purple",
             size: "text-xl"
 
         },
         {
             icon: React.createElement(FaCircleCheck),
-            text: "Upto 20 Backlinks added / Month",
+            text: "1 YouTube video/week",
             color: "text-blue-Purple",
             size: "text-xl"
 
         },
         {
             icon: React.createElement(FaCircleCheck),
-            text: "Upto 2 Blogs Created & added / Month",
+            text: "social media accounts",
             color: "text-blue-Purple",
             size: "text-xl"
 
         },
         {
             icon: React.createElement(FaCircleCheck),
-            text: "Upto 10 landing Pages optimized",
+            text: "Online store on your domain",
             color: "text-blue-Purple",
             size: "text-xl"
 
         },
         {
             icon: React.createElement(FaCircleCheck),
-            text: "ON-Page & OFF-Page Both SEO Covered",
-            color: "text-blue-Purple",
-            size: "text-xl"
-
-        },
-        {
-            icon: React.createElement(FaCircleCheck),
-            text: "Basic Technical Analysis & Improvization",
-            color: "text-blue-Purple",
-            size: "text-xl"
-
-        },
-        {
-            icon: React.createElement(FaCircleCheck),
-            text: "Basic Competitor Analysis Covered",
-            color: "text-blue-Purple",
-            size: "text-xl"
-
-        },
-        {
-            icon: React.createElement(FaCircleCheck),
-            text: "Content Optimization",
-            color: "text-blue-Purple",
-            size: "text-xl"
-
-        },
-        {
-            icon: React.createElement(FaCircleCheck),
-            text: "Monthly Reports",
+            text: "Google My Business optimization",
             color: "text-blue-Purple",
             size: "text-xl"
 
         },
         {
             icon: React.createElement(IoCloseCircleSharp),
-            text: "Google Business Profile Optimization not Included",
+            text: "Facebook Ads(charged extra)",
             color: "text-black",
             size: "text-2xl"
 
         },
         {
             icon: React.createElement(IoCloseCircleSharp),
-            text: "YouTube Videos added on Channel for optimization*",
+            text: " Google Ads (charged extra)",
+            color: "text-black",
+            size: "text-2xl"
+
+        },
+        {
+            icon: React.createElement(IoCloseCircleSharp),
+            text: "Instagram Ads (charged extra)",
+            color: "text-black",
+            size: "text-2xl"
+
+        },
+        {
+            icon: React.createElement(IoCloseCircleSharp),
+            text: "Instagram Ads (charged extra)",
+            color: "text-black",
+            size: "text-2xl"
+
+        },
+        {
+            icon: React.createElement(IoCloseCircleSharp),
+            text: "Instagram Ads (charged extra)",
             color: "text-black",
             size: "text-2xl"
 
         }
     ],
 
-    buttonText: "SELECT basic seo"
+    buttonText: "SELECT Basic SSL"
 }
 
 export const secureSSLPlans = {
@@ -1414,84 +1407,84 @@ export const secureSSLPlans = {
     plans: [
         {
             icon: React.createElement(FaCircleCheck),
-            text: "Assessment / Audit of Current Email Marketing Activity",
+            text: "social media accounts",
             color: "text-blue-Purple",
             size: "text-xl"
 
         },
         {
             icon: React.createElement(FaCircleCheck),
-            text: "Industry & Competitors Research",
+            text: " social media accounts",
             color: "text-blue-Purple",
             size: "text-xl"
 
         },
         {
             icon: React.createElement(FaCircleCheck),
-            text: "AI-Powered Email Content creation, Copywriting & Design creation",
+            text: "1 YouTube video/week",
             color: "text-blue-Purple",
             size: "text-xl"
 
         },
         {
             icon: React.createElement(FaCircleCheck),
-            text: "Creation & Optimization of audience segments",
+            text: "social media accounts",
             color: "text-blue-Purple",
             size: "text-xl"
 
         },
         {
             icon: React.createElement(FaCircleCheck),
-            text: "Build relationships through personalized engagement",
+            text: "Online store on your domain",
             color: "text-blue-Purple",
             size: "text-xl"
 
         },
         {
             icon: React.createElement(FaCircleCheck),
-            text: "Boost brand awareness , Promote content & Generate leads",
+            text: "Google My Business optimization",
             color: "text-blue-Purple",
             size: "text-xl"
 
         },
         {
-            icon: React.createElement(FaCircleCheck),
-            text: "Market products or services & Nurture leads",
-            color: "text-blue-Purple",
-            size: "text-xl"
+            icon: React.createElement(IoCloseCircleSharp),
+            text: "Facebook Ads(charged extra)",
+            color: "text-black",
+            size: "text-2xl"
 
         },
         {
-            icon: React.createElement(FaCircleCheck),
-            text: "Smart AI-Engaging managed Campaigns",
-            color: "text-blue-Purple",
-            size: "text-xl"
+            icon: React.createElement(IoCloseCircleSharp),
+            text: " Google Ads (charged extra)",
+            color: "text-black",
+            size: "text-2xl"
 
         },
         {
-            icon: React.createElement(FaCircleCheck),
-            text: "Upto 40k Emails included",
-            color: "text-blue-Purple",
-            size: "text-xl"
+            icon: React.createElement(IoCloseCircleSharp),
+            text: "Instagram Ads (charged extra)",
+            color: "text-black",
+            size: "text-2xl"
 
         },
         {
-            icon: React.createElement(FaCircleCheck),
-            text: "Upto 20k contacts included",
-            color: "text-blue-Purple",
-            size: "text-xl"
+            icon: React.createElement(IoCloseCircleSharp),
+            text: "Instagram Ads (charged extra)",
+            color: "text-black",
+            size: "text-2xl"
 
         },
         {
-            icon: React.createElement(FaCircleCheck),
-            text: "Additional emails & contacts can be added separately",
-            color: "text-blue-Purple",
-            size: "text-xl"
+            icon: React.createElement(IoCloseCircleSharp),
+            text: "Instagram Ads (charged extra)",
+            color: "text-black",
+            size: "text-2xl"
 
         }
     ],
 
-    buttonText: "SELECT EMP"
+    buttonText: "SELECT Secure SSL"
 }
 
 
