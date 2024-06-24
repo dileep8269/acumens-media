@@ -1,4 +1,4 @@
-import { GoGraph } from "react-icons/go";
+
 
 const AiProofCard = ({ proofs }) => {
   return (
@@ -10,12 +10,13 @@ const AiProofCard = ({ proofs }) => {
               <h1 className='text-left text-3xl lg:text-5xl font-bold font-syne lg:w-[63%] text-black'>{card.percentage}</h1>
             </div>
             <div className="w-[20%]">
-              <div className="w-12 h-12 rounded-full bg-slate-100 flex justify-center items-center">
-                <span className="text-xl text-blue-Purple font-bold"><GoGraph /></span>
+              <div className="w-12 h-12 rounded-full bg-slate-200 flex justify-center items-center">
+              <img className=" w-8 h-8" src="growth.png"/>
               </div>
             </div>
           </div>
           <div className="text-left">
+          <p className="text-base font-semibold font-kanit leading-6 tracking-normal">{card.subHeading}</p>
             <p className="text-base font-light font-kanit leading-6 tracking-normal">{card.context}</p>
           </div>
 

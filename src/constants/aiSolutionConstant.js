@@ -68,7 +68,7 @@ export const socialMediaProofs = {
     heading : "Why SMM can bring in the numbers",
     cards : [
         {percentage: "99.9%", context : "of growth rate in brand awareness for businesses use social media to reach customers"},
-        {percentage: "100%", context : "of total clicks on social media ads are serving as proof that a dependence on SMM alone limits your potential for more traffic and leads."},
+        {percentage: "100%",  context : "of total clicks on social media ads are serving as proof that a dependence on SMM alone limits your potential for more traffic and leads."},
         {percentage: "82%", context : "of clicks on social media ads are more likely to buy, making for better leads"},
     ]
 }

@@ -63,9 +63,9 @@ export const socialMediaProofs = {
     title : "THE PROOF IS IN THE NUMBERS",
     heading : "How AI-Solutions has helped our clients.",
     cards : [
-        {percentage: "79%", context : "Increase in Sales: E-commerce businesses embracing AI experience a significant boost in sales, creating a substantial revenue surge"},
-        {percentage: "85%", context : "Enhanced Customer Retention: AI-powered E-commerce stores excel in retaining customers through personalized experiences, leading to greater brand loyalty and repeat business."},
-        {percentage: "82%", context : "Reduction in Cart Abandonment: Smart AI algorithms reduce cart abandonment rates, ensuring that more customers complete their purchases and contribute to higher revenues."},
+        {percentage: "79%", subHeading: "Increase in Sales:",context : "Increase in Sales: E-commerce businesses embracing AI experience a significant boost in sales, creating a substantial revenue surge"},
+        {percentage: "85%", subHeading: "Enhanced Customer Retention:",context : "Enhanced Customer Retention: AI-powered E-commerce stores excel in retaining customers through personalized experiences, leading to greater brand loyalty and repeat business."},
+        {percentage: "82%", subHeading: "Reduction in Cart Abandonment:",context : "Reduction in Cart Abandonment: Smart AI algorithms reduce cart abandonment rates, ensuring that more customers complete their purchases and contribute to higher revenues."},
     ]
 }
 
