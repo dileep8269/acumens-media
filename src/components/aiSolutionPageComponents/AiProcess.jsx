@@ -8,9 +8,11 @@ const AiProcess = ({blog}) => {
             <div className='flex flex-col md:flex-row justify-center items-center md:items-start gap-12 py-10'>
                 <div className='w-full md:w-1/2 space-y-6'>
                     <h1 className='text-left text-2xl lg:text-4xl font-bold font-syne  text-black'>{blog?.blog1.header}</h1>
-                    <p className='text-left text-base font-kanit font-light tracking-normal leading-6 text-black mb-5'>{blog?.blog1.context}</p>
-                    {blog?.blog1.context2 && <p className='text-left text-base font-kanit font-light tracking-normal leading-6 text-black mb-5'>{blog?.blog1.context2}</p>}
-                    {blog?.blog1.context3 && <p className='text-left text-base font-kanit font-light tracking-normal leading-6 text-black mb-5'>{blog?.blog1.context3}</p>}
+                    <p className='text-left text-base font-kanit font-light tracking-normal leading-6 text-black mb-5'> 
+                    <span className=" font-semibold"> {blog?.blog1.subHead1} </span>
+                    {blog?.blog1.context}</p>
+                    {blog?.blog1.context2 && <p className='text-left text-base font-kanit font-light tracking-normal leading-6 text-black mb-5'><span className=" font-semibold"> {blog?.blog1.subHead2} </span>{blog?.blog1.context2}</p>}
+                    {blog?.blog1.context3 && <p className='text-left text-base font-kanit font-light tracking-normal leading-6 text-black mb-5'><span className=" font-semibold"> {blog?.blog1.subHead3} </span>{blog?.blog1.context3}</p>}
                 </div>
                 <div className='w-full md:w-1/2 flex justify-center md:justify-end items-center'>
                     <img src={blog?.blog1.photo} alt="sdsds" className='w-[500px] h-[400px] object-cover rounded-[40px]' />
@@ -22,17 +24,17 @@ const AiProcess = ({blog}) => {
                 </div>
                 <div className='w-full md:w-1/2 space-y-6 flex flex-col justify-end items-center'>
                     <h1 className='text-left text-2xl lg:text-4xl font-bold font-syne text-black'>{blog?.blog2.header}</h1>
-                    <p className='text-left text-base font-kanit font-light tracking-normal leading-6 text-black mb-5'>{blog?.blog2.context}</p>
-                    {blog?.blog2.context2 &&<p className='text-left text-base font-kanit font-light tracking-normal leading-6 text-black mb-5'>{blog?.blog2.context2}</p>}
-                    {blog?.blog2.context3 &&<p className='text-left text-base font-kanit font-light tracking-normal leading-6 text-black mb-5'>{blog?.blog2.context3}</p>}
+                    <p className='text-left text-base font-kanit font-light tracking-normal leading-6 text-black mb-5'><span className=" font-semibold"> {blog?.blog2.subHead1} </span>{blog?.blog2.context}</p>
+                    {blog?.blog2.context2 &&<p className='text-left text-base font-kanit font-light tracking-normal leading-6 text-black mb-5'><span className=" font-semibold"> {blog?.blog2.subHead2} </span>{blog?.blog2.context2}</p>}
+                    {blog?.blog2.context3 &&<p className='text-left text-base font-kanit font-light tracking-normal leading-6 text-black mb-5'><span className=" font-semibold"> {blog?.blog2.subHead3} </span>{blog?.blog2.context3}</p>}
                 </div>
             </div>
             {blog?.blog3 && <div className='flex flex-col md:flex-row justify-center items-center md:items-start gap-12 py-10'>
                 <div className='w-full md:w-1/2 space-y-6'>
                     <h1 className='text-left text-2xl lg:text-4xl font-bold font-syne text-black'>{blog?.blog3.header}</h1>
-                    <p className='text-left text-base font-kanit font-light tracking-normal leading-6 text-black mb-5'>{blog?.blog3.context}</p>
-                    {blog?.blog3.context2 && <p className='text-left text-base font-kanit font-light tracking-normal leading-6 text-black mb-5'>{blog?.blog3.context2}</p>}
-                    {blog?.blog3.context3 && <p className='text-left text-base font-kanit font-light tracking-normal leading-6 text-black mb-5'>{blog?.blog3.context3}</p>}
+                    <p className='text-left text-base font-kanit font-light tracking-normal leading-6 text-black mb-5'><span className=" font-semibold"> {blog?.blog3.subHead1} </span>{blog?.blog3.context}</p>
+                    {blog?.blog3.context2 && <p className='text-left text-base font-kanit font-light tracking-normal leading-6 text-black mb-5'><span className=" font-semibold"> {blog?.blog3.subHead2} </span>{blog?.blog3.context2}</p>}
+                    {blog?.blog3.context3 && <p className='text-left text-base font-kanit font-light tracking-normal leading-6 text-black mb-5'><span className=" font-semibold"> {blog?.blog3.subHead3} </span>{blog?.blog3.context3}</p>}
                 </div>
                 <div className='w-full md:w-1/2 flex justify-center md:justify-end items-center'>
                     <img src={blog?.blog3.photo} alt="sdsds" className='w-[500px] h-[400px] object-cover rounded-[40px]' />
