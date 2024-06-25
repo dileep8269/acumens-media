@@ -4,6 +4,7 @@ import AutomationTab from './PricingTabs/AutomationTab';
 import MarketingTab from './PricingTabs/MarketingTab';
 import SslTab from './PricingTabs/SslTab';
 import CustomTab from './PricingTabs/CustomTab';
+
 const PricingPage = () => {
 
   return (

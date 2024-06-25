@@ -37,9 +37,9 @@ const EmailMarketingPricePlan = ({ price, plan }) => {
                     <div className='mx-auto'>
                         <Button className='uppercase mb-2'>{plan.buttonText}</Button>
 
-                        <div className='text-center'>
+                        {/* <div className='text-center'>
                             <Link className='font-kanit font-light text-base leading-6 text-black hover:text-blue-Purple transition-colors duration-500'>Compare Plans</Link>
-                        </div>
+                        </div> */}
                     </div>
 
                 </div>

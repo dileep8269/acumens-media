@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import MarketingTabPriceComparison from '../../../components/pricingPageComponents/MarketingTabPriceComparison';
 import EmailMarketingPricePlan from '../../../components/pricingPageComponents/EmailMarketingPricePlan';
 import PricingTabs from '../../../components/pricingPageComponents/PricingTabs';
 import { SEMPlans, SMMPlans, SEOPlans, advancedSEOPlans, basicSEOPlans, emailMarketingPlans, socialMediaPlanFaqs, emailPricing } from '../../../constants/pricingPageConstant';
@@ -31,11 +30,6 @@ const MarketingTab = () => {
                     </div>
                 </section>
             </div>
-
-            <div className='lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto py-5'>
-                <MarketingTabPriceComparison />
-            </div>
-
 
             <div className="w-full py-10">
                 <div className="lg:w-[900px] xl:w-[1140px] 2xl:w-[1400px] 3xl:w-[1600px] mx-auto space-y-6">

@@ -5,6 +5,7 @@ import PricingTabs from '../../../components/pricingPageComponents/PricingTabs';
 import { socialMediaBasicPlan, socialMediaGrowthPlan, socialMediaDynamicPlan, socialMediaUltimatePlan, socialMediaPlanFaqs, pricing } from '../../../constants/pricingPageConstant';
 import AiSolutionFaqs from '../../../components/aiSolutionPageComponents/AiSolutionFaqs';
 import Contact from '../../../components/aiSolutionPageComponents/Contact';
+import PricingTabs1 from '../../../components/pricingPageComponents/PricingTabs1';
 
 const AutomationTab = () => {
     const [plan, setPlan] = useState('monthly'); // Default plan
@@ -17,8 +18,13 @@ const AutomationTab = () => {
                         <div className="flex flex-col justify-center items-center px-8 lg:px-0">
                             <h1 className="md:text-4xl text-3xl font-bold font-syne text-gray-900 text-center">Social Media Automation/SEO/SEM Packages</h1>
                             <PricingTabs plan={plan} setPlan={setPlan} />
+                            <span className='mt-10'>
+
+                                <PricingTabs1 plan={plan} setPlan={setPlan} />
+                            </span>
+
                         </div>
-                        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-12 lg:gap-2 py-10 md:py-5 px-8">
+                        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-12 lg:gap-2 py-10 md:py-5 px-8 place-items-center">
 
                             <SocialMediaPricePlan price={pricing[plan]?.UltimatePro} plan={socialMediaBasicPlan} />
                             <SocialMediaPricePlan price={pricing[plan]?.pro} plan={socialMediaGrowthPlan} />
