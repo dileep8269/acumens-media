@@ -2,8 +2,6 @@ import React from "react"
 import { SiGooglemarketingplatform } from "react-icons/si";
 import { FaLightbulb } from "react-icons/fa";
 import { PiMicrophoneStageFill } from "react-icons/pi";
-import router from "../router/Router";
-
 
 export const socialMediaHero = {
     title : "MARKETING SOLUTIONS",
