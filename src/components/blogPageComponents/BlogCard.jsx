@@ -1,14 +1,19 @@
 import { blogDetails } from "../../constants/constant";
 import { Swiper, SwiperSlide } from "swiper/react";
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+
 //import required modules
 import { Pagination, Navigation } from "swiper/modules";
 import { useEffect, useState } from "react";
+
 const BlogCard = () => {
+
   const [noOfCards, setNoOfCards] = useState(2);
+  
   useEffect(() => {
     const handleNoOfCards = () => {
       if (window.innerWidth < 460) {

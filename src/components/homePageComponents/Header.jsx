@@ -1,6 +1,5 @@
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { MyContext } from "../../context api/MyProvider";
 import { RxCross1, RxHamburgerMenu } from "react-icons/rx";
 import acumensLogo from "../../assets/acumens-logoo_new2.webp";
 import acumensStyleLogo from "../../assets/acumenslogo2.webp";
@@ -8,7 +7,7 @@ import DropdownButton from "./DropdownButton";
 import Button from "./Button";
 import { FaBars } from "react-icons/fa";
 
-// importing dropdown list from constant folder
+// importing dropdown constant from constant folder
 import {
   AiSolutionsDropdown,
   WhoWeAreDropdown,
@@ -20,7 +19,8 @@ import {
 const buttonTabs = ["Login", "Sign Up", "Lets Talk"];
 
 const Header = () => {
-  const { menuOpen, setMenuOpen } = useContext(MyContext);
+
+  const [menuOpen, setMenuOpen] = useState(false);
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(10);
 
@@ -80,7 +80,7 @@ const Header = () => {
                 </button>
               </Link>
               <li className="cursor-pointer">
-                <DropdownButton dropdown={AiSolutionsDropdown} classname="w-72">
+                <DropdownButton dropdown={AiSolutionsDropdown} classname="w-72" menuOpen={menuOpen} setMenuOpen={setMenuOpen}>
                   <Link to='/Ai-Solutions.htm'>Ai Solutions</Link>
                 </DropdownButton>
               </li>
@@ -92,12 +92,12 @@ const Header = () => {
                 </button>
               </Link>
               <li className="cursor-pointer">
-                <DropdownButton dropdown={WhoWeAreDropdown} classname="w-36">
+                <DropdownButton dropdown={WhoWeAreDropdown} classname="w-36" menuOpen={menuOpen} setMenuOpen={setMenuOpen}>
                   Who We Are
                 </DropdownButton>
               </li>
               <li className="cursor-pointer">
-                <DropdownButton dropdown={FollowUs} classname="w-72 ">
+                <DropdownButton dropdown={FollowUs} classname="w-72" menuOpen={menuOpen} setMenuOpen={setMenuOpen}>
                   Follow Us
                 </DropdownButton>
               </li>
@@ -132,9 +132,8 @@ const Header = () => {
             </Link>
 
             <div>
-              <DropdownButton isHandBar={true} dropdown={LetsTalk} classname="w-40">
+              <DropdownButton isHandBar={true} dropdown={LetsTalk} classname="w-40" menuOpen={menuOpen} setMenuOpen={setMenuOpen}>
                 <FaBars className="w-20 h-6" />
-
               </DropdownButton>
             </div>
 
@@ -143,7 +142,7 @@ const Header = () => {
       </header>
 
       {/* Mobile view */}
-      <header className={`bg-white bg-opacity-50 backdrop-blur-md shadow-lg p-4 flex justify-between items-center xl:hidden -mt-8 fixed top-8 left-0 w-full z-50 transition-transform duration-300 ${show ? 'translate-y-0' : '-translate-y-full'}`}>
+      <header className={`bg-white bg-opacity-50 backdrop-blur-md shadow-lg p-4 flex justify-between items-center xl:hidden -mt-8 fixed top-8 left-0 w-full z-50 transition-transform duration-300`}>
         {/* Logo */}
         <Link to="/">
           <div className="flex items-center" onClick={toggleMenu}>
@@ -168,7 +167,7 @@ const Header = () => {
               </span>
             </Link>
             <li className=" cursor-pointer">
-              <DropdownButton dropdown={AiSolutionsDropdownMobile} classname="w-72">
+              <DropdownButton dropdown={AiSolutionsDropdownMobile} classname="w-72" menuOpen={menuOpen} setMenuOpen={setMenuOpen}>
                 Ai Solutions
               </DropdownButton>
             </li>
@@ -183,7 +182,7 @@ const Header = () => {
             </li>
 
             <li className="cursor-pointer">
-              <DropdownButton dropdown={WhoWeAreDropdown} classname="w-36">
+              <DropdownButton dropdown={WhoWeAreDropdown} classname="w-36" menuOpen={menuOpen} setMenuOpen={setMenuOpen}>
                 Who We Are
               </DropdownButton>
             </li>

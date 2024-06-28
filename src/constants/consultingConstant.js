@@ -3,7 +3,6 @@ import { SiGooglemarketingplatform } from "react-icons/si";
 import { FaLightbulb } from "react-icons/fa";
 import { PiMicrophoneStageFill } from "react-icons/pi";
 
-
 export const socialMediaHero = {
     title : "SOLUTIONS",
     heading : "Consulting, Outsourcing & CCaaS",

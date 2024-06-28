@@ -4,9 +4,9 @@ import Button from "../homePageComponents/Button"
 const CustomPlan = () => {
 
     return (
-        <div className="relative bg-black w-[340px] lg:w-[650px] h-[880px] lg:h-[520px] rounded-[40px] shrink-0">
+        <div className="relative bg-black w-[340px] lg:w-[650px] h-[950px] lg:h-[520px] rounded-[40px] shrink-0">
 
-            <div className="absolute inset-y-[-12px] left-2.5 w-[340px] lg:w-[650px] h-[880px] lg:h-[520px] bg-[#f7f7fa] rounded-[40px] border border-black p-8 shrink-0">
+            <div className="absolute inset-y-[-12px] left-2.5 w-[340px] lg:w-[650px] h-[950px] lg:h-[520px] bg-[#f7f7fa] rounded-[40px] border border-black p-8 shrink-0">
 
                 <div className="space-y-6 text-black">
                     <h1 className="text-4xl font-syne font-bold leading-10 text-center">Need Custom ERP, App, Chatbot or Tailored Services?</h1>
