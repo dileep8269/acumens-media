@@ -15,9 +15,7 @@ const SocialMediaPage = lazy(() => import("../pages/SocialMediaPage"));
 const SearchEnginePage = lazy(() => import("../pages/SearchEnginePage"));
 const GoogleBusinessPage = lazy(() => import("../pages/GoogleBusinessPage"));
 const EmailMarketingPage = lazy(() => import("../pages/EmailMarketingPage"));
-const EcommerceSolutionPage = lazy(() =>
-  import("../pages/EcommerceSolutionPage")
-);
+const EcommerceSolutionPage = lazy(() => import("../pages/EcommerceSolutionPage"));
 const WebDesignAndHosting = lazy(() => import("../pages/WebDesignAndHosting"));
 const AppDevelopmentPage = lazy(() => import("../pages/AppDevelopmentPage"));
 const ConsultingPage = lazy(() => import("../pages/ConsultingPage"));
@@ -28,6 +26,7 @@ const BlogPage = lazy(() => import("../pages/BlogPage"));
 const AboutPage = lazy(() => import("../pages/AboutPage"));
 const TermsCondition = lazy(() => import("../pages/TermsCondition"));
 const Privacy = lazy(() => import("../pages/Privacy"));
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -80,10 +79,6 @@ const router = createBrowserRouter([
       {
         path: "/CCaaS-Outsourcing-Consulting.htm",
         element: <ConsultingPage />,
-      },
-      {
-        path: "/Erp-crm-it-chatbot.htm",
-        element: <AiChatbotPage />,
       },
       {
         path: "/pricing.htm",
