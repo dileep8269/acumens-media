@@ -5,6 +5,25 @@ import { Link } from 'react-router-dom'
 const SocialMediaPricePlan = ({ price, plan }) => {
 
     const formatPrice = (price) => `$${price.toFixed(2)}`;
+    // console.log({formatPrice});
+    const handleBuy = (price) => {
+        // const priceStr = handlePrice(null);
+        // const price = parseFloat(priceStr)
+        // console.log(price);
+        if(price===899.99){
+    
+            window.location.href='https://www.google.com'
+        }
+        else if(price===499.99){
+            window.location.href='https://www.youtube.com'
+            
+        }
+        else if(price===89.99){
+            window.location.href='https://predis.ai'
+            
+        }
+        console.log(price);
+    }
 
     return (
         <div className="relative bg-black w-[330px] h-[750px] rounded-[40px] shrink-0">
@@ -44,10 +63,10 @@ const SocialMediaPricePlan = ({ price, plan }) => {
                     </div>
 
                     <div className="mx-auto">
-
-                        <Button className='uppercase mb-2'>{plan.buttonText}</Button>
-
-                        <div className='text-center'>
+                    <div onClick={()=>handleBuy()}>
+                    <Button  className='uppercase mb-2'>{plan.buttonText}</Button>
+                    </div>
+                      <div className='text-center'>
                             <Link className='font-kanit font-light text-lg leading-6 text-black hover:text-blue-Purple transition-colors duration-500'>Compare Plans</Link>
                         </div>
 

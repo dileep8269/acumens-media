@@ -4,7 +4,6 @@ import { inputFields } from "../constants/constant";
 import Contact from "../components/aiSolutionPageComponents/Contact";
 import { useRef, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { SiGooglemaps } from "react-icons/si";
 const ContactPage = () => {
   const formRef = useRef(null);
   const location = useLocation();

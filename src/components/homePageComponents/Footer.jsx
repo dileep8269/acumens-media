@@ -1,5 +1,4 @@
-import { FaLinkedin, FaFacebook, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
-import { SiGooglemaps } from "react-icons/si";
+
 import { Link } from "react-router-dom";
 
 // importing Footer constants from constants folder
