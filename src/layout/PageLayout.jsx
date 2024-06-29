@@ -7,6 +7,7 @@ import { Suspense } from "react";
 import AboutUsLoader from "../ComponentLoader/AboutUsLoader";
 import PricingLoader from "../ComponentLoader/PricingLoader";
 import AiSolutionsLoader from "../ComponentLoader/AiSolutionsLoader";
+import TermsAndConditionLoader from "../ComponentLoader/TermsAndConditionLoader";
 
 function Hello() {
     return (
@@ -42,7 +43,7 @@ const PageLayout = () => {
         }else if (location.pathname === "/pricing.htm") {
             return <PricingLoader />;
         }else {
-            return <Hello />;
+            return <TermsAndConditionLoader />;
         }
     };
     
