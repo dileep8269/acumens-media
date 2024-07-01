@@ -15,7 +15,9 @@ const SocialMediaPage = lazy(() => import("../pages/SocialMediaPage"));
 const SearchEnginePage = lazy(() => import("../pages/SearchEnginePage"));
 const GoogleBusinessPage = lazy(() => import("../pages/GoogleBusinessPage"));
 const EmailMarketingPage = lazy(() => import("../pages/EmailMarketingPage"));
-const EcommerceSolutionPage = lazy(() => import("../pages/EcommerceSolutionPage"));
+const EcommerceSolutionPage = lazy(() =>
+  import("../pages/EcommerceSolutionPage")
+);
 const WebDesignAndHosting = lazy(() => import("../pages/WebDesignAndHosting"));
 const AppDevelopmentPage = lazy(() => import("../pages/AppDevelopmentPage"));
 const ConsultingPage = lazy(() => import("../pages/ConsultingPage"));
